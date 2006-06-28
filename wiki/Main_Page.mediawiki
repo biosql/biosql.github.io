@@ -1,4 +1,9 @@
-Wiki software successfully installed.
+The BioSQL project is a collaboration between [[bp:Main Page|BioPerl]], [[biopython:Main Page|BioPython]], [[bj:Main Page|BioJava]],and [http://bioruby.org BioRuby] projects to build a schema for persistent storage of sequences and features.
 
-Please see [http://meta.wikipedia.org/wiki/MediaWiki_i18n documentation on customizing the interface]
-and the [http://meta.wikipedia.org/wiki/MediaWiki_User%27s_Guide User's Guide] for usage and configuration help.
+==In Progress==
+''Work is underway to migrate the documentation from the code repository to this website.''
+
+See [http://code.open-bio.org/cgi/viewcvs.cgi/biosql-schema/?cvsroot=biosql schema CVS repository] and [http://code.open-bio.org/cgi/viewcvs.cgi/bioperl-db/?cvsroot=bioperl Perl DB implementation] for starters.
+
+==Contacts==
+Project lead is [[bp:Hilmar Lapp|Hilmar Lapp]]
