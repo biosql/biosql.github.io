@@ -123,21 +123,25 @@ tables.
 Example SQL - what is the description of the longest sequence in
 GenBank?
 
-`SELECT   bioentry.description`  
-`FROM     bioentry`  
-`         JOIN biodatabase using (biodatabase_id)`  
-`         JOIN biosequence using (bioentry_id)`  
-`WHERE    biodatabase.name = 'genbank'`  
-`ORDER BY biosequence.length DESC`  
-`LIMIT 1`
+``` sql
+ SELECT   bioentry.description
+ FROM     bioentry
+          JOIN biodatabase using (biodatabase_id)
+          JOIN biosequence using (bioentry_id)
+ WHERE    biodatabase.name = 'genbank'
+ ORDER BY biosequence.length DESC
+ LIMIT 1
+```
 
 Example SQL - find all bioentries with protein sequences containing
 "ELVIS":
 
-`SELECT  bioentry.*`  
-`FROM    bioentry JOIN biosequence USING (bioentry_id)`  
-`WHERE   biosequence.seq LIKE "%ELVIS%"`  
-`  AND   biosequence.alphabet = 'protein'`
+``` sql
+ SELECT  bioentry.*
+ FROM    bioentry JOIN biosequence USING (bioentry_id)
+ WHERE   biosequence.seq LIKE "%ELVIS%"
+   AND   biosequence.alphabet = 'protein'
+```
 
 BIOENTRY\_RELATIONSHIP
 ----------------------

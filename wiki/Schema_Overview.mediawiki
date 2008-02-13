@@ -111,7 +111,7 @@ constrained to be unique, thus enforcing the one-to-one relationship
 between the two tables.
 
 Example SQL - what is the description of the longest sequence in GenBank?
-
+<source lang=sql>
  SELECT   bioentry.description
  FROM     bioentry
           JOIN biodatabase using (biodatabase_id)
@@ -119,13 +119,14 @@ Example SQL - what is the description of the longest sequence in GenBank?
  WHERE    biodatabase.name = 'genbank'
  ORDER BY biosequence.length DESC
  LIMIT 1
-
+</source>
 Example SQL - find all bioentries with protein sequences containing "ELVIS":
-
+<source lang=sql>
  SELECT  bioentry.*
  FROM    bioentry JOIN biosequence USING (bioentry_id)
  WHERE   biosequence.seq LIKE "%ELVIS%"
    AND   biosequence.alphabet = 'protein'
+</source>
 
 ==BIOENTRY_RELATIONSHIP==
 
