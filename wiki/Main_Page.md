@@ -26,8 +26,8 @@ for starters.
 To Do
 -----
 
-[Bugs](bp:Bugs "wikilink") and suggestions for
-[improvement](bp:Enhancement_Requests "wikilink")
+[Bugs](Bugs "wikilink") and suggestions for
+[improvement](Enhancement_Requests "wikilink")
 
 Contacts
 --------
