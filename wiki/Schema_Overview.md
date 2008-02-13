@@ -187,30 +187,36 @@ concept of taxon may not be meaningful for the bioentry.
 Example SQL - find the taxon id of the parent taxon for 'Homo sapiens'
 using a self-join.
 
-`SELECT parent.ncbi_taxon_id`  
-`FROM   taxon AS parent`  
-`       JOIN taxon AS child`  
-`       ON child.parent_taxon_id = parent.ncbi_taxon_id`  
-`       JOIN taxon_name`  
-`       ON taxon_name.taxon_id = child.ncbi_taxon_id`  
-`WHERE  taxon_name.name = 'Homo sapiens';`
+``` sql
+ SELECT parent.ncbi_taxon_id
+ FROM   taxon AS parent
+        JOIN taxon AS child
+        ON child.parent_taxon_id = parent.ncbi_taxon_id
+        JOIN taxon_name
+        ON taxon_name.taxon_id = child.ncbi_taxon_id
+ WHERE  taxon_name.name = 'Homo sapiens';
+```
 
 Example SQL - find all human sequences:
 
-`SELECT * FROM biosequence`  
-`       JOIN bioentry USING (bioentry_id)`  
-`       JOIN taxon_name USING (taxon_id)`  
-`WHERE  taxon_name.name = 'Homo sapiens'`
+``` sql
+ SELECT * FROM biosequence
+        JOIN bioentry USING (bioentry_id)
+        JOIN taxon_name USING (taxon_id)
+ WHERE  taxon_name.name = 'Homo sapiens'
+```
 
 Example SQL -find the taxon id's of all the parental taxa in the Primate
 lineage using a self-join:
 
-`SELECT b.taxon_id FROM taxon as a`  
-`       JOIN taxon as b`  
-`       ON (a.left_value < b.right_value AND a.left_value > b.left_value)`  
-`       JOIN taxon_name`  
-`       ON a.taxon_id = taxon_name.taxon_id`  
-`WHERE taxon_name.name = 'Primate'`
+``` sql
+ SELECT b.taxon_id FROM taxon as a
+        JOIN taxon as b
+        ON (a.left_value < b.right_value AND a.left_value > b.left_value)
+        JOIN taxon_name
+        ON a.taxon_id = taxon_name.taxon_id
+ WHERE taxon_name.name = 'Primate'
+```
 
 Sequence Features with Location and Annotation
 ==============================================
