@@ -1,7 +1,7 @@
-[[bj:BioJava|BioJava]] provides object relational mapping (ORM) to BioSQL 1.0 using [http://www.hibernate.org  Hibernate] bindings to objects in the <code>org.biojavax</code> packages.
+[[bj:Main_Page|BioJava]] provides object relational mapping (ORM) to BioSQL 1.0 using [http://www.hibernate.org  Hibernate] bindings to objects in the <code>org.biojavax</code> packages.
 
 =BioJavaX Design=
-[[bj:BioJavaXDocs|BioJavaX]] was officially released with BioJava1.5. It extends the <code>org.biojava</code> API's and was designed to very closely match the BioSQL schema. This made ORM of [[bj:BioJava|BioJava]] to BioSQL much more straight forward and brought the BioJava object model much closer to that used by [[bp:BioPerl|BioPerl]].
+[[bj:BioJavaXDocs|BioJavaX]] was officially released with BioJava1.5. It extends the <code>org.biojava</code> API's and was designed to very closely match the BioSQL schema. This made ORM of [[bj:BioJava|BioJava]] to BioSQL much more straight forward and brought the BioJava object model much closer to that used by [[bp:Main_Page|BioPerl]].
 
 =Hibernate Mapping=
 [http://www.hibernate.org Hibernate] is currently used as the ORM provider for BioJava. Mapping is defined using xml config files. These files formally define where objects are written in the database.
