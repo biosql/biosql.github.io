@@ -3,6 +3,14 @@ The BioSQL project is a collaboration between [[bp:Main Page|BioPerl]], [[biopyt
 ==Schema Overview==
 A good introduction to BioSQL and it's intended use is the [[Schema Overview|schema overview]] document. This was originaly copied from CVS. It will now be maintained as a live document in the wiki.
 
+==Object Relational Mapping==
+The Bio* projects provide object relational mapping from their respective object models to BioSQL. Details for each project can be obtained from the links below.
+
+ * [[BioJava BioSQL ORM|BioJava]]
+ * BioPerl
+ * BioRuby
+ * BioPython
+
 ==In Progress==
 ''Work is underway to migrate the documentation from the code repository to this website.''
 
