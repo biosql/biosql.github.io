@@ -9,13 +9,8 @@ schema. It also aims to demonstrate functional capabilities using
 example SQL. Design philosophies and expectations are presented with
 reasoning.
 
-The BioSQL schema is described in four sections: Bioentry, Sequence
-Features, Ontology Terms, and Annotation. A fifth section demonstrates
-possible extensions to the schema that may be useful under some
-circumstances.
-
-I. Bioentry with Taxon and Namespace
-====================================
+Bioentry with Taxon and Namespace
+=================================
 
 BIOENTRY
 --------
@@ -205,8 +200,8 @@ lineage using a self-join:
 `       ON a.taxon_id = taxon_name.taxon_id`  
 `WHERE taxon_name.name = 'Primate'`
 
-II. Sequence Features with Location and Annotation
-==================================================
+Sequence Features with Location and Annotation
+==============================================
 
 SEQFEATURE
 ----------
@@ -235,8 +230,8 @@ potentially many-to-many parent-child relationships). These
 relationships are also "typed" via links to ontology terms using the
 term\_id fields.
 
-III. Ontology Terms and Relationships
-=====================================
+Ontology Terms and Relationships
+================================
 
 TERM
 ----
@@ -292,8 +287,8 @@ relationship types are the same, then A and C are related by the same
 type; when the two relationship types differ, then A and C are related
 by the first "supertype" that includes both relationship types).
 
-IV. Annotation Bundle
-=====================
+Annotation Bundle
+=================
 
 Annotations are similar to Sequence Features in that they describe a
 sequence, but unlike Sequence Features they have no locations on the
