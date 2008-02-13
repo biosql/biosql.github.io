@@ -6,6 +6,7 @@ It would be desirable to have a flag to indicate a circular sequence in the BioS
 
 =Bioentry Date Stamping=
 Possible table structure:
+<source lang=sql>
  CREATE TABLE bioentry_history (
    bioentry_history_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
    bioentry_id INT UNSIGNED NOT NULL FOREIGN KEY REFERENCES 
@@ -13,10 +14,10 @@ Possible table structure:
    startdate DATE NOT NULL DEFAULT CURRENT_DATE,
    enddate DATE NULL
  );
-
+</source>
 Example SQL - give me all the entries from GenBank as they existed on
 Jan 1, 2002
-
+<source lang=sql>
  SELECT bioentry.*
  FROM   bioentry
         JOIN biodatabase USING (biodatabase_id)
@@ -25,9 +26,9 @@ Jan 1, 2002
    AND  bioentry_history.startdate <= 2002-01-01 
    AND  (bioentry_history.enddate IS NULL
          OR bioentry_history.enddate > 2002-01-01)
-
- Alternative, if you want db history info as well:
-
+</source>
+Alternative, if you want db history info as well:
+<source lang=sql>
  CREATE TABLE biodatabase_history (
    biodatabase_history_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
    biodatabase_id INT UNSIGNED NOT NULL FOREIGN KEY REFERENCES 
@@ -50,10 +51,11 @@ Jan 1, 2002
    bioentry_history.removed IS NULL OR bioentry_history.entered 
   <> bioentry_history.removed
  );
+</source>
 
 Example SQL - same as before, retrieve all bioentries from GenBank as
 they were on Jan 1, 2002
-
+<source lang=sql>
  SELECT bioentry.*
  FROM   bioentry
         JOIN biodatabase USING (biodatabase_id)
@@ -65,7 +67,7 @@ they were on Jan 1, 2002
  WHERE  biodatabase.name = 'GenBank'
    AND  entered.entrydate <= 2002-01-01
    AND  (exit.entrydate IS NULL OR exit.entrydate > 2002-01-01)
-
+</source>
 Advantage: you don't need to store N*M rows for every M database
 updates, only N rows of date ranges (or database version refs).
 
@@ -73,7 +75,6 @@ Disadvantage: all historical bioentries remain in the database, even
 ones that are no longer "current" - simple SELECTs must specify
 enddate IS NULL (optionally, a "is_current" flag can be added to
 bioentry) - again, a bioentry_current VIEW may be the best solution.
-
 
 =Sequence redundancy=
 
