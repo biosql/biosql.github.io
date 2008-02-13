@@ -9,27 +9,16 @@ schema. It also aims to demonstrate functional capabilities using
 example SQL. Design philosophies and expectations are presented with
 reasoning.
 
-Weak-Typing Paradigm
---------------------
+The BioSQL schema is described in four sections: Bioentry, Sequence
+Features, Ontology Terms, and Annotation. A fifth section demonstrates
+possible extensions to the schema that may be useful under some
+circumstances.
 
-The BioSQL model follows the weak-typing paradigm. As opposed to the
-strong-typing paradigm, in which entities and their attributes
-exhaustively define the object type(s) that they store, in a
-weakly-typed model a few relatively generic entities can hold any number
-of specializations (derived entities, in an object-oriented sense), and
-the attributes that apply to only some of those specializations are
-attached to the row through tag/value associations (vertical storage).
+I. Bioentry with Taxon and Namespace
+====================================
 
-To identify what particular object type a row is of, many entities have
-a type. The type as well as the tag of tag/value pairs come from
-controlled vocabularies (ontologies), which allows assigning arbitrarily
-rich semantics to both the type of a tuple (row) as well as to the
-attributes.
-
-Bioentry with Taxon and Namespace
----------------------------------
-
-### BIOENTRY
+BIOENTRY
+--------
 
 This is the core entity of the BioSQL schema; a bioentry is any single
 entry or record in a biological database. The bioentry contains
@@ -70,7 +59,8 @@ In this case, the identifier 902772 is not an NCBI GI number, but is a
 key to lookup this entry in the private database, "My Favorite Database"
 (MFD).
 
-### BIODATABASE
+BIODATABASE
+-----------
 
 A biodatabase is simply a collection of bioentries; one bioentry may
 only belong to one biodatabase, but one biodatabase may contain many
@@ -81,34 +71,26 @@ database name is officially mandated.
 
 SQL example - fetch the accessions of all sequences from SwissProt:
 
-<sql>
-
 `SELECT DISTINCT bioentry.accession`  
 `FROM   bioentry JOIN biodatabase USING (biodatabase_id)`  
-`WHERE  biodatabase.name = 'swiss'  -- or 'Swiss-Prot'`
-
-</sql>
+`WHERE  biodatabase.name = 'swiss'`
 
 SQL example: Find the database, 'GenBank' or 'GenPept', that contains
 the GI number 386456:
-
-<sql>
 
 `SELECT biodatabase.name`  
 `FROM   bioentry JOIN biodatabase USING (biodatabase_id)`  
 `WHERE  bioentry.identifier = '386456'`  
 `  AND  biodatabase.name IN ('genbank', 'genpept')`
 
-</sql>
-
-SQL example - how many unique entries are there in GenBank: <sql>
+SQL example - how many unique entries are there in GenBank:
 
 `SELECT COUNT(DISTINCT bioentry.accession)`  
 `FROM   bioentry JOIN biodatabase USING (biodatabase_id)`  
 `WHERE  biodatabase.name = 'genbank'`
 
-</sql> SQL example - fetch the locus names for the latest versions of
-all entries where the biodatabase name is 'swiss' (Mysql syntax): <sql>
+SQL example - fetch the locus names for the latest versions of all
+entries where the biodatabase name is 'swiss' (Mysql syntax):
 
 `SELECT MID(MAX(CONCAT(RPAD(LPAD(bioentry.version,5,'?'),10,'?'),`  
 `       bioentry.name)),11)`  
@@ -116,9 +98,8 @@ all entries where the biodatabase name is 'swiss' (Mysql syntax): <sql>
 `WHERE  biodatabase.name = 'swiss'`  
 `GROUP BY bioentry.name`
 
-</sql>
-
-### BIOSEQUENCE
+BIOSEQUENCE
+-----------
 
 In BioSQL, all databases have bioentries, but not all bioentries need
 have raw sequence data associated with the entry. The biosequence table
@@ -137,7 +118,7 @@ to be unique, thus enforcing the one-to-one relationship between the two
 tables.
 
 Example SQL - what is the description of the longest sequence in
-GenBank? <sql>
+GenBank?
 
 `SELECT   bioentry.description`  
 `FROM     bioentry`  
@@ -147,17 +128,16 @@ GenBank? <sql>
 `ORDER BY biosequence.length DESC`  
 `LIMIT 1`
 
-</sql> Example SQL - find all bioentries with protein sequences
-containing "ELVIS": <sql>
+Example SQL - find all bioentries with protein sequences containing
+"ELVIS":
 
 `SELECT  bioentry.*`  
 `FROM    bioentry JOIN biosequence USING (bioentry_id)`  
 `WHERE   biosequence.seq LIKE "%ELVIS%"`  
 `  AND   biosequence.alphabet = 'protein'`
 
-</sql>
-
-### BIOENTRY\_RELATIONSHIP
+BIOENTRY\_RELATIONSHIP
+----------------------
 
 Bioentries may themselves be related to one another (e.g., a PDB record
 may be composed of multiple subrecords for separate chains, or multiple
@@ -165,7 +145,7 @@ SwissProt records may be associated with a given PFAM domain entry).
 These relationships are "typed" via links to ontology terms using the
 term\_id field.
 
-### TAXON, TAXON\_NAME
+`TAXON, TAXON_NAME`
 
 These are tables to store basic taxonomic information about the organism
 to which a given bioentry refers, and they reflect the structure of
@@ -177,7 +157,7 @@ use the BioSQL script load\_taxonomy.pl to populate them.
 The taxon\_name.taxon\_id field is meant to store an NCBI taxon id. The
 name\_class field stores tags to describe taxonomic names (e.g.
 "scientific name") and the name field stores the value (e.g "Homo
-sapiens"). This flexibility allows us to store such things as synonyms
+sapien"). This flexibility allows us to store such things as synonyms
 and common names as well as the expected binomial.
 
 The taxon table is designed to store the taxonomic relationship between
@@ -198,7 +178,7 @@ bioentries may not have a clearly identified taxon, or because the
 concept of taxon may not be meaningful for the bioentry.
 
 Example SQL - find the taxon id of the parent taxon for 'Homo sapiens'
-using a self-join. <sql>
+using a self-join.
 
 `SELECT parent.ncbi_taxon_id`  
 `FROM   taxon AS parent`  
@@ -208,67 +188,58 @@ using a self-join. <sql>
 `       ON taxon_name.taxon_id = child.ncbi_taxon_id`  
 `WHERE  taxon_name.name = 'Homo sapiens';`
 
-</sql> Example SQL - find all human sequences: <sql>
+Example SQL - find all human sequences:
 
 `SELECT * FROM biosequence`  
 `       JOIN bioentry USING (bioentry_id)`  
 `       JOIN taxon_name USING (taxon_id)`  
 `WHERE  taxon_name.name = 'Homo sapiens'`
 
-</sql> Example SQL -find the taxon id's of all the parental taxa in the
-Primate lineage using a self-join: <sql>
+Example SQL -find the taxon id's of all the parental taxa in the Primate
+lineage using a self-join:
 
 `SELECT b.taxon_id FROM taxon as a`  
 `       JOIN taxon as b`  
 `       ON (a.left_value < b.right_value AND a.left_value > b.left_value)`  
 `       JOIN taxon_name`  
 `       ON a.taxon_id = taxon_name.taxon_id`  
-`WHERE taxon_name.name = 'primate'  -- 'Primata' or 'Primates'`
+`WHERE taxon_name.name = 'Primate'`
 
-</sql> Or list all species(final nodes) of Fungi (so no all hierarchy of
-parent nodes but lists the downstream, child path instead): <sql>
+II. Sequence Features with Location and Annotation
+==================================================
 
-`SELECT DISTINCT include.ncbi_taxon_id FROM taxon`  
-`   INNER JOIN taxon AS include ON`  
-`     (include.left_value BETWEEN taxon.left_value`  
-`       AND taxon.right_value)`  
-`WHERE taxon.taxon_id IN`  
-`  (SELECT taxon_id FROM taxon_name`  
-`   WHERE name LIKE '%fungi%')`
-
-</sql>
-
-Sequence Features with Location and Annotation
-----------------------------------------------
-
-### SEQFEATURE
+SEQFEATURE
+----------
 
 More information pertaining to a bioentry is stored as a generic
 "feature" of the sequence, the semantics of which are defined by
 associations with a specific "source" term and optional qualifiers (see
 below under TERM).
 
-### LOCATION
+LOCATION
+--------
 
 The location of each seqfeature (or sub-seqfeature) is defined by a
 location entity, describing the stop and start coordinates and strand. A
 seqfeature may have multiple locations (i.e. split locations are
-handled). Start and stop coordinates may be left NULL to accommodate
-some forms of "fuzzy" locations. Additionally, a location may refer to a
+handled). Start and stop coordinates may be left NULL to accomodate some
+forms of "fuzzy" locations. Additionally, a location may refer to a
 "remote" sequence, i.e. not the sequence associated with the bioentry,
 this is accomplished by a dbxref\_id link.
 
-### SEQFEATURE\_RELATIONSHIP
+SEQFEATURE\_RELATIONSHIP
+------------------------
 
 Sequence features may also have associated sub-seqfeatures (with
 potentially many-to-many parent-child relationships). These
 relationships are also "typed" via links to ontology terms using the
 term\_id fields.
 
-Ontology Terms and Relationships
---------------------------------
+III. Ontology Terms and Relationships
+=====================================
 
-### TERM
+TERM
+----
 
 An ontology (in the current usage) is essentially a dictionary of terms
 in a somewhat-controlled vocabulary. An ontology\_term is used to
@@ -280,7 +251,8 @@ seqfeature\_relationship below). While a seqfeature may have only one
 term to describe its type and source, relationships between seqfeatures
 and sub-seqfeatures may have multiple terms associated with them.
 
-### TERM\_RELATIONSHIP, TERM\_DBXREF
+TERM\_RELATIONSHIP, TERM\_DBXREF
+--------------------------------
 
 However, the powerful utility of ontology terms is that they can be
 associated with each other in hierarchies; e.g. a "sequence similarity
@@ -300,10 +272,8 @@ where each "rule" comes from.
 Finally, ontology terms themselves can be linked to external databases
 via a many-to-many relationship using the term\_dbxref table.
 
-Transitive closure tables over hierarchical structures
-------------------------------------------------------
-
-### TERM\_PATH, BIOENTRY\_PATH, SEQFEATURE\_PATH
+TERM\_PATH, BIOENTRY\_PATH, SEQFEATURE\_PATH
+--------------------------------------------
 
 All three of these tables are meant to store the "transitive closure" of
 the respective \*\_relationship data; that is, if A is related to B, and
@@ -322,15 +292,16 @@ relationship types are the same, then A and C are related by the same
 type; when the two relationship types differ, then A and C are related
 by the first "supertype" that includes both relationship types).
 
-Annotation Bundle
------------------
+IV. Annotation Bundle
+=====================
 
 Annotations are similar to Sequence Features in that they describe a
 sequence, but unlike Sequence Features they have no locations on the
 sequence, they are associated with the entire sequence. Annotations may
 come with references and database ids.
 
-### BIOENTRY\_REFERENCE
+BIOENTRY\_REFERENCE
+-------------------
 
 A given literature reference may be associated with many bioentries, and
 a given bioentry may be associated with multiple references (thus
@@ -340,13 +311,15 @@ define the order of the references for each associated bioentry. Lastly,
 start\_pos and end\_pos fields may be used to associate references with
 specific locations on the bioentry.
 
-### COMMENT
+COMMENT
+-------
 
 Each bioentry can have one or more simple textual comments associated
 with it, and the order of the comments may be specified by the rank
 field.
 
-### BIOENTRY\_QUALIFIER\_VALUE, DBXREF\_QUALIFIER\_VALUE, LOCATION\_QUALIFIER\_VALUE, SEQFEATURE\_QUALIFIER\_VALUE
+BIOENTRY\_QUALIFIER\_VALUE, DBXREF\_QUALIFIER\_VALUE, LOCATION\_QUALIFIER\_VALUE, SEQFEATURE\_QUALIFIER\_VALUE
+--------------------------------------------------------------------------------------------------------------
 
 Furthermore, ontology terms may be used to qualify dbxrefs, bioentries,
 seqfeatures, and locations. Multiple qualifier values can be associated
@@ -367,7 +340,8 @@ tables. For example, a "SwissProt\_dbxref" view could be made that had
 all the dbxref fields plus a "SwissProt\_name" field containing the
 qualifier value discussed previously.
 
-### REFERENCE
+REFERENCE
+---------
 
 Entries in a database may have cross-references to the literature. The
 reference table stores each journal article, book chapter, etc. that may
@@ -381,7 +355,8 @@ the data source, dbxref\_id will contain the MEDLINE number, or any
 other identifier if the reference is indexed in another resource than
 MEDLINE.
 
-### DBXREF, BIOENTRY\_DBXREF
+DBXREF, BIOENTRY\_DBXREF
+------------------------
 
 Database cross references are links to records in other databases
 (whether they be sequence databases or not). The relationship between
