@@ -4,19 +4,19 @@ permalink: wiki/BioJava_BioSQL_ORM
 layout: wiki
 ---
 
-[BioJava](bj:Main_Page "wikilink") provides object relational mapping
+[BioJava](bj:BioJava "wikilink") provides object relational mapping
 (ORM) to BioSQL 1.0 using [Hibernate](http://www.hibernate.org) bindings
 to objects in the `org.biojavax` packages.
 
 BioJavaX Design
 ===============
 
-[BioJavaX](bj:BioJavaXDocs "wikilink") was officially released with
-BioJava1.5. It extends the `org.biojava` API's and was designed to very
-closely match the BioSQL schema. This made ORM of
+\[bj:BioJavaX|BioJavaXDocs\]\] was officially released with BioJava1.5.
+It extends the `org.biojava` API's and was designed to very closely
+match the BioSQL schema. This made ORM of
 [BioJava](bj:BioJava "wikilink") to BioSQL much more straight forward
 and brought the BioJava object model much closer to that used by
-[BioPerl](bp:Main_Page "wikilink").
+[BioPerl](bp:BioPerl "wikilink").
 
 Hibernate Mapping
 =================
