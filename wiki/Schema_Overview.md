@@ -185,7 +185,7 @@ bioentries may not have a clearly identified taxon, or because the
 concept of taxon may not be meaningful for the bioentry.
 
 Example SQL - find the taxon id of the parent taxon for 'Homo sapiens'
-using a self-join.
+using a self-join. <sql>
 
 `SELECT parent.ncbi_taxon_id`  
 `FROM   taxon AS parent`  
@@ -195,15 +195,15 @@ using a self-join.
 `       ON taxon_name.taxon_id = child.ncbi_taxon_id`  
 `WHERE  taxon_name.name = 'Homo sapiens';`
 
-Example SQL - find all human sequences:
+</sql> Example SQL - find all human sequences: <sql>
 
 `SELECT * FROM biosequence`  
 `       JOIN bioentry USING (bioentry_id)`  
 `       JOIN taxon_name USING (taxon_id)`  
 `WHERE  taxon_name.name = 'Homo sapiens'`
 
-Example SQL -find the taxon id's of all the parental taxa in the Primate
-lineage using a self-join:
+</sql> Example SQL -find the taxon id's of all the parental taxa in the
+Primate lineage using a self-join: <sql>
 
 `SELECT b.taxon_id FROM taxon as a`  
 `       JOIN taxon as b`  
@@ -211,6 +211,8 @@ lineage using a self-join:
 `       JOIN taxon_name`  
 `       ON a.taxon_id = taxon_name.taxon_id`  
 `WHERE taxon_name.name = 'Primate'`
+
+</sql>
 
 Sequence Features with Location and Annotation
 ==============================================
