@@ -23,6 +23,12 @@ and [Perl DB
 implementation](http://code.open-bio.org/cgi/viewcvs.cgi/bioperl-db/?cvsroot=bioperl)
 for starters.
 
+To Do
+-----
+
+[Bugs](bp:Bugs "wikilink") and suggestions for
+[improvement](bp:Enhancement_Requests "wikilink")
+
 Contacts
 --------
 
