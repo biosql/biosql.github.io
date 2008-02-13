@@ -26,10 +26,10 @@ The Bio\* projects provide object relational mapping from their
 respective object models to BioSQL. Details for each project can be
 obtained from the links below.
 
-`* `[`BioJava`](BioJava_BioSQL_ORM "wikilink")  
-`* BioPerl`  
-`* BioRuby`  
-`* BioPython`
+-   [BioJava](BioJava_BioSQL_ORM "wikilink")
+-   BioPerl
+-   BioRuby
+-   BioPython
 
 In Progress
 -----------
