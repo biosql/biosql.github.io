@@ -19,6 +19,18 @@ overview](Schema_Overview "wikilink") document. This was originaly
 copied from CVS. It will now be maintained as a live document in the
 wiki.
 
+Object Relational Mapping
+-------------------------
+
+The Bio\* projects provide object relational mapping from their
+respective object models to BioSQL. Details for each project can be
+obtained from the links below.
+
+`* `[`BioJava`](BioJava_BioSQL_ORM "wikilink")  
+`* BioPerl`  
+`* BioRuby`  
+`* BioPython`
+
 In Progress
 -----------
 
