@@ -11,9 +11,9 @@ to objects in the `org.biojavax` packages.
 BioJavaX Design
 ===============
 
-\[bj:BioJavaX|BioJavaXDocs\]\] was officially released with BioJava1.5.
-It extends the `org.biojava` API's and was designed to very closely
-match the BioSQL schema. This made ORM of
+[BioJavaX](bj:BioJavaXDocs "wikilink") was officially released with
+BioJava1.5. It extends the `org.biojava` API's and was designed to very
+closely match the BioSQL schema. This made ORM of
 [BioJava](bj:BioJava "wikilink") to BioSQL much more straight forward
 and brought the BioJava object model much closer to that used by
 [BioPerl](bp:BioPerl "wikilink").
