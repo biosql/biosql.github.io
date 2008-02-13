@@ -6,7 +6,7 @@ The BioSQL project is a collaboration between [[bp:Main Page|BioPerl]], [[biopyt
 See [http://code.open-bio.org/cgi/viewcvs.cgi/biosql-schema/?cvsroot=biosql schema CVS repository] and [http://code.open-bio.org/cgi/viewcvs.cgi/bioperl-db/?cvsroot=bioperl Perl DB implementation] for starters.
 
 ==To Do==
-[[bp:Bugs|Bugs]] and suggestions for [[bp:Enhancement Requests|improvement]]
+[[Bugs|Bugs]] and suggestions for [[Enhancement Requests|improvement]]
 
 ==Contacts==
 Project lead is [[bp:Hilmar Lapp|Hilmar Lapp]]
