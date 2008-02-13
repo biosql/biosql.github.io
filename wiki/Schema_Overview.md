@@ -66,32 +66,40 @@ database name is officially mandated.
 
 SQL example - fetch the accessions of all sequences from SwissProt:
 
-`SELECT DISTINCT bioentry.accession`  
-`FROM   bioentry JOIN biodatabase USING (biodatabase_id)`  
-`WHERE  biodatabase.name = 'swiss'`
+``` sql
+ SELECT DISTINCT bioentry.accession
+ FROM   bioentry JOIN biodatabase USING (biodatabase_id)
+ WHERE  biodatabase.name = 'swiss'
+```
 
 SQL example: Find the database, 'GenBank' or 'GenPept', that contains
 the GI number 386456:
 
-`SELECT biodatabase.name`  
-`FROM   bioentry JOIN biodatabase USING (biodatabase_id)`  
-`WHERE  bioentry.identifier = '386456'`  
-`  AND  biodatabase.name IN ('genbank', 'genpept')`
+``` sql
+ SELECT biodatabase.name
+ FROM   bioentry JOIN biodatabase USING (biodatabase_id)
+ WHERE  bioentry.identifier = '386456'
+   AND  biodatabase.name IN ('genbank', 'genpept')
+```
 
 SQL example - how many unique entries are there in GenBank:
 
-`SELECT COUNT(DISTINCT bioentry.accession)`  
-`FROM   bioentry JOIN biodatabase USING (biodatabase_id)`  
-`WHERE  biodatabase.name = 'genbank'`
+``` sql
+ SELECT COUNT(DISTINCT bioentry.accession)
+ FROM   bioentry JOIN biodatabase USING (biodatabase_id)
+ WHERE  biodatabase.name = 'genbank'
+```
 
 SQL example - fetch the locus names for the latest versions of all
 entries where the biodatabase name is 'swiss' (Mysql syntax):
 
-`SELECT MID(MAX(CONCAT(RPAD(LPAD(bioentry.version,5,'?'),10,'?'),`  
-`       bioentry.name)),11)`  
-`       FROM bioentry JOIN biodatabase USING (biodatabase_id)`  
-`WHERE  biodatabase.name = 'swiss'`  
-`GROUP BY bioentry.name`
+``` sql
+ SELECT MID(MAX(CONCAT(RPAD(LPAD(bioentry.version,5,'?'),10,'?'),
+        bioentry.name)),11)
+        FROM bioentry JOIN biodatabase USING (biodatabase_id)
+ WHERE  biodatabase.name = 'swiss'
+ GROUP BY bioentry.name
+```
 
 BIOSEQUENCE
 -----------

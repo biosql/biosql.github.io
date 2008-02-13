@@ -59,32 +59,37 @@ database name is officially mandated.
 
 SQL example - fetch the accessions of all sequences from SwissProt:
 
+<source lang=sql>
  SELECT DISTINCT bioentry.accession
  FROM   bioentry JOIN biodatabase USING (biodatabase_id)
  WHERE  biodatabase.name = 'swiss'
+</source>
 
 SQL example: Find the database, 'GenBank' or 'GenPept', that contains the
 GI number 386456:
 
+<source lang=sql>
  SELECT biodatabase.name
  FROM   bioentry JOIN biodatabase USING (biodatabase_id)
  WHERE  bioentry.identifier = '386456'
    AND  biodatabase.name IN ('genbank', 'genpept')
+</source>
 
 SQL example - how many unique entries are there in GenBank:
-
+<source lang=sql>
  SELECT COUNT(DISTINCT bioentry.accession)
  FROM   bioentry JOIN biodatabase USING (biodatabase_id)
  WHERE  biodatabase.name = 'genbank'
-
+</source>
 SQL example - fetch the locus names for the latest versions of all
 entries where the biodatabase name is 'swiss' (Mysql syntax):
-
+<source lang=sql>
  SELECT MID(MAX(CONCAT(RPAD(LPAD(bioentry.version,5,'?'),10,'?'),
         bioentry.name)),11)
         FROM bioentry JOIN biodatabase USING (biodatabase_id)
  WHERE  biodatabase.name = 'swiss'
  GROUP BY bioentry.name
+</source>
 
 ==BIOSEQUENCE==
 
