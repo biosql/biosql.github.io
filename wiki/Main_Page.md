@@ -11,6 +11,14 @@ The BioSQL project is a collaboration between
 projects to build a schema for persistent storage of sequences and
 features.
 
+Schema Overview
+---------------
+
+A good introduction to BioSQL and it's intended use is the [schema
+overview](Schema_Overview "wikilink") document. This was originaly
+copied from CVS. It will now be maintained as a live document in the
+wiki.
+
 In Progress
 -----------
 
