@@ -123,7 +123,7 @@ to be unique, thus enforcing the one-to-one relationship between the two
 tables.
 
 Example SQL - what is the description of the longest sequence in
-GenBank?
+GenBank? <sql>
 
 `SELECT   bioentry.description`  
 `FROM     bioentry`  
@@ -133,13 +133,15 @@ GenBank?
 `ORDER BY biosequence.length DESC`  
 `LIMIT 1`
 
-Example SQL - find all bioentries with protein sequences containing
-"ELVIS":
+</sql> Example SQL - find all bioentries with protein sequences
+containing "ELVIS": <sql>
 
 `SELECT  bioentry.*`  
 `FROM    bioentry JOIN biosequence USING (bioentry_id)`  
 `WHERE   biosequence.seq LIKE "%ELVIS%"`  
 `  AND   biosequence.alphabet = 'protein'`
+
+</sql>
 
 BIOENTRY\_RELATIONSHIP
 ----------------------
