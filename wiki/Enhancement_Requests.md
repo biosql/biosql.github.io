@@ -20,7 +20,7 @@ the BioSequence table.
 Bioentry Date Stamping
 ======================
 
-Possible table structure:
+Possible table structure: <sql>
 
 `CREATE TABLE bioentry_history (`  
 `  bioentry_history_id INT UNSIGNED NOT NULL AUTO_INCREMENT,`  
@@ -30,8 +30,8 @@ Possible table structure:
 `  enddate DATE NULL`  
 `);`
 
-Example SQL - give me all the entries from GenBank as they existed on
-Jan 1, 2002
+</sql> Example SQL - give me all the entries from GenBank as they
+existed on Jan 1, 2002 <sql>
 
 `SELECT bioentry.*`  
 `FROM   bioentry`  
@@ -42,7 +42,7 @@ Jan 1, 2002
 `  AND  (bioentry_history.enddate IS NULL`  
 `        OR bioentry_history.enddate > 2002-01-01)`
 
-`Alternative, if you want db history info as well:`
+</sql> Alternative, if you want db history info as well: <sql>
 
 `CREATE TABLE biodatabase_history (`  
 `  biodatabase_history_id INT UNSIGNED NOT NULL AUTO_INCREMENT,`  
@@ -67,8 +67,10 @@ Jan 1, 2002
 ` <> bioentry_history.removed`  
 `);`
 
+</sql>
+
 Example SQL - same as before, retrieve all bioentries from GenBank as
-they were on Jan 1, 2002
+they were on Jan 1, 2002 <sql>
 
 `SELECT bioentry.*`  
 `FROM   bioentry`  
@@ -82,7 +84,7 @@ they were on Jan 1, 2002
 `  AND  entered.entrydate <= 2002-01-01`  
 `  AND  (exit.entrydate IS NULL OR exit.entrydate > 2002-01-01)`
 
-Advantage: you don't need to store N\*M rows for every M database
+</sql> Advantage: you don't need to store N\*M rows for every M database
 updates, only N rows of date ranges (or database version refs).
 
 Disadvantage: all historical bioentries remain in the database, even
