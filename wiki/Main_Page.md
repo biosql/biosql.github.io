@@ -37,10 +37,10 @@ In Progress
 *Work is underway to migrate the documentation from the code repository
 to this website.*
 
-See [schema CVS
-repository](http://code.open-bio.org/cgi/viewcvs.cgi/biosql-schema/?cvsroot=biosql)
-and [Perl DB
-implementation](http://code.open-bio.org/cgi/viewcvs.cgi/bioperl-db/?cvsroot=bioperl)
+See [schema SVN
+repository](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk)
+and [BioPerl-DB
+implementation](http://code.open-bio.org/svnweb/index.cgi/bioperl/browse/bioperl-db/trunk/)
 for starters.
 
 To Do
