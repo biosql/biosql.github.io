@@ -14,7 +14,7 @@ The Bio* projects provide object relational mapping from their respective object
 ==In Progress==
 ''Work is underway to migrate the documentation from the code repository to this website.''
 
-See [http://code.open-bio.org/cgi/viewcvs.cgi/biosql-schema/?cvsroot=biosql schema CVS repository] and [http://code.open-bio.org/cgi/viewcvs.cgi/bioperl-db/?cvsroot=bioperl Perl DB implementation] for starters.
+See [http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk schema SVN repository] and [http://code.open-bio.org/svnweb/index.cgi/bioperl/browse/bioperl-db/trunk/ BioPerl-DB implementation] for starters.
 
 ==To Do==
 [[Bugs|Bugs]] and suggestions for [[Enhancement Requests|improvement]]
