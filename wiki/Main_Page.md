@@ -4,23 +4,73 @@ permalink: wiki/Main_Page
 layout: wiki
 ---
 
-The BioSQL project is a collaboration between
-[BioPerl](bp:Main_Page "wikilink"),
+About BioSQL
+------------
+
+BioSQL is a generic relational model covering sequences, features,
+sequence and feature annotation, a reference taxonomy, and ontologies
+(or controlled vocabularies).
+
+While in its original incarnation (in 2001) conceived by Ewan Birney as
+a local relational store for GenBank, the project has since become a
+collaboration between the [BioPerl](bp:Main_Page "wikilink"),
 [BioPython](biopython:Main_Page "wikilink"),
-[BioJava](bj:Main_Page "wikilink"),and [BioRuby](http://bioruby.org)
-projects to build a schema for persistent storage of sequences and
-features.
+[BioJava](bj:Main_Page "wikilink"), and [BioRuby](http://bioruby.org)
+projects. The goal is to build a sufficiently generic schema for
+persistent storage of sequences, features, and annotation in a way that
+is interoperable between the Bio\* projects. Each Bio\* project has a
+[language binding](#Language_Bindings "wikilink") (object-relational
+mapping, ORM) to BioSQL.
 
 Schema Overview
 ---------------
 
 A good introduction to BioSQL and it's intended use is the [schema
 overview](Schema_Overview "wikilink") document. This was originaly
-copied from CVS. It will now be maintained as a live document in the
-wiki.
+copied from SVN, and it isnow being maintained as a live document in
+this wiki.
 
-Object Relational Mapping
--------------------------
+### Weak-Typing Paradigm
+
+The BioSQL model follows the weak-typing paradigm. As opposed to the
+strong-typing paradigm, in which entities and their attributes
+exhaustively define the object type(s) that they store, in a
+weakly-typed model a few relatively generic entities can hold any number
+of specializations (derived entities, in an object-oriented sense), and
+the attributes that apply to only some of those specializations are
+attached to the row through tag/value associations (vertical storage).
+
+To identify what particular object type a row is of, many entities have
+a type. The type as well as the tag of tag/value pairs come from
+controlled vocabularies (ontologies), which allows assigning arbitrarily
+rich semantics to both the type of a tuple (row) as well as to the
+attributes.
+
+### Extension Modules
+
+Extension modules are optional, and only needed for storing or
+retrieving the respective data types it accommodates. Language mappings
+should not expect these modules to be present if only core-schema data
+types are being persisted or retrieved.
+
+#### PhyloDB
+
+A PhyloDB extension module for storing phylogenetic trees and taxonomies
+has been under development since December 2006 (started by Bill Piel and
+Hilmar Lapp at the [Phyloinformatics
+Hackathon](http://hackathon.nescent.org/Phylohackathon_1)).
+
+The module is in pre-release status. It has undergone considerable
+extensions at the [BioHackathon 2008](http://hackathon.dbcls.jp), and is
+still subject to changes.
+
+### Supported RDBMs
+
+At present there are versions for PostgreSQL, MySQL, Oracle, HSQLDB, and
+Apache Derby for the core schema.
+
+Language Bindings
+-----------------
 
 The Bio\* projects provide object relational mapping from their
 respective object models to BioSQL. Details for each project can be
