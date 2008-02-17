@@ -1,10 +1,10 @@
-=References=
+==References==
 BioSQL reference table cannot store more than one db_xref. This causes an inadequacy in parsing Uniprot where references often contain Pubmed id, Medline id and DOI.
 
-=Circular Sequences=
+==Circular Sequences==
 It would be desirable to have a flag to indicate a circular sequence in the BioSequence table.
 
-=Bioentry Date Stamping=
+==Bioentry Date Stamping==
 Possible table structure:
 <sql>
  CREATE TABLE bioentry_history (
@@ -76,7 +76,7 @@ ones that are no longer "current" - simple SELECTs must specify
 enddate IS NULL (optionally, a "is_current" flag can be added to
 bioentry) - again, a bioentry_current VIEW may be the best solution.
 
-=Sequence redundancy=
+==Sequence redundancy==
 
 There is no utility here for handling biosequence redundancy; i.e. the
 biosequence table cannot be easily used to generate non-redundant
@@ -104,7 +104,7 @@ Example SQL: Give me all nonredundant biosequences from GenPept
 
 Nasty cross-joining SQL to be delivered ...
 
-=Feature set versioning=
+==Feature set versioning==
 
 Could already be accomplished with "dated" source ontology terms, but
 that seems like a bastardization.  Suggestions welcome.
