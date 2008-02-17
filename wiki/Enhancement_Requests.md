@@ -5,20 +5,20 @@ layout: wiki
 ---
 
 References
-==========
+----------
 
 BioSQL reference table cannot store more than one db\_xref. This causes
 an inadequacy in parsing Uniprot where references often contain Pubmed
 id, Medline id and DOI.
 
 Circular Sequences
-==================
+------------------
 
 It would be desirable to have a flag to indicate a circular sequence in
 the BioSequence table.
 
 Bioentry Date Stamping
-======================
+----------------------
 
 Possible table structure:
 
@@ -99,7 +99,7 @@ IS NULL (optionally, a "is\_current" flag can be added to bioentry) -
 again, a bioentry\_current VIEW may be the best solution.
 
 Sequence redundancy
-===================
+-------------------
 
 There is no utility here for handling biosequence redundancy; i.e. the
 biosequence table cannot be easily used to generate non-redundant
@@ -127,7 +127,7 @@ the NCBI "nr" database)
 Nasty cross-joining SQL to be delivered ...
 
 Feature set versioning
-======================
+----------------------
 
 Could already be accomplished with "dated" source ontology terms, but
 that seems like a bastardization. Suggestions welcome.
