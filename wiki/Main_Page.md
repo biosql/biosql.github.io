@@ -79,9 +79,9 @@ respective object models to BioSQL. Details for each project can be
 obtained from the links below.
 
 -   [BioJava](BioJava_BioSQL_ORM "wikilink")
--   BioPerl
+-   [BioPerl](bp:Bioperl-db "wikilink")
 -   BioRuby
--   BioPython
+-   [BioPython](http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/biopython/BioSQL/?cvsroot=biopython)
 
 In Progress
 -----------
