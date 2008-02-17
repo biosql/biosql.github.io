@@ -12,7 +12,7 @@ reasoning.
 Weak-Typing Paradigm
 --------------------
 
-= The BioSQL model follows the weak-typing paradigm. As opposed to the
+The BioSQL model follows the weak-typing paradigm. As opposed to the
 strong-typing paradigm, in which entities and their attributes
 exhaustively define the object type(s) that they store, in a
 weakly-typed model a few relatively generic entities can hold any number
