@@ -3,10 +3,14 @@ schema.  It also aims to demonstrate functional capabilities using
 example SQL. Design philosophies and expectations are presented with 
 reasoning.
 
+==Weak-Typing Paradigm=== 
+The BioSQL model follows the weak-typing paradigm. As opposed to the strong-typing paradigm, in which entities and their attributes exhaustively define the object type(s) that they store, in a weakly-typed model a few relatively generic entities can hold any number of specializations (derived entities, in an object-oriented sense), and the attributes that apply to only some of those specializations are attached to the row through tag/value associations (vertical storage). 
 
-= Bioentry with Taxon and Namespace=
+To identify what particular object type a row is of, many entities have a type. The type as well as the tag of tag/value pairs come from controlled vocabularies (ontologies), which allows assigning arbitrarily rich semantics to both the type of a tuple (row) as well as to the attributes.
 
-==BIOENTRY==
+== Bioentry with Taxon and Namespace==
+
+===BIOENTRY===
 
 This is the core entity of the BioSQL schema; a bioentry is any single
 entry or record in a biological database.  The bioentry contains
@@ -48,7 +52,7 @@ In this case, the identifier 902772 is not an NCBI GI number, but is a
 key to lookup this entry in the private database, "My Favorite
 Database" (MFD).
 
-==BIODATABASE==
+===BIODATABASE===
 
 A biodatabase is simply a collection of bioentries; one bioentry may
 only belong to one biodatabase, but one biodatabase may contain many
@@ -91,7 +95,7 @@ entries where the biodatabase name is 'swiss' (Mysql syntax):
  GROUP BY bioentry.name
 </sql>
 
-==BIOSEQUENCE==
+===BIOSEQUENCE===
 
 In BioSQL, all databases have bioentries, but not all bioentries need
 have raw sequence data associated with the entry.  The biosequence
@@ -128,7 +132,7 @@ Example SQL - find all bioentries with protein sequences containing "ELVIS":
    AND   biosequence.alphabet = 'protein'
 </sql>
 
-==BIOENTRY_RELATIONSHIP==
+===BIOENTRY_RELATIONSHIP===
 
 Bioentries may themselves be related to one another (e.g., a PDB
 record may be composed of multiple subrecords for separate chains, or
@@ -136,7 +140,7 @@ multiple SwissProt records may be associated with a given PFAM domain
 entry).  These relationships are "typed" via links to ontology terms
 using the term_id field.
 
- TAXON, TAXON_NAME
+=== TAXON, TAXON_NAME ===
 
 These are tables to store basic taxonomic information about
 the organism to which a given bioentry refers, and they reflect the 
@@ -198,16 +202,16 @@ Primate lineage using a self-join:
  WHERE taxon_name.name = 'Primate'
 </sql>
 
-=Sequence Features with Location and Annotation=
+==Sequence Features with Location and Annotation==
 
-==SEQFEATURE==
+===SEQFEATURE===
 
 More information pertaining to a bioentry is stored as a
 generic "feature" of the sequence, the semantics of which are defined
 by associations with a specific "source" term and optional qualifiers
 (see below under TERM).
 
-==LOCATION==
+===LOCATION===
 The location of each seqfeature (or sub-seqfeature) is defined by a
 location entity, describing the stop and start coordinates
 and strand.  A seqfeature may have multiple locations (i.e. split
@@ -216,16 +220,16 @@ to accomodate some forms of "fuzzy" locations.  Additionally, a
 location may refer to a "remote" sequence, i.e. not the sequence
 associated with the bioentry, this is accomplished by a dbxref_id link.
 
-==SEQFEATURE_RELATIONSHIP==
+===SEQFEATURE_RELATIONSHIP===
 
 Sequence features may also have associated sub-seqfeatures (with potentially
 many-to-many parent-child relationships).  These relationships are
 also "typed" via links to ontology terms using the term_id fields.
 
 
-=Ontology Terms and Relationships=
+==Ontology Terms and Relationships==
 
-==TERM==
+===TERM===
 
 An ontology (in the current usage) is essentially a dictionary of
 terms in a somewhat-controlled vocabulary.  An ontology_term is used
@@ -238,7 +242,7 @@ term to describe its type and source, relationships between
 seqfeatures and sub-seqfeatures may have multiple terms associated
 with them.
 
-==TERM_RELATIONSHIP, TERM_DBXREF==
+===TERM_RELATIONSHIP, TERM_DBXREF===
 
 However, the powerful utility of ontology terms is that they can be
 associated with each other in hierarchies; e.g. a "sequence similarity
@@ -258,7 +262,8 @@ ontologies; we must keep track of where each "rule" comes from.
 Finally, ontology terms themselves can be linked to external databases
 via a many-to-many relationship using the term_dbxref table.
 
-==TERM_PATH, BIOENTRY_PATH, SEQFEATURE_PATH==
+==Transitive closure tables over hierarchical structures==
+===TERM_PATH, BIOENTRY_PATH, SEQFEATURE_PATH===
 
 All three of these tables are meant to store the "transitive closure"
 of the respective *_relationship data; that is, if A is related to B,
@@ -277,15 +282,14 @@ relationship types are the same, then A and C are related by the same
 type; when the two relationship types differ, then A and C are related
 by the first "supertype" that includes both relationship types).
 
-
-=Annotation Bundle=
+==Annotation Bundle==
 
 Annotations are similar to Sequence Features in that they describe a
 sequence, but unlike Sequence Features they have no locations on the
 sequence, they are associated with the entire sequence. Annotations
 may come with references and database ids.
 
-==BIOENTRY_REFERENCE==
+===BIOENTRY_REFERENCE===
 
 A given literature reference may be associated with many bioentries,
 and a given bioentry may be associated with multiple references (thus
@@ -295,13 +299,13 @@ may be used to define the order of the references for each associated
 bioentry.  Lastly, start_pos and end_pos fields may be used
 to associate references with specific locations on the bioentry.
 
-==COMMENT==
+===COMMENT===
 
 Each bioentry can have one or more simple textual comments associated
 with it, and the order of the comments may be specified by the
 rank field.
 
-==BIOENTRY_QUALIFIER_VALUE, DBXREF_QUALIFIER_VALUE, LOCATION_QUALIFIER_VALUE, SEQFEATURE_QUALIFIER_VALUE==
+===BIOENTRY_QUALIFIER_VALUE, DBXREF_QUALIFIER_VALUE, LOCATION_QUALIFIER_VALUE, SEQFEATURE_QUALIFIER_VALUE===
 
 Furthermore, ontology terms may be used to qualify dbxrefs,
 bioentries, seqfeatures, and locations.  Multiple qualifier values can be
@@ -322,7 +326,7 @@ entity-specific tables.  For example, a "SwissProt_dbxref" view could
 be made that had all the dbxref fields plus a "SwissProt_name" field
 containing the qualifier value discussed previously.
 
-==REFERENCE==
+===REFERENCE===
 
 Entries in a database may have cross-references to the literature.
 The reference table stores each journal article, book chapter,
@@ -336,7 +340,7 @@ fields. Also, if provided by the data source, dbxref_id
 will contain the MEDLINE number, or any other identifier if the
 reference is indexed in another resource than MEDLINE.
 
-==DBXREF, BIOENTRY_DBXREF==
+===DBXREF, BIOENTRY_DBXREF===
 
 Database cross references are links to records in other databases
 (whether they be sequence databases or not).  The relationship between
