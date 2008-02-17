@@ -4,19 +4,20 @@ BioSQL is a generic relational model covering sequences, features, sequence and 
 
 While in its original incarnation (in 2001) conceived by Ewan Birney as a local relational store for GenBank, the project has since become a collaboration between the [[bp:Main Page|BioPerl]], [[biopython:Main Page|BioPython]], [[bj:Main Page|BioJava]], and [http://bioruby.org BioRuby] projects. The goal is to build a sufficiently generic schema for persistent storage of sequences, features, and annotation in a way that is interoperable between the Bio* projects. Each Bio* project has a [[#Language Bindings|language binding]] (object-relational mapping, ORM) to BioSQL.
 
+==About BioSQL==
+
+BioSQL is a generic relational model covering sequences, features, sequence and feature annotation, a reference taxonomy, and ontologies (or controlled vocabularies). 
+
+While in its original incarnation (in 2001) conceived by Ewan Birney as a local relational store for GenBank, the project has since become a collaboration between the [[bp:Main Page|BioPerl]], [[biopython:Main Page|BioPython]], [[bj:Main Page|BioJava]], and [http://bioruby.org BioRuby] projects. The goal is to build a sufficiently generic schema for persistent storage of sequences, features, and annotation in a way that is interoperable between the Bio* projects. Each Bio* project has a [[#Language Bindings|language binding]] (object-relational mapping, ORM) to BioSQL.
+
 ==Schema Overview==
 A good introduction to BioSQL and it's intended use is the [[Schema Overview|schema overview]] document. This was originaly copied from SVN, and it isnow being maintained as a live document in this wiki.
-
-===Weak-Typing Paradigm=== 
-The BioSQL model follows the weak-typing paradigm. As opposed to the strong-typing paradigm, in which entities and their attributes exhaustively define the object type(s) that they store, in a weakly-typed model a few relatively generic entities can hold any number of specializations (derived entities, in an object-oriented sense), and the attributes that apply to only some of those specializations are attached to the row through tag/value associations (vertical storage). 
-
-To identify what particular object type a row is of, many entities have a type. The type as well as the tag of tag/value pairs come from controlled vocabularies (ontologies), which allows assigning arbitrarily rich semantics to both the type of a tuple (row) as well as to the attributes.
 
 ===Extension Modules===
 
 Extension modules are optional, and only needed for storing or retrieving the respective data types it accommodates. Language mappings should not expect these modules to be present if only core-schema data types are being persisted or retrieved.
 
-====PhyloDB====
+===PhyloDB===
 A PhyloDB extension module for storing phylogenetic trees and taxonomies has been under development since December 2006 (started by Bill Piel and Hilmar Lapp at the [http://hackathon.nescent.org/Phylohackathon_1 Phyloinformatics Hackathon]). 
 
 The module is in pre-release status. It has undergone considerable extensions at the [http://hackathon.dbcls.jp BioHackathon 2008], and is still subject to changes.
@@ -24,6 +25,25 @@ The module is in pre-release status. It has undergone considerable extensions at
 ===Supported RDBMs===
 
 At present there are versions for PostgreSQL, MySQL, Oracle, HSQLDB, and Apache Derby for the core schema.
+
+==Language Bindings==
+The Bio* projects provide object relational mapping from their respective object models to BioSQL. Details for each project can be obtained from the links below.
+
+* [[BioJava BioSQL ORM|BioJava]]
+* BioPerl
+* BioRuby
+* BioPython
+
+==In Progress==
+''Work is underway to migrate the documentation from the code repository to this website.''
+
+See [http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk schema SVN repository] and [http://code.open-bio.org/svnweb/index.cgi/bioperl/browse/bioperl-db/trunk/ BioPerl-DB implementation] for starters.
+
+==To Do==
+[[Bugs|Bugs]] and suggestions for [[Enhancement Requests|improvement]]
+
+==Contacts==
+Project lead is [[bp:Hilmar Lapp|Hilmar Lapp]]
 
 ==Language Bindings==
 The Bio* projects provide object relational mapping from their respective object models to BioSQL. Details for each project can be obtained from the links below.
