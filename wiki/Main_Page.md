@@ -104,39 +104,6 @@ To Do
 Contacts
 --------
 
-Project lead is [Hilmar Lapp](bp:Hilmar_Lapp "wikilink")
-
-Language Bindings
------------------
-
-The Bio\* projects provide object relational mapping from their
-respective object models to BioSQL. Details for each project can be
-obtained from the links below.
-
--   [BioJava](BioJava_BioSQL_ORM "wikilink")
--   BioPerl
--   BioRuby
--   BioPython
-
-In Progress
------------
-
-*Work is underway to migrate the documentation from the code repository
-to this website.*
-
-See [schema SVN
-repository](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk)
-and [BioPerl-DB
-implementation](http://code.open-bio.org/svnweb/index.cgi/bioperl/browse/bioperl-db/trunk/)
-for starters.
-
-To Do
------
-
-[Bugs](Bugs "wikilink") and suggestions for
-[improvement](Enhancement_Requests "wikilink")
-
-Contacts
---------
-
-Project lead is [Hilmar Lapp](bp:Hilmar_Lapp "wikilink")
+Project lead is [Hilmar Lapp](bp:Hilmar_Lapp "wikilink"). Questions
+should be sent to the BioSQL mailing list at
+[biosql-l@lists.open-bio.org](mailto:biosql-l%40lists%2eopen-bio%2eorg).
