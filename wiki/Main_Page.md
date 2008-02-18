@@ -25,28 +25,19 @@ mapping, ORM) to BioSQL.
 Schema Overview
 ---------------
 
-A good introduction to BioSQL and it's intended use is the [schema
-overview](Schema_Overview "wikilink") document. This was originaly
-copied from SVN, and it isnow being maintained as a live document in
-this wiki.
+A good introduction to the core BioSQL schema and it's intended use is
+the [schema overview](Schema_Overview "wikilink") document. This was
+originaly copied from SVN, and it isnow being maintained as a live
+document in this wiki.
 
 ### Extension Modules
 
-Extension modules are optional, and only needed for storing or
-retrieving the respective data types it accommodates. Language mappings
-should not expect these modules to be present if only core-schema data
-types are being persisted or retrieved.
+[Extension modules](Extensions "wikilink") extend the core schema and
+are optional unless specifically needed for storing or retrieving the
+respective data types the module accommodates.
 
-### PhyloDB
-
-A PhyloDB extension module for storing phylogenetic trees and taxonomies
-has been under development since December 2006 (started by Bill Piel and
-Hilmar Lapp at the [Phyloinformatics
-Hackathon](http://hackathon.nescent.org/Phylohackathon_1)).
-
-The module is in pre-release status. It has undergone considerable
-extensions at the [BioHackathon 2008](http://hackathon.dbcls.jp), and is
-still subject to changes.
+At present, there is one extension module, PhyloDB, storing phylogenetic
+trees and taxonomies.
 
 ### Supported RDBMs
 
