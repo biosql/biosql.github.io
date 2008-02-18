@@ -24,8 +24,9 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
 
 2.  Rename biosql-ora to biosqldb-ora for consistency with the other
     schema versions
-3.  Create biosql-release-1.0 branch.
-4.  Remove from biosql-release-1.0 branch all schema modules or versions
+3.  Regenerate HTML documentation from schema DDL (using sqlt)
+4.  Create biosql-release-1.0 branch.
+5.  Remove from biosql-release-1.0 branch all schema modules or versions
     and all scripts that aren't release-ready yet, or are not yet or no
     longer supported.
     -   This includes the following:
@@ -40,11 +41,11 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
         correctness and compatibility with a current revision of
         HSQLDB?*
 
-5.  Write release announcement.
-6.  Package BioSQL for release, upload to download site. *Which site
+6.  Write release announcement.
+7.  Package BioSQL for release, upload to download site. *Which site
     should we use? Is there a common one for Open-Bio? Create separate
     one for BioSQL?*
-7.  Release:
+8.  Release:
     -   Add download and release link to wiki on front page (also add
         Downloads page ot sidebar).
     -   Post announcement to biosql-l (*there is no biosql-announce,
