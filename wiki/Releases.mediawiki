@@ -9,6 +9,7 @@ Note: open questions are in ''italics.'' If you have thoughts or feedback on any
 # Update license for BioSQL and all its DDL and software scripts.
 #* The current license refers to the 'same terms as Perl' and the Perl Artistic Licence. Not only does Perl now dual-license under Artistic License v2.0 or GPL (because the original Perl Artistic License v1.0 has problems), but also there isn't a good reason to tie the BioSQL license to that of Perl.
 # Rename biosql-ora to biosqldb-ora for consistency with the other schema versions
+# Regenerate HTML documentation from schema DDL (using sqlt)
 # Create biosql-release-1.0 branch.
 # Remove from biosql-release-1.0 branch all schema modules or versions and all scripts that aren't release-ready yet, or are not yet or no longer supported.
 #* This includes the following:
