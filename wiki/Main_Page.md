@@ -22,24 +22,6 @@ is interoperable between the Bio\* projects. Each Bio\* project has a
 [language binding](#Language_Bindings "wikilink") (object-relational
 mapping, ORM) to BioSQL.
 
-About BioSQL
-------------
-
-BioSQL is a generic relational model covering sequences, features,
-sequence and feature annotation, a reference taxonomy, and ontologies
-(or controlled vocabularies).
-
-While in its original incarnation (in 2001) conceived by Ewan Birney as
-a local relational store for GenBank, the project has since become a
-collaboration between the [BioPerl](bp:Main_Page "wikilink"),
-[BioPython](biopython:Main_Page "wikilink"),
-[BioJava](bj:Main_Page "wikilink"), and [BioRuby](http://bioruby.org)
-projects. The goal is to build a sufficiently generic schema for
-persistent storage of sequences, features, and annotation in a way that
-is interoperable between the Bio\* projects. Each Bio\* project has a
-[language binding](#Language_Bindings "wikilink") (object-relational
-mapping, ORM) to BioSQL.
-
 Schema Overview
 ---------------
 
