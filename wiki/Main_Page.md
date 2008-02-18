@@ -36,8 +36,8 @@ document in this wiki.
 are optional unless specifically needed for storing or retrieving the
 respective data types the module accommodates.
 
-At present, there is one extension module, PhyloDB, storing phylogenetic
-trees and taxonomies.
+At present, there is one extension module, PhyloDB, for storing
+phylogenetic trees and taxonomies.
 
 ### Supported RDBMs
 
