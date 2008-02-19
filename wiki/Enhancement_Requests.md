@@ -183,3 +183,62 @@ The Oracle version demonstrates that this can actually be fully mapped
 back to a Term\_Relationship\_Term view (for backwards compatibility,
 for example), using triggers (or RULEs for PostgreSQL) to make it fully
 writable.
+
+Ability to fully represent contig assembly
+------------------------------------------
+
+The ability to fully represent [EMBL format's CO
+lines](http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html#3_4_14)
+in a BioSQL record would be desirable. The CO line is essentially a join
+of segments of other sequences, like this:
+
+` join(MySeq:1..40,ThisSeq:5..8,gap(unk100),ThatSeq:90..154,gap(4000),TheirSeq:100..2000)`
+
+This describes the sequence as being constructed of the first 40 bases
+of MySeq, followed by bases 5 to 8 of ThisSeq, followed by a gap of
+unknown length, followed by bases 90-154 of ThatSeq, followed by a gap
+of length 4000, followed by bases 100-2000 of TheirSeq. All entries in
+the join statement are immediately adjacent, but owing to the use of
+gaps of unknown length it is not possible to map components that occur
+after that gap to a specific location in the assembled contig sequence.
+
+The 'unk100' keyword used to represent the unknown length gap as the
+keyword specified by the EMBL format docs, but it does not explain why
+this keyword is used or what it means, or how it affects the overall
+computation of the sequence length.
+
+This join statement takes the place of any actual sequence data
+associated with the EMBL entry. The length of the sequence the join
+represents is computed by an unknown function using the above join
+statement as input.
+
+The approach to store this in BioSQL would be via features on the contig
+(a bioentry) which have remote locations.
+
+However, the gaps do not have a remote location, and they do not have a
+direct location on the contig either (if the first one had a known
+length, the locations could be inferred). While BioSQL itself does
+permit location-less features, some of the Bio\* toolkits may have
+difficulty dealing with this. The only way to represent that the first
+gap feature has unknown length is through its annotation
+(seqfeature\_qualifier\_value).
+
+While the second gap has a known length, BioSQL (and, for example,
+neither BioPerl) can't represent the length of a feature other than by
+its coordinates (which aren't known in the example above, due to the
+preceding gap of unknown length). One could work around that by giving
+the second gap a remote location to a fictitious 'gap' sequence (which
+would only consist of gap characters, and be virtual).
+
+Should there be a better way of doing this?
+
+Related to CO lines, [EMBLs AS
+lines](http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html#3_4_13)
+store assembly path information. In essence, these could be stored as
+feature pairs, one feature on the source contig (or read, another
+bioentry), the other feature on the assembled contig (the entry with the
+AS line), and both linked by seqfeature\_relationship. The complicating
+factor is that the location of the source contig feature may not be
+known, resulting in a location-less feature. This should be fine from
+BioSQL's standpoint, but may cause trouble when processed with on of the
+Bio\* toolkits.
