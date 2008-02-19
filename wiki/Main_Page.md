@@ -54,7 +54,7 @@ obtained from the links below.
 -   [BioJava](BioJava_BioSQL_ORM "wikilink")
 -   [BioPerl](bp:Bioperl-db "wikilink")
 -   BioRuby
--   [BioPython](http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/biopython/BioSQL/?cvsroot=biopython)
+-   [BioPython](http://biopython.org/wiki/BioSQL)
 
 In Progress
 -----------
