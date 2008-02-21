@@ -80,3 +80,6 @@ Contacts
 Project lead is [Hilmar Lapp](bp:Hilmar_Lapp "wikilink"). Questions
 should be sent to the BioSQL mailing list at
 [biosql-l@lists.open-bio.org](mailto:biosql-l%40lists%2eopen-bio%2eorg).
+You can also [subscribe](http://open-bio.org/mailman/listinfo/biosql-l)
+to the mailing list to keep up to date with discussions and
+announcements.
