@@ -34,4 +34,4 @@ See [http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk
 [[Bugs|Bugs]] and suggestions for [[Enhancement Requests|improvement]]
 
 ==Contacts==
-Project lead is [[bp:Hilmar Lapp|Hilmar Lapp]]. Questions should be sent to the BioSQL mailing list at [mailto:biosql-l%40lists%2eopen-bio%2eorg biosql-l&#64;lists&#46;open-bio&#46;org].
+Project lead is [[bp:Hilmar Lapp|Hilmar Lapp]]. Questions should be sent to the BioSQL mailing list at [mailto:biosql-l%40lists%2eopen-bio%2eorg biosql-l&#64;lists&#46;open-bio&#46;org].  You can also [http://open-bio.org/mailman/listinfo/biosql-l subscribe] to the mailing list to keep up to date with discussions and announcements.
