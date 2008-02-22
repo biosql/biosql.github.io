@@ -52,10 +52,11 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
         HSQLDB?*
 
 7.  Write release announcement.
-8.  Package BioSQL for release, upload to download site. *Which site
+8.  Tag release with biosql-rel-1.0.0
+9.  Package BioSQL for release, upload to download site. *Which site
     should we use? Is there a common one for Open-Bio? Create separate
     one for BioSQL?*
-9.  Release:
+10. Release:
     -   Add download and release link to wiki on front page (also add
         Downloads page ot sidebar).
     -   Post announcement to biosql-l (*there is no biosql-announce,
