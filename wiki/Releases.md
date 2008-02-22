@@ -47,7 +47,6 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
         -   load\_itis\_taxonomy.pl, tree-precompute.pl scripts (depend
             on phylodb, and not up-to-date)
         -   phylodb-topo-queries.sql (depends on phylodb)
-    -   *What about biosqldb-derby.sql? Has this been tested enough?*
     -   *Can the HSQLDB version be tested by anyone for syntactic
         correctness and compatibility with a current revision of
         HSQLDB?*
