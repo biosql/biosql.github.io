@@ -26,11 +26,15 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
 
 2.  Update, fix, or remove various ancillary files that don't seem to
     have been touched in a long time.
-    -   biosql-accelerators-pg.sql
-    -   biosqldb-views-pg.sql
+    -   biosql-accelerators-pg.sql *Updated/fixed, but could be better
+        to remove it. --[Hilmar](User%3AHlapp "wikilink") 20:31, 21
+        February 2008 (EST)*
+    -   biosqldb-views-pg.sql *Done. --[Hilmar](User%3AHlapp "wikilink")
+        20:31, 21 February 2008 (EST)*
 
 3.  Rename biosql-ora to biosqldb-ora for consistency with the other
-    schema versions
+    schema versions *Done. --[Hilmar](User%3AHlapp "wikilink") 20:31, 21
+    February 2008 (EST)*
 4.  Regenerate HTML documentation from schema DDL (using sqlt)
 5.  Create biosql-release-1.0 branch.
 6.  Remove from biosql-release-1.0 branch all schema modules or versions
