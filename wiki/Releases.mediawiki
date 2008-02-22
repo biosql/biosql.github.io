@@ -12,7 +12,7 @@ Note: open questions are in ''italics.'' If you have thoughts or feedback on any
 #* biosql-accelerators-pg.sql ''Updated/fixed, but could be better to remove it. --[[User%3AHlapp|Hilmar]] 20:31, 21 February 2008 (EST)''
 #* biosqldb-views-pg.sql ''Done. --[[User%3AHlapp|Hilmar]] 20:31, 21 February 2008 (EST)''
 # Rename biosql-ora to biosqldb-ora for consistency with the other schema versions ''Done. --[[User%3AHlapp|Hilmar]] 20:31, 21 February 2008 (EST)''
-# Regenerate HTML documentation from schema DDL (using sqlt)
+# Regenerate HTML documentation from schema DDL (using sqlt) ''Doesn't work, sqlt seems to be broken at present. --[[User%3AHlapp|Hilmar]] 21:11, 21 February 2008 (EST)''
 # Create biosql-release-1.0 branch.
 # Remove from biosql-release-1.0 branch all schema modules or versions and all scripts that aren't release-ready yet, or are not yet or no longer supported.
 #* This includes the following:
