@@ -6,8 +6,11 @@ This is a release of the core BioSQL schema, not including recent extensions.
 
 Note: open questions are in ''italics.'' If you have thoughts or feedback on any of the below, please email them to biosql-l&#64;lists&#46;open-bio&#46;org.
 
-# Update license for BioSQL and all its DDL and software scripts.
+# Update license for BioSQL and all its DDL and software scripts. ''Done. This is now the LGPL license for all schema files. --[[User%3AHlapp|Hilmar]] 20:23, 21 February 2008 (EST)''
 #* The current license refers to the 'same terms as Perl' and the Perl Artistic Licence. Not only does Perl now dual-license under Artistic License v2.0 or GPL (because the original Perl Artistic License v1.0 has problems), but also there isn't a good reason to tie the BioSQL license to that of Perl.
+# Update, fix, or remove various ancillary files that don't seem to have been touched in a long time.
+#* biosql-accelerators-pg.sql
+#* biosqldb-views-pg.sql
 # Rename biosql-ora to biosqldb-ora for consistency with the other schema versions
 # Regenerate HTML documentation from schema DDL (using sqlt)
 # Create biosql-release-1.0 branch.
