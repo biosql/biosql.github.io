@@ -42,7 +42,7 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
     23:41, 22 February 2008 (EST)*
 6.  Create biosql-release-1-0 branch. *Done.
     --[Hilmar](User%3AHlapp "wikilink") 23:43, 22 February 2008 (EST)*
-7.  Remove from biosql-release-1.0 branch all schema modules or versions
+7.  Remove from biosql-release-1-0 branch all schema modules or versions
     and all scripts that aren't release-ready yet, or are not yet or no
     longer supported. *Done. --[Hilmar](User%3AHlapp "wikilink") 23:43,
     22 February 2008 (EST)*
