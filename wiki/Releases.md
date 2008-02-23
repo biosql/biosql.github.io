@@ -40,10 +40,12 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
     --[Hilmar](User%3AHlapp "wikilink") 21:11, 21 February 2008 (EST)*
 5.  Update Changes file. *Done. --[Hilmar](User%3AHlapp "wikilink")
     23:41, 22 February 2008 (EST)*
-6.  Create biosql-release-1.0 branch.
+6.  Create biosql-release-1-0 branch. *Done.
+    --[Hilmar](User%3AHlapp "wikilink") 23:43, 22 February 2008 (EST)*
 7.  Remove from biosql-release-1.0 branch all schema modules or versions
     and all scripts that aren't release-ready yet, or are not yet or no
-    longer supported.
+    longer supported. *Done. --[Hilmar](User%3AHlapp "wikilink") 23:43,
+    22 February 2008 (EST)*
     -   This includes the following:
         -   phylodb module DDLs
         -   phylodb ERD

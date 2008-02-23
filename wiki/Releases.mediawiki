@@ -14,8 +14,8 @@ Note: open questions are in ''italics.'' If you have thoughts or feedback on any
 # Rename biosql-ora to biosqldb-ora for consistency with the other schema versions ''Done. --[[User%3AHlapp|Hilmar]] 20:31, 21 February 2008 (EST)''
 # Regenerate HTML documentation from schema DDL (using sqlt) ''Doesn't work, sqlt seems to be broken at present. --[[User%3AHlapp|Hilmar]] 21:11, 21 February 2008 (EST)''
 # Update Changes file. ''Done. --[[User%3AHlapp|Hilmar]] 23:41, 22 February 2008 (EST)''
-# Create biosql-release-1.0 branch. 
-# Remove from biosql-release-1.0 branch all schema modules or versions and all scripts that aren't release-ready yet, or are not yet or no longer supported.
+# Create biosql-release-1-0 branch. ''Done. --[[User%3AHlapp|Hilmar]] 23:43, 22 February 2008 (EST)'' 
+# Remove from biosql-release-1.0 branch all schema modules or versions and all scripts that aren't release-ready yet, or are not yet or no longer supported. ''Done. --[[User%3AHlapp|Hilmar]] 23:43, 22 February 2008 (EST)''
 #* This includes the following:
 #** phylodb module DDLs
 #** phylodb ERD
