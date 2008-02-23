@@ -26,9 +26,9 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
 
 2.  Update, fix, or remove various ancillary files that don't seem to
     have been touched in a long time.
-    -   biosql-accelerators-pg.sql *Updated/fixed, but could be better
-        to remove it. --[Hilmar](User%3AHlapp "wikilink") 20:31, 21
-        February 2008 (EST)*
+    -   biosql-accelerators-pg.sql *Updated/fixed, and now also retired.
+        --[Hilmar](User%3AHlapp "wikilink") 23:40, 22 February
+        2008 (EST)*
     -   biosqldb-views-pg.sql *Done. --[Hilmar](User%3AHlapp "wikilink")
         20:31, 21 February 2008 (EST)*
 
@@ -38,8 +38,9 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
 4.  Regenerate HTML documentation from schema DDL (using sqlt) *Doesn't
     work, sqlt seems to be broken at present.
     --[Hilmar](User%3AHlapp "wikilink") 21:11, 21 February 2008 (EST)*
-5.  Create biosql-release-1.0 branch.
-6.  Remove from biosql-release-1.0 branch all schema modules or versions
+5.  Update Changes file.
+6.  Create biosql-release-1.0 branch.
+7.  Remove from biosql-release-1.0 branch all schema modules or versions
     and all scripts that aren't release-ready yet, or are not yet or no
     longer supported.
     -   This includes the following:
@@ -53,12 +54,12 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
         correctness and compatibility with a current revision of
         HSQLDB?*
 
-7.  Write release announcement.
-8.  Tag release with biosql-rel-1.0.0
-9.  Package BioSQL for release, upload to download site. *Which site
+8.  Write release announcement.
+9.  Tag release with biosql-rel-1.0.0
+10. Package BioSQL for release, upload to download site. *Which site
     should we use? Is there a common one for Open-Bio? Create separate
     one for BioSQL?*
-10. Release:
+11. Release:
     -   Add download and release link to wiki on front page (also add
         Downloads page ot sidebar).
     -   Post announcement to biosql-l (*there is no biosql-announce,
