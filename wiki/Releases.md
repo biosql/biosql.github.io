@@ -40,9 +40,18 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
     --[Hilmar](User%3AHlapp "wikilink") 21:11, 21 February 2008 (EST)*
 5.  Update Changes file. *Done. --[Hilmar](User%3AHlapp "wikilink")
     23:41, 22 February 2008 (EST)*
-6.  Create biosql-release-1-0 branch. *Done.
+6.  Update documentation in the repository. *Done, for
+    [Biopython](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk/doc/biopython)
+    (see
+    [PDF](http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/biopython/python_biosql_basic.pdf))
+    and
+    [BioJava/Oracle](http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/bj_and_bsql_oracle_howto.htm).
+    Unfortunately, realized this not before, but only after branching
+    off, so need to merge all changes to the branch.
+    --[Hilmar](User%3AHlapp "wikilink") 12:06, 24 February 2008 (EST)*
+7.  Create biosql-release-1-0 branch. *Done.
     --[Hilmar](User%3AHlapp "wikilink") 23:43, 22 February 2008 (EST)*
-7.  Remove from biosql-release-1-0 branch all schema modules or versions
+8.  Remove from biosql-release-1-0 branch all schema modules or versions
     and all scripts that aren't release-ready yet, or are not yet or no
     longer supported. *Done. --[Hilmar](User%3AHlapp "wikilink") 23:43,
     22 February 2008 (EST)*
@@ -57,12 +66,12 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
         correctness and compatibility with a current revision of
         HSQLDB?*
 
-8.  Write release announcement.
-9.  Tag release with biosql-rel-1.0.0
-10. Package BioSQL for release, upload to download site. *Which site
+9.  Write release announcement.
+10. Tag release with biosql-rel-1.0.0
+11. Package BioSQL for release, upload to download site. *Which site
     should we use? Is there a common one for Open-Bio? Create separate
     one for BioSQL?*
-11. Release:
+12. Release:
     -   Add download and release link to wiki on front page (also add
         Downloads page ot sidebar).
     -   Post announcement to biosql-l (*there is no biosql-announce,
