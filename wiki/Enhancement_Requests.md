@@ -238,3 +238,31 @@ factor is that the location of the source contig feature may not be
 known, resulting in a location-less feature. This should be fine from
 BioSQL's standpoint, but may cause trouble when processed with on of the
 Bio\* toolkits.
+
+Support for chimeric sequences
+------------------------------
+
+BioSQL only allows a single taxon link for a species. This creates a
+difficulty for representing chimeric sequences. See a [BioSQL-l thread
+in March
+2008](http://lists.open-bio.org/pipermail/biosql-l/2008-March/001176.html)
+discussing an example.
+
+It should be noted that currently probably none of the Bio\* toolkits
+supports multiple species for sequences either, so there isn't a need
+(or possible use) for that capability in BioSQL from that side. There
+are plans to change this, though.
+
+Some character column widths are too narrow
+-------------------------------------------
+
+[Erik Jan reports](http://bugzilla.open-bio.org/show_bug.cgi?id=2389)
+that some varchar(n) type columns are constrained too narrow to
+accommodate the latest UniProt database.
+
+Though it isn't clear for the above bug report whether the issue is due
+to a parsing error or not, and if it is a legitimate column value, which
+column(s) is (are) affected, Hilmar Lapp did hit similar problems for
+dbxref.accession when importing the Gene Ontology into the Oracle
+version of BioSQL, which is why the width of that column is 64 (and not
+40) in that version.
