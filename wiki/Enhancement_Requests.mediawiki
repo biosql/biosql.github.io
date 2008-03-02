@@ -53,6 +53,9 @@ The proposal is to rename the table to 'anncomment'. For the sake of
 consistency, this would also mean to rename the primary key of the
 table to anncomment_id.
 
+===References===
+BioSQL reference table cannot store more than one db_xref. This causes an inadequacy in parsing Uniprot where references often contain Pubmed id, Medline id and DOI.
+
 ==Scheduled for v1.0.x==
 
 ===Some character column widths are too narrow===
@@ -62,9 +65,6 @@ table to anncomment_id.
 Though it isn't clear for the above bug report whether the issue is due to a parsing error or not, and if it is a legitimate column value, which column(s) is (are) affected, Hilmar Lapp did hit similar problems for dbxref.accession when importing the Gene Ontology into the Oracle version of BioSQL, which is why the width of that column is 64 (and not 40) in that version.
 
 ==Pending scheduling==
-
-===References===
-BioSQL reference table cannot store more than one db_xref. This causes an inadequacy in parsing Uniprot where references often contain Pubmed id, Medline id and DOI.
 
 ===Bioentry Date Stamping===
 Possible table structure:
