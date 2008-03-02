@@ -4,21 +4,27 @@ permalink: wiki/Enhancement_Requests
 layout: wiki
 ---
 
-References
-----------
+Scheduled for v1.1
+------------------
+
+Scheduled for v1.0.x
+--------------------
+
+Pending scheduling
+------------------
+
+### References
 
 BioSQL reference table cannot store more than one db\_xref. This causes
 an inadequacy in parsing Uniprot where references often contain Pubmed
 id, Medline id and DOI.
 
-Circular Sequences
-------------------
+### Circular Sequences
 
 It would be desirable to have a flag to indicate a circular sequence in
 the BioSequence table.
 
-Bioentry Date Stamping
-----------------------
+### Bioentry Date Stamping
 
 Possible table structure:
 
@@ -98,8 +104,7 @@ ones that are no longer "current" - simple SELECTs must specify enddate
 IS NULL (optionally, a "is\_current" flag can be added to bioentry) -
 again, a bioentry\_current VIEW may be the best solution.
 
-Sequence redundancy
--------------------
+### Sequence redundancy
 
 There is no utility here for handling biosequence redundancy; i.e. the
 biosequence table cannot be easily used to generate non-redundant
@@ -126,14 +131,12 @@ the NCBI "nr" database)
 
 Nasty cross-joining SQL to be delivered ...
 
-Feature set versioning
-----------------------
+### Feature set versioning
 
 Could already be accomplished with "dated" source ontology terms, but
 that seems like a bastardization. Suggestions welcome.
 
-Surrogate primary keys on all tables
-------------------------------------
+### Surrogate primary keys on all tables
 
 The current BioSQL unique keys enforce constraints upon the data. Most
 have primary keys in addition but in some tables there is no primary
@@ -153,8 +156,7 @@ whereas in general primary keys are a method of uniquely identifying an
 individual row. Primary keys are a subset of unique keys but they should
 not be used to enforce data business rules.
 
-Comment is a reserved word in some RDBMSs
------------------------------------------
+### Comment is a reserved word in some RDBMSs
 
 There is a table named 'comment' (for holding comment-type annotation),
 which is a reserved in some RDBMSs, for example HSQLDB and Oracle.
@@ -163,16 +165,14 @@ The proposal is to rename the table to 'anncomment'. For the sake of
 consistency, this would also mean to rename the primary key of the table
 to anncomment\_id.
 
-Synonym is a reserved word in some RDBMSs
------------------------------------------
+### Synonym is a reserved word in some RDBMSs
 
 The column synonym in table term\_synonym is a reserved word in at least
 Oracle. Rename the column synonym to name, which would also be more
 consistent with column naming in other tables (as the fact that it is a
 synonym is already in the table name).
 
-Term\_Relationship\_Term can be folded into Term\_Relationship
---------------------------------------------------------------
+### Term\_Relationship\_Term can be folded into Term\_Relationship
 
 The Term\_Relationship\_Term table links a relationship between two
 terms to a first-class term that is equivalent to the relationship
@@ -184,8 +184,7 @@ back to a Term\_Relationship\_Term view (for backwards compatibility,
 for example), using triggers (or RULEs for PostgreSQL) to make it fully
 writable.
 
-Ability to fully represent contig assembly
-------------------------------------------
+### Ability to fully represent contig assembly
 
 The ability to fully represent [EMBL format's CO
 lines](http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html#3_4_14)
@@ -243,8 +242,7 @@ known, resulting in a location-less feature. This should be fine from
 BioSQL's standpoint, but may cause trouble when processed with on of the
 Bio\* toolkits.
 
-Support for chimeric sequences
-------------------------------
+### Support for chimeric sequences
 
 BioSQL only allows a single taxon link for a species. This creates a
 difficulty for representing chimeric sequences. See a [BioSQL-l thread
@@ -257,8 +255,7 @@ supports multiple species for sequences either, so there isn't a need
 (or possible use) for that capability in BioSQL from that side. There
 are plans to change this, though.
 
-Some character column widths are too narrow
--------------------------------------------
+### Some character column widths are too narrow
 
 [Erik Jan reports](http://bugzilla.open-bio.org/show_bug.cgi?id=2389)
 that some varchar(n) type columns are constrained too narrow to

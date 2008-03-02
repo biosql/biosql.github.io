@@ -1,10 +1,16 @@
-==References==
+==Scheduled for v1.1==
+
+==Scheduled for v1.0.x==
+
+==Pending scheduling==
+
+===References===
 BioSQL reference table cannot store more than one db_xref. This causes an inadequacy in parsing Uniprot where references often contain Pubmed id, Medline id and DOI.
 
-==Circular Sequences==
+===Circular Sequences===
 It would be desirable to have a flag to indicate a circular sequence in the BioSequence table.
 
-==Bioentry Date Stamping==
+===Bioentry Date Stamping===
 Possible table structure:
 <source lang=sql>
  CREATE TABLE bioentry_history (
@@ -76,7 +82,7 @@ ones that are no longer "current" - simple SELECTs must specify
 enddate IS NULL (optionally, a "is_current" flag can be added to
 bioentry) - again, a bioentry_current VIEW may be the best solution.
 
-==Sequence redundancy==
+===Sequence redundancy===
 
 There is no utility here for handling biosequence redundancy; i.e. the
 biosequence table cannot be easily used to generate non-redundant
@@ -104,12 +110,12 @@ Example SQL: Give me all nonredundant biosequences from GenPept
 
 Nasty cross-joining SQL to be delivered ...
 
-==Feature set versioning==
+===Feature set versioning===
 
 Could already be accomplished with "dated" source ontology terms, but
 that seems like a bastardization.  Suggestions welcome.
 
-==Surrogate primary keys on all tables==
+===Surrogate primary keys on all tables===
 
 The current BioSQL unique keys enforce constraints upon the data. Most
 have primary keys in addition but in some tables there is no primary
@@ -130,7 +136,7 @@ whereas in general primary keys are a method of uniquely identifying
 an individual row. Primary keys are a subset of unique keys but they
 should not be used to enforce data business rules.
 
-==Comment is a reserved word in some RDBMSs==
+===Comment is a reserved word in some RDBMSs===
 
 There is a table named 'comment' (for holding comment-type
 annotation), which is a reserved in some RDBMSs, for example HSQLDB
@@ -140,14 +146,14 @@ The proposal is to rename the table to 'anncomment'. For the sake of
 consistency, this would also mean to rename the primary key of the
 table to anncomment_id.
 
-==Synonym is a reserved word in some RDBMSs==
+===Synonym is a reserved word in some RDBMSs===
 
 The column synonym in table term_synonym is a reserved word in at
 least Oracle. Rename the column synonym to name, which would also be
 more consistent with column naming in other tables (as the fact that
 it is a synonym is already in the table name).
 
-==Term_Relationship_Term can be folded into Term_Relationship==
+===Term_Relationship_Term can be folded into Term_Relationship===
 
 The Term_Relationship_Term table links a relationship between two
 terms to a first-class term that is equivalent to the relationship
@@ -159,7 +165,7 @@ back to a Term_Relationship_Term view (for backwards compatibility,
 for example), using triggers (or RULEs for PostgreSQL) to make it
 fully writable.
 
-==Ability to fully represent contig assembly==
+===Ability to fully represent contig assembly===
 
 The ability to fully represent [http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html#3_4_14 EMBL format's CO lines] in a BioSQL record would be desirable. The CO line is essentially a join of segments of other
 sequences, like this:
@@ -194,13 +200,13 @@ Should there be a better way of doing this?
 
 Related to CO lines, [http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html#3_4_13 EMBLs AS lines] store assembly path information. In essence, these could be stored as feature pairs, one feature on the source contig (or read, another bioentry), the other feature on the assembled contig (the entry with the AS line), and both linked by seqfeature_relationship. The complicating factor is that the location of the source contig feature may not be known, resulting in a location-less feature. This should be fine from BioSQL's standpoint, but may cause trouble when processed with on of the Bio* toolkits.
 
-==Support for chimeric sequences==
+===Support for chimeric sequences===
 
 BioSQL only allows a single taxon link for a species. This creates a difficulty for representing chimeric sequences. See a [http://lists.open-bio.org/pipermail/biosql-l/2008-March/001176.html BioSQL-l thread in March 2008] discussing an example. 
 
 It should be noted that currently probably none of the Bio* toolkits supports multiple species for sequences either, so there isn't a need (or possible use) for that capability in BioSQL from that side. There are plans to change this, though.
 
-==Some character column widths are too narrow==
+===Some character column widths are too narrow===
 
 [http://bugzilla.open-bio.org/show_bug.cgi?id=2389 Erik Jan reports] that some varchar(n) type columns are constrained too narrow to accommodate the latest UniProt database.
 
