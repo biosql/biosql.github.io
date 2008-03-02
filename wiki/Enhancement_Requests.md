@@ -60,6 +60,12 @@ The proposal is to rename the table to 'anncomment'. For the sake of
 consistency, this would also mean to rename the primary key of the table
 to anncomment\_id.
 
+### References
+
+BioSQL reference table cannot store more than one db\_xref. This causes
+an inadequacy in parsing Uniprot where references often contain Pubmed
+id, Medline id and DOI.
+
 Scheduled for v1.0.x
 --------------------
 
@@ -78,12 +84,6 @@ version of BioSQL, which is why the width of that column is 64 (and not
 
 Pending scheduling
 ------------------
-
-### References
-
-BioSQL reference table cannot store more than one db\_xref. This causes
-an inadequacy in parsing Uniprot where references often contain Pubmed
-id, Medline id and DOI.
 
 ### Bioentry Date Stamping
 
