@@ -7,6 +7,11 @@ layout: wiki
 Scheduled for v1.1
 ------------------
 
+BioSQL v1.1 may have changes that may not be fully backwards compatible,
+such as new or dropped tables, or changes in the cardinality of
+relationships. At a minimum it will require language bindings to be
+extensively tested for compatibility with the changes.
+
 ### Circular Sequences
 
 It would be desirable to have a flag to indicate a circular sequence in
@@ -68,6 +73,18 @@ id, Medline id and DOI.
 
 Scheduled for v1.0.x
 --------------------
+
+All BioSQL v.1.0.x schemas at a minimum can be expected to work with all
+language bindings and software that ran with a recent, but pre-release
+schema (the so-called 'post-Singapore' schema). As such, there will be
+no changes in tables, table names, column names, or relationship
+cardinalities. Except if necessitated to fix a serious bug, column type
+changes will be limited to changing the width (or precision) of columns.
+
+Other allowable changes include additional indexes, or changing the
+column order in existing compound indexes to increase performance.
+Unique key changes do not, however, fall into this category, as language
+bindings may frequently rely on them for uniquely locating records.
 
 ### Some character column widths are too narrow
 
