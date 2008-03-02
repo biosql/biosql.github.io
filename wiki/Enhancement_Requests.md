@@ -7,8 +7,74 @@ layout: wiki
 Scheduled for v1.1
 ------------------
 
+### Circular Sequences
+
+It would be desirable to have a flag to indicate a circular sequence in
+the BioSequence table.
+
+### Surrogate primary keys on all tables
+
+The current BioSQL unique keys enforce constraints upon the data. Most
+have primary keys in addition but in some tables there is no primary
+key. Here it is implied that the unique key is the primary key, but
+using compound keys such as this is not 'tidy' (because some columns in
+the key may be mutable, whereas normally a primary key is assumed to be
+immutable by most generic ORMs) and causes problems when attempting to
+auto-generate code using tools such as Java's recent JPA system.
+
+The proposal is to have a separate surrogate primary key on such tables,
+just as one would if that table were being referenced elsewhere in the
+db schema (even though in this case it isn't).
+
+This should fit nicely with general relational db design - unique key
+(in MySQL, for example) is just a type of constraint over the data,
+whereas in general primary keys are a method of uniquely identifying an
+individual row. Primary keys are a subset of unique keys but they should
+not be used to enforce data business rules.
+
+### Synonym is a reserved word in some RDBMSs
+
+The column synonym in table term\_synonym is a reserved word in at least
+Oracle. Rename the column synonym to name, which would also be more
+consistent with column naming in other tables (as the fact that it is a
+synonym is already in the table name).
+
+### Term\_Relationship\_Term can be folded into Term\_Relationship
+
+The Term\_Relationship\_Term table links a relationship between two
+terms to a first-class term that is equivalent to the relationship
+(reification). As this is a 1-1 relationship, it should be folded into
+the Term\_Relationshop column (as a foreign key).
+
+The Oracle version demonstrates that this can actually be fully mapped
+back to a Term\_Relationship\_Term view (for backwards compatibility,
+for example), using triggers (or RULEs for PostgreSQL) to make it fully
+writable.
+
+### Comment is a reserved word in some RDBMSs
+
+There is a table named 'comment' (for holding comment-type annotation),
+which is a reserved in some RDBMSs, for example HSQLDB and Oracle.
+
+The proposal is to rename the table to 'anncomment'. For the sake of
+consistency, this would also mean to rename the primary key of the table
+to anncomment\_id.
+
 Scheduled for v1.0.x
 --------------------
+
+### Some character column widths are too narrow
+
+[Erik Jan reports](http://bugzilla.open-bio.org/show_bug.cgi?id=2389)
+that some varchar(n) type columns are constrained too narrow to
+accommodate the latest UniProt database.
+
+Though it isn't clear for the above bug report whether the issue is due
+to a parsing error or not, and if it is a legitimate column value, which
+column(s) is (are) affected, Hilmar Lapp did hit similar problems for
+dbxref.accession when importing the Gene Ontology into the Oracle
+version of BioSQL, which is why the width of that column is 64 (and not
+40) in that version.
 
 Pending scheduling
 ------------------
@@ -18,11 +84,6 @@ Pending scheduling
 BioSQL reference table cannot store more than one db\_xref. This causes
 an inadequacy in parsing Uniprot where references often contain Pubmed
 id, Medline id and DOI.
-
-### Circular Sequences
-
-It would be desirable to have a flag to indicate a circular sequence in
-the BioSequence table.
 
 ### Bioentry Date Stamping
 
@@ -132,54 +193,6 @@ Nasty cross-joining SQL to be delivered ...
 Could already be accomplished with "dated" source ontology terms, but
 that seems like a bastardization. Suggestions welcome.
 
-### Surrogate primary keys on all tables
-
-The current BioSQL unique keys enforce constraints upon the data. Most
-have primary keys in addition but in some tables there is no primary
-key. Here it is implied that the unique key is the primary key, but
-using compound keys such as this is not 'tidy' (because some columns in
-the key may be mutable, whereas normally a primary key is assumed to be
-immutable by most generic ORMs) and causes problems when attempting to
-auto-generate code using tools such as Java's recent JPA system.
-
-The proposal is to have a separate surrogate primary key on such tables,
-just as one would if that table were being referenced elsewhere in the
-db schema (even though in this case it isn't).
-
-This should fit nicely with general relational db design - unique key
-(in MySQL, for example) is just a type of constraint over the data,
-whereas in general primary keys are a method of uniquely identifying an
-individual row. Primary keys are a subset of unique keys but they should
-not be used to enforce data business rules.
-
-### Comment is a reserved word in some RDBMSs
-
-There is a table named 'comment' (for holding comment-type annotation),
-which is a reserved in some RDBMSs, for example HSQLDB and Oracle.
-
-The proposal is to rename the table to 'anncomment'. For the sake of
-consistency, this would also mean to rename the primary key of the table
-to anncomment\_id.
-
-### Synonym is a reserved word in some RDBMSs
-
-The column synonym in table term\_synonym is a reserved word in at least
-Oracle. Rename the column synonym to name, which would also be more
-consistent with column naming in other tables (as the fact that it is a
-synonym is already in the table name).
-
-### Term\_Relationship\_Term can be folded into Term\_Relationship
-
-The Term\_Relationship\_Term table links a relationship between two
-terms to a first-class term that is equivalent to the relationship
-(reification). As this is a 1-1 relationship, it should be folded into
-the Term\_Relationshop column (as a foreign key).
-
-The Oracle version demonstrates that this can actually be fully mapped
-back to a Term\_Relationship\_Term view (for backwards compatibility,
-for example), using triggers (or RULEs for PostgreSQL) to make it fully
-writable.
-
 ### Ability to fully represent contig assembly
 
 The ability to fully represent [EMBL format's CO
@@ -250,16 +263,3 @@ It should be noted that currently probably none of the Bio\* toolkits
 supports multiple species for sequences either, so there isn't a need
 (or possible use) for that capability in BioSQL from that side. There
 are plans to change this, though.
-
-### Some character column widths are too narrow
-
-[Erik Jan reports](http://bugzilla.open-bio.org/show_bug.cgi?id=2389)
-that some varchar(n) type columns are constrained too narrow to
-accommodate the latest UniProt database.
-
-Though it isn't clear for the above bug report whether the issue is due
-to a parsing error or not, and if it is a legitimate column value, which
-column(s) is (are) affected, Hilmar Lapp did hit similar problems for
-dbxref.accession when importing the Gene Ontology into the Oracle
-version of BioSQL, which is why the width of that column is 64 (and not
-40) in that version.
