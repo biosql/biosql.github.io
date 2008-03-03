@@ -300,3 +300,12 @@ It should be noted that currently probably none of the Bio\* toolkits
 supports multiple species for sequences either, so there isn't a need
 (or possible use) for that capability in BioSQL from that side. There
 are plans to change this, though.
+
+### Abstracts and Full Text on References
+
+As an enhancement for a future version of BioSQL it would be nice to
+have CLOB rows for abstract and full text (Full text might need to be a
+BLOB depending on format). Obviously they could both be null.
+
+See also the [respective thread on the BioSQL mailing
+list](http://lists.open-bio.org/pipermail/biosql-l/2006-July/001026.html).
