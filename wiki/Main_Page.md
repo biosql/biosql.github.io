@@ -103,6 +103,9 @@ obtained from the links below.
 -   [BioPython](biopython:BioSQL "wikilink") (this also contains
     excellent documentation for installing BioSQL)
 
+See also the recommendations for [mapping sequence annotation to the
+BioSQL relational model](Annotation_Mapping "wikilink").
+
 Contacts
 --------
 
