@@ -116,7 +116,9 @@ On hand at this point this applies only to the NCBI taxonomy and not to
 any other, but also the other attributes of the taxon table are pretty
 specific to the NCBI taxonomy, so we might as well add this one. In
 addition, one might in fact want to search by it (for instance, for
-pulling out all ancestors of a given taxon that are visible).
+pulling out all ancestors of a given taxon that are visible). (See the
+[respective thread on the BioSQL mailing list for
+reference](http://lists.open-bio.org/pipermail/biosql-l/2006-July/001015.html).)
 
 Alternatively, we could generalize the taxon model to be as applicable
 to other taxonomies, and move special attributes to a
