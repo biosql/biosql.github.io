@@ -71,6 +71,9 @@ BioSQL reference table cannot store more than one db\_xref. This causes
 an inadequacy in parsing Uniprot where references often contain Pubmed
 id, Medline id and DOI.
 
+References may also have additional attributes (remarks, GeneRIFs, etc),
+and thus one needs a Reference\_Qualifier\_Value table to store those.
+
 Scheduled for v1.0.x
 --------------------
 
