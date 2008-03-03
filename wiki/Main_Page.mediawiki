@@ -38,6 +38,7 @@ The Bio* projects provide object relational mapping from their respective object
 * [[bp:Bioperl-db|BioPerl]]
 * BioRuby
 * [[biopython:BioSQL|BioPython]] (this also contains excellent documentation for installing BioSQL)
+See also the recommendations for [[Annotation Mapping|mapping sequence annotation to the BioSQL relational model]].
 
 ==Contacts==
 Project lead is [[bp:Hilmar Lapp|Hilmar Lapp]]. Questions should be sent to the BioSQL mailing list at [mailto:biosql-l%40lists%2eopen-bio%2eorg biosql-l&#64;lists&#46;open-bio&#46;org].  You can also [http://open-bio.org/mailman/listinfo/biosql-l subscribe] to the mailing list to keep up to date with discussions and announcements.
