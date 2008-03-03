@@ -58,6 +58,8 @@ table to anncomment_id.
 ===References===
 BioSQL reference table cannot store more than one db_xref. This causes an inadequacy in parsing Uniprot where references often contain Pubmed id, Medline id and DOI.
 
+References may also have additional attributes (remarks, GeneRIFs, etc), and thus one needs a Reference_Qualifier_Value table to store those.
+
 ==Scheduled for v1.0.x==
 
 All BioSQL v.1.0.x schemas at a minimum can be expected to work with all language bindings and software that ran with a recent, but pre-release schema (the so-called 'post-Singapore' schema). As such, there will be no changes in tables, table names, column names, or relationship cardinalities. Except if necessitated to fix a serious bug, column type changes will be limited to changing the width (or precision) of columns.
