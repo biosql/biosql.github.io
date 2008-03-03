@@ -326,3 +326,8 @@ abstract\_mime\_type to 'text/plain'.
 
 See also the [respective thread on the BioSQL mailing
 list](http://lists.open-bio.org/pipermail/biosql-l/2006-July/001026.html).
+
+### Normalized bibliographic metadata for References
+
+There should be individual author records instead of a single string,
+and possibly a full bibliographic record model.
