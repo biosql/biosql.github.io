@@ -76,6 +76,15 @@ and thus one needs a Reference\_Qualifier\_Value table to store those.
 Furthermore, it would be good to be able to store the type of a
 reference (eg. journal, book, article, conference paper, etc.).
 
+### Check constraint on biosequence.alphabet
+
+The Bio\* toolkits turn out to use slight variations of the set of valid
+alphabet names. Consistency could be enforced through a check
+constraint.
+
+BioPerl uses protein, DNA, and RNA. Biojava reportedly uses
+all-uppercase for all three.
+
 Scheduled for v1.0.x
 --------------------
 
