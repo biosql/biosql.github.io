@@ -246,3 +246,7 @@ Then if you stored a PDF in it you could set abstract_mime_type to
 abstract_mime_type to 'text/plain'.
 
 See also the [http://lists.open-bio.org/pipermail/biosql-l/2006-July/001026.html respective thread on the BioSQL mailing list].
+
+=== Normalized bibliographic metadata for References ===
+
+There should be individual author records instead of a single string, and possibly a full bibliographic record model.
