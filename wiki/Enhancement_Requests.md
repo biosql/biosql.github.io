@@ -311,8 +311,8 @@ BLOB depending on format). Obviously they could both be null.
 
 Another column could indicate the MIME type of the BLOB:
 
-`   BLOB abstract`  
-`   VARCHAR abstract_mime_type`
+`BLOB abstract`  
+`VARCHAR abstract_mime_type`
 
 Then if you stored a PDF in it you could set abstract\_mime\_type to
 'application/x-pdf', or if it was plain text, you could set the
