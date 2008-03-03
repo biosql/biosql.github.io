@@ -73,7 +73,7 @@ to this website.*
     [Biojava/BioSQL
     HowTo](http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/bj_and_bsql_oracle_howto.htm) (Oracle).
 -   See [possible optimizations of local BioSQL
-    installations](Optimizations "wikilink")
+    installations](Optimizations "wikilink").
 -   BioSQL add-on modules are documented as [Extension
     modules](Extensions "wikilink") (and the repository may hold
     additional documentation for them, too).
