@@ -105,6 +105,21 @@ version of BioSQL, which is why the width of that column is 64 (and not
 Pending scheduling
 ------------------
 
+### Need additional attributes for taxon
+
+The NCBI taxonomy has a isTaxonHidden attribute determining whether a
+taxon is included in the lineage information given in GenBank entries:
+
+`GenBank hidden flag (1 or 0) -- 1 if name is suppressed in GenBank entry lineage`
+
+On hand at this point this applies only to the NCBI taxonomy and not to
+any other, but also the other attributes of the taxon table are pretty
+specific to the NCBI taxonomy, so we might as well add this one.
+
+Alternatively, we could generalize the taxon model to be as applicable
+to other taxonomies, and move special attributes to a
+taxon\_qualifier\_value table.
+
 ### Bioentry Date Stamping
 
 Possible table structure:
