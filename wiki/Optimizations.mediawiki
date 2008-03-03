@@ -7,9 +7,9 @@ This page lists optimizations that people have found useful in their local BioSQ
 === Indexing only a substring of qualifier values ===
 
 There is a possibility in MySQL to index only an initial substring, which can be very effective for qualifier values, for example seqfeature_qualifier_value:
-<sql>
+<source lang=sql>
 CREATE INDEX value_ind ON seqfeature_qualifier_value (term_id, value(64));
-</sql>
+</source>
 This would index only the first 64 characters of the value column. [http://lists.open-bio.org/pipermail/biosql-l/2007-March/001064.html Suggested by Dmitry Samborskiy].
 
 A similar functionality could by achieved in PostgreSQL and Oracle since they support functional indexes, but these would only be used if the query used the same function, and hence require specific query rewriting, which is not transparent.
