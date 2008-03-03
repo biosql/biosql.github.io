@@ -73,6 +73,8 @@ id, Medline id and DOI.
 
 References may also have additional attributes (remarks, GeneRIFs, etc),
 and thus one needs a Reference\_Qualifier\_Value table to store those.
+Furthermore, it would be good to be able to store the type of a
+reference (eg. journal, book, article, conference paper, etc.).
 
 Scheduled for v1.0.x
 --------------------
