@@ -309,7 +309,7 @@ As an enhancement for a future version of BioSQL it would be nice to
 have CLOB rows for abstract and full text (Full text might need to be a
 BLOB depending on format). Obviously they could both be null.
 
-Another column could indicate the MIME type of the BLOB.
+Another column could indicate the MIME type of the BLOB:
 
 `   BLOB abstract`  
 `   VARCHAR abstract_mime_type`

@@ -236,7 +236,7 @@ As an enhancement for a future version of BioSQL it would be nice to have
 CLOB rows for abstract and full text (Full text might need to be a BLOB 
 depending on format). Obviously they could both be null.
 
-Another column could indicate the MIME type of the BLOB.
+Another column could indicate the MIME type of the BLOB:
 
 	BLOB abstract
 	VARCHAR abstract_mime_type
@@ -244,6 +244,5 @@ Another column could indicate the MIME type of the BLOB.
 Then if you stored a PDF in it you could set abstract_mime_type to
 'application/x-pdf', or if it was plain text, you could set the
 abstract_mime_type to 'text/plain'.
-
 
 See also the [http://lists.open-bio.org/pipermail/biosql-l/2006-July/001026.html respective thread on the BioSQL mailing list].
