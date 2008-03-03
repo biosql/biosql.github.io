@@ -22,27 +22,71 @@ is interoperable between the Bio\* projects. Each Bio\* project has a
 [language binding](#Language_Bindings "wikilink") (object-relational
 mapping, ORM) to BioSQL.
 
-Schema Overview
----------------
+### Schema Overview
 
 A good introduction to the core BioSQL schema and it's intended use is
-the [schema overview](Schema_Overview "wikilink") document. This was
-originaly copied from SVN, and it isnow being maintained as a live
-document in this wiki.
+the [schema overview](Schema_Overview "wikilink") document.
 
-### Extension Modules
+-   [Extension modules](Extensions "wikilink") extend the core schema
+    and are optional unless specifically needed for storing or
+    retrieving the respective data types the module accommodates. At
+    present, there is one extension module, PhyloDB, for storing
+    phylogenetic trees and taxonomies.
+-   Supported RDBMs are at present PostgreSQL, MySQL, Oracle, HSQLDB,
+    and Apache Derby for the core schema.
 
-[Extension modules](Extensions "wikilink") extend the core schema and
-are optional unless specifically needed for storing or retrieving the
-respective data types the module accommodates.
+Downloads & Releases
+--------------------
 
-At present, there is one extension module, PhyloDB, for storing
-phylogenetic trees and taxonomies.
+We are currently in the process of releasing the 1.0 version of the core
+schema. A [detailed release plan](Releases "wikilink") with status
+information is available. The PhyloDB extension module has not been
+released yet and is only available from the [Subversion
+repository](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk).
+[Instructions for downloading code from anonymous
+svn](http://open-bio.org/wiki/SourceCode#Downloading_and_updating_code_via_Anonymous_SVN)
+are on the O|B|F wiki; the URL for the main trunk of BioSQL is
+[`svn://code.open-bio.org/biosql/biosql-schema/trunk`](svn://code.open-bio.org/biosql/biosql-schema/trunk).
 
-### Supported RDBMs
+The [Downloads](Downloads "wikilink") section has links to downloads for
+current and past releases as well as pre/alpha-releases.
 
-At present there are versions for PostgreSQL, MySQL, Oracle, HSQLDB, and
-Apache Derby for the core schema.
+Documentation
+-------------
+
+*Work is underway to migrate the documentation from the code repository
+to this website.*
+
+-   See the [schema overview](Schema_Overview "wikilink") for an
+    overview of the BioSQL model. In addition, see the documentation in
+    the [schema SVN
+    repository](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk),
+    especially
+    [INSTALL](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL),
+    and documents in the
+    [doc/](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk/doc) subdirectory.
+-   Instantiating the schema and pre-populating it with the NCBI
+    taxonomy or other data are extensively documented in the
+    [INSTALL](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL)
+    file in BioSQL (MySQL and PostgreSQL), the [BioSQL page at the
+    BioPython wiki](biopython:BioSQL "wikilink") (MySQL), and the
+    [Biojava/BioSQL
+    HowTo](http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/bj_and_bsql_oracle_howto.htm) (Oracle).
+-   BioSQL add-on modules are documented as [Extension
+    modules](Extensions "wikilink") (and the repository may hold
+    additional documentation for them, too).
+
+Bug Reports & Enhancement Requests
+----------------------------------
+
+We are in the process of adding a BioSQL category to the O|B|F Bugzilla
+instance. Until then, please simply report bugs directly to the BioSQL
+mailing list at
+[biosql-l@lists.open-bio.org](mailto:biosql-l%40lists%2eopen-bio%2eorg).
+
+This wiki documents [enhancement requests and which BioSQL version they
+are scheduled](Enhancement_Requests "wikilink") to be incorporated in
+(if they have been scheduled yet).
 
 Language Bindings
 -----------------
@@ -54,25 +98,8 @@ obtained from the links below.
 -   [BioJava](BioJava_BioSQL_ORM "wikilink")
 -   [BioPerl](bp:Bioperl-db "wikilink")
 -   BioRuby
--   [BioPython](biopython:BioSQL "wikilink")
-
-In Progress
------------
-
-*Work is underway to migrate the documentation from the code repository
-to this website.*
-
-See [schema SVN
-repository](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk)
-and [BioPerl-DB
-implementation](http://code.open-bio.org/svnweb/index.cgi/bioperl/browse/bioperl-db/trunk/)
-for starters.
-
-To Do
------
-
-[Bugs](Bugs "wikilink") and suggestions for
-[improvement](Enhancement_Requests "wikilink")
+-   [BioPython](biopython:BioSQL "wikilink") (this also contains
+    excellent documentation for installing BioSQL)
 
 Contacts
 --------
