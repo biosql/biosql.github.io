@@ -68,14 +68,13 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
 
 9.  Write release announcement. *Done.
     --[Hilmar](User%3AHlapp "wikilink") 10:52, 5 March 2008 (EST)*
-10. Tag release with biosql-rel-1.0.0
-11. Package BioSQL for release, upload to download site. *Which site
-    should we use? Is there a common one for Open-Bio? Create separate
-    one for BioSQL?*
+10. Tag release with biosql-rel-1.0.0 *Done.
+    --[Hilmar](User%3AHlapp "wikilink") 10:53, 5 March 2008 (EST)*
+11. Package BioSQL for release, upload to download
+    site (http://biosql.org/DIST)
 12. Release:
     -   Add download and release link to wiki on front page (also add
         Downloads page ot sidebar).
-    -   Post announcement to biosql-l (*there is no biosql-announce,
-        right?*) and news.open-bio.org.
+    -   Post announcement to biosql-l and news.open-bio.org.
 
 
