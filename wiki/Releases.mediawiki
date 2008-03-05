@@ -1,4 +1,4 @@
-==BioSQL release v1.0==
+==BioSQL release v1.0.0==
 
 This is a release of the core BioSQL schema, not including recent extensions.
 
@@ -24,7 +24,7 @@ Note: open questions are in ''italics.'' If you have thoughts or feedback on any
 #** load_itis_taxonomy.pl, tree-precompute.pl scripts (depend on phylodb, and not up-to-date)
 #** phylodb-topo-queries.sql (depends on phylodb)
 #* ''Can the HSQLDB version be tested by anyone for syntactic correctness and compatibility with a current revision of HSQLDB?''
-# Write release announcement.
+# Write release announcement. ''Done. --[[User%3AHlapp|Hilmar]] 10:52, 5 March 2008 (EST)''
 # Tag release with biosql-rel-1.0.0
 # Package BioSQL for release, upload to download site. ''Which site should we use? Is there a common one for Open-Bio? Create separate one for BioSQL?''
 # Release:

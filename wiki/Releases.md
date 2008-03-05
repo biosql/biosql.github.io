@@ -4,8 +4,8 @@ permalink: wiki/Releases
 layout: wiki
 ---
 
-BioSQL release v1.0
--------------------
+BioSQL release v1.0.0
+---------------------
 
 This is a release of the core BioSQL schema, not including recent
 extensions.
@@ -66,7 +66,8 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
         correctness and compatibility with a current revision of
         HSQLDB?*
 
-9.  Write release announcement.
+9.  Write release announcement. *Done.
+    --[Hilmar](User%3AHlapp "wikilink") 10:52, 5 March 2008 (EST)*
 10. Tag release with biosql-rel-1.0.0
 11. Package BioSQL for release, upload to download site. *Which site
     should we use? Is there a common one for Open-Bio? Create separate
