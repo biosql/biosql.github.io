@@ -4,8 +4,7 @@ BioSQL is a generic relational model covering sequences, features, sequence and 
 
 While in its original incarnation (in 2001) conceived by Ewan Birney as a local relational store for GenBank, the project has since become a collaboration between the [[bp:Main Page|BioPerl]], [[biopython:Main Page|BioPython]], [[bj:Main Page|BioJava]], and [http://bioruby.org BioRuby] projects. The goal is to build a sufficiently generic schema for persistent storage of sequences, features, and annotation in a way that is interoperable between the Bio* projects. Each Bio* project has a [[#Language Bindings|language binding]] (object-relational mapping, ORM) to BioSQL.
 
-===Schema Overview===
-A good introduction to the core BioSQL schema and it's intended use is the [[Schema Overview|schema overview]] document.
+'''Schema Overview:''' A good introduction to the core BioSQL schema and it's intended use is the [[Schema Overview|schema overview]] document.
 
 * [[Extensions|Extension modules]] extend the core schema and are optional unless specifically needed for storing or retrieving the respective data types the module accommodates. At present, there is one extension module, PhyloDB, for storing phylogenetic trees and taxonomies.
 * Supported RDBMs are at present PostgreSQL, MySQL, Oracle, HSQLDB, and Apache Derby for the core schema.

@@ -22,10 +22,9 @@ is interoperable between the Bio\* projects. Each Bio\* project has a
 [language binding](#Language_Bindings "wikilink") (object-relational
 mapping, ORM) to BioSQL.
 
-### Schema Overview
-
-A good introduction to the core BioSQL schema and it's intended use is
-the [schema overview](Schema_Overview "wikilink") document.
+**Schema Overview:** A good introduction to the core BioSQL schema and
+it's intended use is the [schema overview](Schema_Overview "wikilink")
+document.
 
 -   [Extension modules](Extensions "wikilink") extend the core schema
     and are optional unless specifically needed for storing or
