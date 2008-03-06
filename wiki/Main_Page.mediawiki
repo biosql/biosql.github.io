@@ -28,7 +28,7 @@ The [[Downloads]] section has links to downloads for current and past releases a
 
 == Bug Reports & Enhancement Requests ==
 
-We are in the process of adding a BioSQL category to the O|B|F Bugzilla instance. Until then, please simply report bugs directly to the BioSQL mailing list at [mailto:biosql-l%40lists%2eopen-bio%2eorg biosql-l&#64;lists&#46;open-bio&#46;org].
+The O|B|F Bugzilla instance has a BioSQL product [http://bugzilla.open-bio.org/enter_bug.cgi?product=BioSQL to which you can submit bugs]. You may also report issues directly to the BioSQL mailing list at [mailto:biosql-l%40lists%2eopen-bio%2eorg biosql-l&#64;lists&#46;open-bio&#46;org].
 
 This wiki documents [[Enhancement Requests|enhancement requests and which BioSQL version they are scheduled]] to be incorporated in (if they have been scheduled yet).
 

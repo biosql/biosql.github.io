@@ -83,9 +83,9 @@ to this website.*
 Bug Reports & Enhancement Requests
 ----------------------------------
 
-We are in the process of adding a BioSQL category to the O|B|F Bugzilla
-instance. Until then, please simply report bugs directly to the BioSQL
-mailing list at
+The O|B|F Bugzilla instance has a BioSQL product [to which you can
+submit bugs](http://bugzilla.open-bio.org/enter_bug.cgi?product=BioSQL).
+You may also report issues directly to the BioSQL mailing list at
 [biosql-l@lists.open-bio.org](mailto:biosql-l%40lists%2eopen-bio%2eorg).
 
 This wiki documents [enhancement requests and which BioSQL version they
