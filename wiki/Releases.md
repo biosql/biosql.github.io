@@ -71,7 +71,8 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
 10. Tag release with biosql-rel-1.0.0 *Done.
     --[Hilmar](User%3AHlapp "wikilink") 10:53, 5 March 2008 (EST)*
 11. Package BioSQL for release, upload to download
-    site (http://biosql.org/DIST)
+    site (http://biosql.org/DIST) *Done, with MD5 signatures.
+    --[Hilmar](User%3AHlapp "wikilink") 17:07, 6 March 2008 (EST)*
 12. Release:
     -   Add download and release link to wiki on front page (also add
         Downloads page ot sidebar).
