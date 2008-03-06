@@ -37,10 +37,13 @@ document.
 Downloads & Releases
 --------------------
 
-We are currently in the process of releasing the 1.0 version of the core
-schema. A [detailed release plan](Releases "wikilink") with status
-information is available. The PhyloDB extension module has not been
-released yet and is only available from the [Subversion
+The [current release of the BioSQL core schema is
+v1.0.0](Downloads "wikilink"). [Release plans](Releases "wikilink") with
+status information for upcoming releases are available, or will be
+posted on this wiki.
+
+The PhyloDB extension module has not been released yet and is only
+available from the [Subversion
 repository](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk).
 [Instructions for downloading code from anonymous
 svn](http://open-bio.org/wiki/SourceCode#Downloading_and_updating_code_via_Anonymous_SVN)
