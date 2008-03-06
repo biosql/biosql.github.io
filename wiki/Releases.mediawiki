@@ -26,7 +26,7 @@ Note: open questions are in ''italics.'' If you have thoughts or feedback on any
 #* ''Can the HSQLDB version be tested by anyone for syntactic correctness and compatibility with a current revision of HSQLDB?''
 # Write release announcement. ''Done. --[[User%3AHlapp|Hilmar]] 10:52, 5 March 2008 (EST)''
 # Tag release with biosql-rel-1.0.0 ''Done. --[[User%3AHlapp|Hilmar]] 10:53, 5 March 2008 (EST)''
-# Package BioSQL for release, upload to download site (http://biosql.org/DIST)
+# Package BioSQL for release, upload to download site (http://biosql.org/DIST) ''Done, with MD5 signatures. --[[User%3AHlapp|Hilmar]] 17:07, 6 March 2008 (EST)''
 # Release:
 #* Add download and release link to wiki on front page (also add Downloads page ot sidebar).
 #* Post announcement to biosql-l and news.open-bio.org.
