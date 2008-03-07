@@ -73,7 +73,8 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
 11. Package BioSQL for release, upload to download
     site (http://biosql.org/DIST) *Done, with MD5 signatures.
     --[Hilmar](User%3AHlapp "wikilink") 17:07, 6 March 2008 (EST)*
-12. Release:
+12. Release: *Done. --[Hilmar](User%3AHlapp "wikilink") 22:02, 6 March
+    2008 (EST)*
     -   Add download and release link to wiki on front page (also add
         Downloads page ot sidebar).
     -   Post announcement to biosql-l and news.open-bio.org.
