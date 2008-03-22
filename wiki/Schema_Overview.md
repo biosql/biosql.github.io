@@ -85,7 +85,7 @@ SQL example - fetch the accessions of all sequences from SwissProt:
 
 `SELECT DISTINCT bioentry.accession`  
 `FROM   bioentry JOIN biodatabase USING (biodatabase_id)`  
-`WHERE  biodatabase.name = 'swiss'`
+`WHERE  biodatabase.name = 'swiss'  -- or 'Swiss-Prot'`
 
 </sql>
 
