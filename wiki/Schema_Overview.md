@@ -223,7 +223,7 @@ Primate lineage using a self-join: <sql>
 `       ON (a.left_value < b.right_value AND a.left_value > b.left_value)`  
 `       JOIN taxon_name`  
 `       ON a.taxon_id = taxon_name.taxon_id`  
-`WHERE taxon_name.name = 'Primate'`
+`WHERE taxon_name.name = 'primate'  -- 'Primata' or 'Primates'`
 
 </sql>
 
