@@ -242,8 +242,8 @@ below under TERM).
 The location of each seqfeature (or sub-seqfeature) is defined by a
 location entity, describing the stop and start coordinates and strand. A
 seqfeature may have multiple locations (i.e. split locations are
-handled). Start and stop coordinates may be left NULL to accomodate some
-forms of "fuzzy" locations. Additionally, a location may refer to a
+handled). Start and stop coordinates may be left NULL to accommodate
+some forms of "fuzzy" locations. Additionally, a location may refer to a
 "remote" sequence, i.e. not the sequence associated with the bioentry,
 this is accomplished by a dbxref\_id link.
 
