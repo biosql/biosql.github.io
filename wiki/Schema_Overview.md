@@ -177,7 +177,7 @@ use the BioSQL script load\_taxonomy.pl to populate them.
 The taxon\_name.taxon\_id field is meant to store an NCBI taxon id. The
 name\_class field stores tags to describe taxonomic names (e.g.
 "scientific name") and the name field stores the value (e.g "Homo
-sapien"). This flexibility allows us to store such things as synonyms
+sapiens"). This flexibility allows us to store such things as synonyms
 and common names as well as the expected binomial.
 
 The taxon table is designed to store the taxonomic relationship between
