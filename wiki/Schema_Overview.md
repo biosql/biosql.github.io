@@ -225,6 +225,17 @@ Primate lineage using a self-join: <sql>
 `       ON a.taxon_id = taxon_name.taxon_id`  
 `WHERE taxon_name.name = 'primate'  -- 'Primata' or 'Primates'`
 
+</sql> Or list all species(final nodes) of Fungi (so no all hierarchy of
+parent nodes but lists the downstream, child path instead): <sql>
+
+`SELECT DISTINCT include.ncbi_taxon_id FROM taxon`  
+`   INNER JOIN taxon AS include ON`  
+`     (include.left_value BETWEEN taxon.left_value`  
+`       AND taxon.right_value)`  
+`WHERE taxon.taxon_id IN`  
+`  (SELECT taxon_id FROM taxon_name`  
+`   WHERE name LIKE "%fungi%"))`
+
 </sql>
 
 Sequence Features with Location and Annotation
