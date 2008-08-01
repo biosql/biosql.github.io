@@ -4,6 +4,38 @@ permalink: wiki/Releases
 layout: wiki
 ---
 
+BioSQL release v1.0.1
+---------------------
+
+This is an update release of the v1.0 core BioSQL schema (code-named
+Tokyo), not including recent extensions.
+
+### Release schedule
+
+Note: open questions are in *italics.* If you have thoughts or feedback
+on any of the below, please email them to biosql-l@lists.open-bio.org.
+
+1.  Update INSTALL file
+    -   Fix inconsistencies in naming of the BioSQL database instance
+        (here and with Bioperl-db). Will name it simply biosql from
+        now on.
+    -   Add note about current incompatibility with PostgreSQL v8.3+.
+
+2.  Implement scheduled changes
+    -   Widen column width constraint of dbxref.accession and
+        correspondingly bioentry.accession. Will use 128 chars for now.
+    -   Add migration scripts at least for Pg, MySQL, and Oracle.
+
+3.  Update Changes file.
+4.  Merge changes to biosql-release-1-0 branch.
+5.  Write release announcement.
+6.  Tag release with biosql-rel-1.0.1
+7.  Package BioSQL for release, upload to download
+    site (http://biosql.org/DIST)
+8.  Release:
+    -   Add download and release link to wiki on front page.
+    -   Post announcement to biosql-l and news.open-bio.org.
+
 BioSQL release v1.0.0
 ---------------------
 
