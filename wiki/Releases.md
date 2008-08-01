@@ -13,7 +13,8 @@ Tokyo), not including recent extensions.
 Note: open questions are in *italics.* If you have thoughts or feedback
 on any of the below, please email them to biosql-l@lists.open-bio.org.
 
-1.  Update INSTALL file
+1.  Update INSTALL file *Done. --[Hilmar](User%3AHlapp "wikilink")
+    05:02, 1 August 2008 (UTC)*
     -   Fix inconsistencies in naming of the BioSQL database instance
         (here and with Bioperl-db). Will name it simply biosql from
         now on.
@@ -25,7 +26,8 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
         correspondingly bioentry.accession. Will use 128 chars for now.
     -   Add migration scripts at least for Pg, MySQL, and Oracle.
 
-3.  Update Changes file.
+3.  Update Changes file. *Done. --[Hilmar](User%3AHlapp "wikilink")
+    05:02, 1 August 2008 (UTC)*
 4.  Merge changes to biosql-release-1-0 branch.
 5.  Write release announcement.
 6.  Tag release with biosql-rel-1.0.1
