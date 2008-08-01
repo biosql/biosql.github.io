@@ -4,13 +4,13 @@ This is an update release of the v1.0 core BioSQL schema (code-named Tokyo), not
 
 Note: open questions are in ''italics.'' If you have thoughts or feedback on any of the below, please email them to biosql-l&#64;lists&#46;open-bio&#46;org.
 
-# Update INSTALL file
+# Update INSTALL file ''Done. --[[User%3AHlapp|Hilmar]] 05:02, 1 August 2008 (UTC)''
 #* Fix inconsistencies in naming of the BioSQL database instance (here and with Bioperl-db). Will name it simply biosql from now on.
 #* Add note about current incompatibility with PostgreSQL v8.3+.
 # Implement [[Enhancement_Requests#Scheduled_for_v1.0.x|scheduled changes]]
 #* Widen column width constraint of dbxref.accession and correspondingly bioentry.accession. Will use 128 chars for now.
 #* Add migration scripts at least for Pg, MySQL, and Oracle. 
-# Update Changes file.
+# Update Changes file. ''Done. --[[User%3AHlapp|Hilmar]] 05:02, 1 August 2008 (UTC)''
 # Merge changes to biosql-release-1-0 branch. 
 # Write release announcement. 
 # Tag release with biosql-rel-1.0.1
