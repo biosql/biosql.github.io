@@ -10,8 +10,6 @@ BioSQL release v1.0.1
 This is an update release of the v1.0 core BioSQL schema (code-named
 Tokyo), not including recent extensions.
 
-### Release schedule
-
 Note: open questions are in *italics.* If you have thoughts or feedback
 on any of the below, please email them to biosql-l@lists.open-bio.org.
 
@@ -41,8 +39,6 @@ BioSQL release v1.0.0
 
 This is a release of the core BioSQL schema, not including recent
 extensions.
-
-### Release schedule
 
 Note: open questions are in *italics.* If you have thoughts or feedback
 on any of the below, please email them to biosql-l@lists.open-bio.org.
