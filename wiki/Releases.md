@@ -19,7 +19,8 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
         now on.
     -   Add note about current incompatibility with PostgreSQL v8.3+.
 
-2.  Implement scheduled changes
+2.  Implement [scheduled
+    changes](Enhancement_Requests#Scheduled_for_v1.0.x "wikilink")
     -   Widen column width constraint of dbxref.accession and
         correspondingly bioentry.accession. Will use 128 chars for now.
     -   Add migration scripts at least for Pg, MySQL, and Oracle.
