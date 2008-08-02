@@ -37,9 +37,11 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
     --[Hilmar](User%3AHlapp "wikilink") 12:21, 2 August 2008 (UTC)*
 6.  Write release announcement. *Done.
     --[Hilmar](User%3AHlapp "wikilink") 12:21, 2 August 2008 (UTC)*
-7.  Tag release with biosql-rel-1.0.1
+7.  Tag release with biosql-rel-1.0.1 *Done.
+    --[Hilmar](User%3AHlapp "wikilink") 13:42, 2 August 2008 (UTC)*
 8.  Package BioSQL for release, upload to download
-    site (http://biosql.org/DIST)
+    site (http://biosql.org/DIST) *Done.
+    --[Hilmar](User%3AHlapp "wikilink") 13:42, 2 August 2008 (UTC)*
 9.  Release:
     -   Add download and release link to wiki on front page.
     -   Post announcement to biosql-l and news.open-bio.org.
