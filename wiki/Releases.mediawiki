@@ -7,9 +7,10 @@ Note: open questions are in ''italics.'' If you have thoughts or feedback on any
 # Update INSTALL file ''Done. --[[User%3AHlapp|Hilmar]] 05:02, 1 August 2008 (UTC)''
 #* Fix inconsistencies in naming of the BioSQL database instance (here and with Bioperl-db). Will name it simply biosql from now on.
 #* Add note about current incompatibility with PostgreSQL v8.3+.
-# Implement [[Enhancement_Requests#Scheduled_for_v1.0.x|scheduled changes]]
+# Implement [[Enhancement_Requests#Scheduled_for_v1.0.x|scheduled changes]] ''Done. --[[User%3AHlapp|Hilmar]] 02:24, 2 August 2008 (UTC)''
 #* Widen column width constraint of dbxref.accession and correspondingly bioentry.accession. Will use 128 chars for now.
 #* Add migration scripts at least for Pg, MySQL, and Oracle. 
+# Fix load_ncbi_taxonomy.pl to not rely on primary key and NCBI taxon ID to be identical. ''Done. --[[User%3AHlapp|Hilmar]] 02:24, 2 August 2008 (UTC)''
 # Update Changes file. ''Done. --[[User%3AHlapp|Hilmar]] 05:02, 1 August 2008 (UTC)''
 # Merge changes to biosql-release-1-0 branch. 
 # Write release announcement. 
