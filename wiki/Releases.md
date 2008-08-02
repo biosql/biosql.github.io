@@ -22,18 +22,23 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
 
 2.  Implement [scheduled
     changes](Enhancement_Requests#Scheduled_for_v1.0.x "wikilink")
+    *Done. --[Hilmar](User%3AHlapp "wikilink") 02:24, 2 August
+    2008 (UTC)*
     -   Widen column width constraint of dbxref.accession and
         correspondingly bioentry.accession. Will use 128 chars for now.
     -   Add migration scripts at least for Pg, MySQL, and Oracle.
 
-3.  Update Changes file. *Done. --[Hilmar](User%3AHlapp "wikilink")
+3.  Fix load\_ncbi\_taxonomy.pl to not rely on primary key and NCBI
+    taxon ID to be identical. *Done. --[Hilmar](User%3AHlapp "wikilink")
+    02:24, 2 August 2008 (UTC)*
+4.  Update Changes file. *Done. --[Hilmar](User%3AHlapp "wikilink")
     05:02, 1 August 2008 (UTC)*
-4.  Merge changes to biosql-release-1-0 branch.
-5.  Write release announcement.
-6.  Tag release with biosql-rel-1.0.1
-7.  Package BioSQL for release, upload to download
+5.  Merge changes to biosql-release-1-0 branch.
+6.  Write release announcement.
+7.  Tag release with biosql-rel-1.0.1
+8.  Package BioSQL for release, upload to download
     site (http://biosql.org/DIST)
-8.  Release:
+9.  Release:
     -   Add download and release link to wiki on front page.
     -   Post announcement to biosql-l and news.open-bio.org.
 
