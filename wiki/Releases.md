@@ -33,8 +33,10 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
     02:24, 2 August 2008 (UTC)*
 4.  Update Changes file. *Done. --[Hilmar](User%3AHlapp "wikilink")
     05:02, 1 August 2008 (UTC)*
-5.  Merge changes to biosql-release-1-0 branch.
-6.  Write release announcement.
+5.  Merge changes to biosql-release-1-0 branch. *Done.
+    --[Hilmar](User%3AHlapp "wikilink") 12:21, 2 August 2008 (UTC)*
+6.  Write release announcement. *Done.
+    --[Hilmar](User%3AHlapp "wikilink") 12:21, 2 August 2008 (UTC)*
 7.  Tag release with biosql-rel-1.0.1
 8.  Package BioSQL for release, upload to download
     site (http://biosql.org/DIST)

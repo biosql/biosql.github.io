@@ -12,8 +12,8 @@ Note: open questions are in ''italics.'' If you have thoughts or feedback on any
 #* Add migration scripts at least for Pg, MySQL, and Oracle. 
 # Fix load_ncbi_taxonomy.pl to not rely on primary key and NCBI taxon ID to be identical. ''Done. --[[User%3AHlapp|Hilmar]] 02:24, 2 August 2008 (UTC)''
 # Update Changes file. ''Done. --[[User%3AHlapp|Hilmar]] 05:02, 1 August 2008 (UTC)''
-# Merge changes to biosql-release-1-0 branch. 
-# Write release announcement. 
+# Merge changes to biosql-release-1-0 branch. ''Done. --[[User%3AHlapp|Hilmar]] 12:21, 2 August 2008 (UTC)''
+# Write release announcement. ''Done. --[[User%3AHlapp|Hilmar]] 12:21, 2 August 2008 (UTC)''
 # Tag release with biosql-rel-1.0.1
 # Package BioSQL for release, upload to download site (http://biosql.org/DIST)
 # Release:
