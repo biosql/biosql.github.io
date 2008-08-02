@@ -11,7 +11,7 @@ While in its original incarnation (in 2001) conceived by Ewan Birney as a local 
 
 == Downloads & Releases ==
 
-The [[Downloads|current release of the BioSQL core schema is v1.0.0]]. [[Releases|Release plans]] with status information for upcoming releases are available, or will be posted on this wiki. 
+The [[Downloads|current release of the BioSQL core schema is v1.0.1]]. [[Releases|Release plans]] with status information for upcoming releases are available, or will be posted on this wiki. 
 
 The PhyloDB extension module has not been released yet and is only available from the [http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk Subversion repository]. [http://open-bio.org/wiki/SourceCode#Downloading_and_updating_code_via_Anonymous_SVN Instructions for downloading code from anonymous svn] are on the O|B|F wiki; the URL for the main trunk of BioSQL is <code>svn://code.open-bio.org/biosql/biosql-schema/trunk</code>.
 

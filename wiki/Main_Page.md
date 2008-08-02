@@ -38,7 +38,7 @@ Downloads & Releases
 --------------------
 
 The [current release of the BioSQL core schema is
-v1.0.0](Downloads "wikilink"). [Release plans](Releases "wikilink") with
+v1.0.1](Downloads "wikilink"). [Release plans](Releases "wikilink") with
 status information for upcoming releases are available, or will be
 posted on this wiki.
 
