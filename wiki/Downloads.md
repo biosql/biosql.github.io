@@ -21,9 +21,9 @@ following formats:
 
 MD5 signatures (http://biosql.org/DIST/biosql-1.0.1.SIGNATURES.md5):
 
-`MD5 (biosql-1.0.1.tar.gz) = be9f48dfa9fbc779ea8faf2fccef99bc`  
-`MD5 (biosql-1.0.1.tar.bz2) = 1d631407e68991ee2867b0191991fac6`  
-`MD5 (biosql-1.0.1.zip) = 81556f99574c8302917a99c242458c60`
+`MD5 (biosql-1.0.1.tar.gz) = aab431c4fd0ed429c0f5f07df5c915ec`  
+`MD5 (biosql-1.0.1.tar.bz2) = 57b14c8f2695d86516ad52c024898889`  
+`MD5 (biosql-1.0.1.zip) = f0f6dd6855ee3e5a0e8457d97bc1efb1`
 
 Release notes can be found in the file
 [Release.txt](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/tags/biosql-release-1-0-1/Release.txt),
