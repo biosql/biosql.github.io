@@ -42,7 +42,8 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
 8.  Package BioSQL for release, upload to download
     site (http://biosql.org/DIST) *Done.
     --[Hilmar](User%3AHlapp "wikilink") 13:42, 2 August 2008 (UTC)*
-9.  Release:
+9.  Release: *Done on Aug 2, except for the news post which was done by
+    Peter Cock a few days later.*
     -   Add download and release link to wiki on front page.
     -   Post announcement to biosql-l and news.open-bio.org.
 
