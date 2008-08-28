@@ -16,7 +16,7 @@ Note: open questions are in ''italics.'' If you have thoughts or feedback on any
 # Write release announcement. ''Done. --[[User%3AHlapp|Hilmar]] 12:21, 2 August 2008 (UTC)''
 # Tag release with biosql-rel-1.0.1 ''Done. --[[User%3AHlapp|Hilmar]] 13:42, 2 August 2008 (UTC)''
 # Package BioSQL for release, upload to download site (http://biosql.org/DIST) ''Done. --[[User%3AHlapp|Hilmar]] 13:42, 2 August 2008 (UTC)''
-# Release:
+# Release: ''Done on Aug 2, except for the news post which was done by Peter Cock a few days later.''
 #* Add download and release link to wiki on front page.
 #* Post announcement to biosql-l and news.open-bio.org.
 
