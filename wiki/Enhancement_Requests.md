@@ -100,19 +100,6 @@ column order in existing compound indexes to increase performance.
 Unique key changes do not, however, fall into this category, as language
 bindings may frequently rely on them for uniquely locating records.
 
-### Some character column widths are too narrow
-
-[Erik Jan reports](http://bugzilla.open-bio.org/show_bug.cgi?id=2389)
-that some varchar(n) type columns are constrained too narrow to
-accommodate the latest UniProt database.
-
-Though it isn't clear for the above bug report whether the issue is due
-to a parsing error or not, and if it is a legitimate column value, which
-column(s) is (are) affected, Hilmar Lapp did hit similar problems for
-dbxref.accession when importing the Gene Ontology into the Oracle
-version of BioSQL, which is why the width of that column is 64 (and not
-40) in that version.
-
 Pending scheduling
 ------------------
 
@@ -340,3 +327,15 @@ list](http://lists.open-bio.org/pipermail/biosql-l/2006-July/001026.html).
 
 There should be individual author records instead of a single string,
 and possibly a full bibliographic record model.
+
+Applied or fixed
+----------------
+
+### Some character column widths are too narrow
+
+[Erik Jan reports](http://bugzilla.open-bio.org/show_bug.cgi?id=2389)
+that some varchar(n) type columns are constrained too narrow to
+accommodate the latest UniProt database.
+
+Fix: expanded the column width of dbxref.accession and
+bioentry.accession to 128 in v1.0.1.
