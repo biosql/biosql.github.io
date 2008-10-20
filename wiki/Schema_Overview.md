@@ -234,7 +234,7 @@ parent nodes but lists the downstream, child path instead): <sql>
 `       AND taxon.right_value)`  
 `WHERE taxon.taxon_id IN`  
 `  (SELECT taxon_id FROM taxon_name`  
-`   WHERE name LIKE "%fungi%"))`
+`   WHERE name LIKE '%fungi%')`
 
 </sql>
 
