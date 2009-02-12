@@ -23,7 +23,7 @@ is interoperable between the Bio\* projects. Each Bio\* project has a
 mapping, ORM) to BioSQL.
 
 **Schema Overview:** A good introduction to the core BioSQL schema and
-it's intended use is the [schema overview](Schema_Overview "wikilink")
+its intended use is the [schema overview](Schema_Overview "wikilink")
 document.
 
 -   [Extension modules](Extensions "wikilink") extend the core schema
