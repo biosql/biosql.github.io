@@ -36,9 +36,11 @@ GenBank
 GFF3
 ----
 
-*Work in progress - see biosql-list threads: [Importing GFF3 files into
-a BioSQL
-database?](http://lists.open-bio.org/pipermail/biosql-l/2009-February/001492.html)*
+**Work in progress** - Use the information in this section at your own
+risk!
+
+See biosql-list threads: [Importing GFF3 files into a BioSQL
+database?](http://lists.open-bio.org/pipermail/biosql-l/2009-February/001492.html)''
 following the [SO's GFF3
 specification](http://www.sequenceontology.org/gff3.shtml) and [this
 blog

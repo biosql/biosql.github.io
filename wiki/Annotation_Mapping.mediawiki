@@ -1,5 +1,6 @@
 This page documents the recommended BioSQL-standard of mapping sequence annotations (through Bio* object models) to the BioSQL relational model.
 
+
 ==GenBank==
 
 {| border="1" cellpadding="2" cellspacing="0"
@@ -44,7 +45,9 @@ This page documents the recommended BioSQL-standard of mapping sequence annotati
 
 ==GFF3==
 
-''Work in progress - see biosql-list threads: [http://lists.open-bio.org/pipermail/biosql-l/2009-February/001492.html Importing GFF3 files into a BioSQL database?]'' following the [http://www.sequenceontology.org/gff3.shtml SO's GFF3 specification] and [http://bcbio.wordpress.com/2009/02/22/exploring-bioperl-genbank-to-gff-mapping/ this blog entry].
+'''Work in progress''' - Use the information in this section at your own risk!
+
+See biosql-list threads: [http://lists.open-bio.org/pipermail/biosql-l/2009-February/001492.html Importing GFF3 files into a BioSQL database?]'' following the [http://www.sequenceontology.org/gff3.shtml SO's GFF3 specification] and [http://bcbio.wordpress.com/2009/02/22/exploring-bioperl-genbank-to-gff-mapping/ this blog entry].
 
 ===Major Columns===
 
