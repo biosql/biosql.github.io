@@ -121,3 +121,7 @@ should be sent to the BioSQL mailing list at
 You can also [subscribe](http://open-bio.org/mailman/listinfo/biosql-l)
 to the mailing list to keep up to date with discussions and
 announcements.
+
+In addition, the [biosql-guts
+list](http://open-bio.org/mailman/listinfo/biosql-guts-l) is for bug
+tracking and commit messages.
