@@ -1,0 +1,27 @@
+This document describes some of the tables and fields in the PhyloDB schema. It also aims to demonstrate functional capabilities using example SQL. Design philosophies and expectations are presented with reasoning. 
+
+=Tables=
+
+==TREE==
+
+==TREE_ROOT==
+
+==TREE_QUALIFIER_VALUE==
+
+==TREE_Dbxref==
+
+==NODE==
+
+==NODE_PATH==
+
+==NODE_TAXON==
+
+==NODE_BIOENTRY==
+
+==NODE_Dbxref==
+
+==EDGE_QUALIFIER_VALUE==
+
+==EDGE==
+
+==EDGE_QUALIFIER_VALUE==
