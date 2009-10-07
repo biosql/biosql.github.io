@@ -12,8 +12,6 @@ Tree stores information on individual bifurcating non-cyclic graphs. Trees are u
 ==TREE_ROOT==
 Tree_root stores information on the root node of a tree. Tree roots are uniquely identified by thier "tree_root_id". The tree the root is from is identified by the "tree_id" while the node table record is identified by "node_id". "is_alternate" is TRUE if the root node is the preferential (most likely) root node of the tree, and FALSE otherwise. The "significance" (such as likelihood, or posterior probability) with which the node is the root node. This only has meaning if the method used for reconstructing the tree calculates this value.
 
-===Questions about TREE_ROOT?===
-
 ==TREE_QUALIFIER_VALUE==
 This stores metadata associated with an entire tree. "tree_id" identifies the tree with which the metadata is associated. The name of the metadata element as a BioSQL term from a controlled vocabulary (or ontology) is identified by the foreign key "term_id". The value of the metadata element is stored as text in "value". The "rank" field stores the index of the metadata value if there is more than one value for the same metadata element. If there is only one value, this may be left at the default of zero.
 

@@ -40,8 +40,6 @@ otherwise. The "significance" (such as likelihood, or posterior
 probability) with which the node is the root node. This only has meaning
 if the method used for reconstructing the tree calculates this value.
 
-### Questions about TREE\_ROOT?
-
 TREE\_QUALIFIER\_VALUE
 ----------------------
 
