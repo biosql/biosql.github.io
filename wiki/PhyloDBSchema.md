@@ -80,8 +80,9 @@ number of a sequences, or any other construct that uniquely identifies
 the node within one tree. "tree\_id" specifies which tree each node is a
 part of. "left\_idx and "right\_idx" specify the left and right values
 of the nested set optimization structure for efficient hierarchical
-queries. These values needs to be precomputed by a program, see J.
-Celko, SQL for Smarties.
+queries. These values needs to be precomputed by a program, see [J.
+Celko, SQL for
+Smarties](http://rs18.rapidshare.com/files/4441805/Trees_and_Hierarchies_in_SQL_for_Smarties.pdf).
 
 NODE\_PATH
 ----------
