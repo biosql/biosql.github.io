@@ -39,6 +39,7 @@ Node_taxon links tree nodes to taxa and is uniquely identified by "node_taxon_id
 This table links a node to a BioSQL [[Schema_Overview#BIOENTRY|bioentry]]. link are uniquely identified by thier "node_bioentry_id". "node_id" is the node to which the bioentry is being linked. "bioentry_id" is the bioentry being linked to the node. "rank" is the index of this bioentry within the list of bioentries being linked to the node, if the order is significant. Typically, this will be used to represent the position of the respective sequence within the concatenated alignment, or the partition index.
 
 ==NODE_Dbxref==
+Sores cross-references between nodes and other database entries. "node_id" is the node to which the database cross-reference is being assigned. "dbxref_id" is the database cross-reference being assigned to the node. "term_id" is the type of the database cross-reference as a controlled vocabulary or ontology term. The type of a node identifier should be 'primary identifier'.
 
 =Edge Tables=
 

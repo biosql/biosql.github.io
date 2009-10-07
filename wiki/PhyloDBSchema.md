@@ -138,6 +138,13 @@ sequence within the concatenated alignment, or the partition index.
 NODE\_Dbxref
 ------------
 
+Sores cross-references between nodes and other database entries.
+"node\_id" is the node to which the database cross-reference is being
+assigned. "dbxref\_id" is the database cross-reference being assigned to
+the node. "term\_id" is the type of the database cross-reference as a
+controlled vocabulary or ontology term. The type of a node identifier
+should be 'primary identifier'.
+
 Edge Tables
 ===========
 
