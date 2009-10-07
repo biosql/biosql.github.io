@@ -45,6 +45,20 @@ if the method used for reconstructing the tree calculates this value.
 TREE\_QUALIFIER\_VALUE
 ----------------------
 
+This stores metadata associated with an entire tree. "tree\_id"
+identifies the tree with which the metadata is associated. The name of
+the metadata element as a BioSQL term from a controlled vocabulary (or
+ontology) is identified by the foreign key "term\_id". The value of the
+metadata element is stored as text in "value". The "rank" field stores
+the index of the metadata value if there is more than one value for the
+same metadata element. If there is only one value, this may be left at
+the default of zero.
+
+Questions about TREE\_QUALIFIER\_VALUE
+--------------------------------------
+
+1.  Why is use rank and not tow tree qualifiers?
+
 TREE\_Dbxref
 ------------
 
