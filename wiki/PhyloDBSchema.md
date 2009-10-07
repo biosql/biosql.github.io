@@ -84,7 +84,7 @@ Celko, SQL for Smarties.
 
 ### Questions about NODE
 
-`#How do I compute "left_idx" and "right_idx"?`
+1.  How do I compute "left\_idx" and "right\_idx"?
 
 NODE\_PATH
 ----------
