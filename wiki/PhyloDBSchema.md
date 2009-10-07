@@ -52,8 +52,7 @@ the index of the metadata value if there is more than one value for the
 same metadata element. If there is only one value, this may be left at
 the default of zero.
 
-Questions about TREE\_QUALIFIER\_VALUE
---------------------------------------
+### Questions about TREE\_QUALIFIER\_VALUE
 
 1.  Why is use rank and not tow tree qualifiers?
 
