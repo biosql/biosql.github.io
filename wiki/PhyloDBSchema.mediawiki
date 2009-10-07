@@ -49,3 +49,4 @@ Sores cross-references between nodes and other database entries. "node_id" is th
 Edge stores information on the edges between nodes each is uniquely identified by the "edge_id". The "child_node_id" is the endpoint node of the two nodes connected by a directed edge. In a phylogenetic tree, this is the descendant, while the "parent_node_id" is the startpoint node of the two nodes connected by a directed edge. In a phylogenetic tree, this is the ancestor.
 
 ==EDGE_QUALIFIER_VALUE==
+Stores associations between edges and metadata. "value" is the value of the attribute/value pair association of metadata (if applicable). "rank" is the index of the metadata value if there is more than one value for the same metadata element. If there is only one value, this may be left at the default of zero. "edge_id" is the tree edge to which the metadata is being associated. "term_id" is the name of the metadate element as a term from a controlled vocabulary (or ontology).
