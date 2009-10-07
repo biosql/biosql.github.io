@@ -15,7 +15,8 @@ PhyloDB
 A PhyloDB extension module for storing phylogenetic trees and taxonomies
 has been under development since December 2006 (started by Bill Piel and
 Hilmar Lapp at the [Phyloinformatics
-Hackathon](http://hackathon.nescent.org/Phylohackathon_1)).
+Hackathon](http://hackathon.nescent.org/Phylohackathon_1)). The [schema
+overview](PhyloDBSchema "wikilink") is good place to start.
 
 The module is in pre-release status and is only available via
 [Subversion](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk)
