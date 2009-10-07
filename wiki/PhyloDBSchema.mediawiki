@@ -36,6 +36,7 @@ Node path stores directed paths between nodes. In a phylogenetic tree, these are
 Node_taxon links tree nodes to taxa and is uniquely identified by "node_taxon_id". "node_id" is the node to which the taxon is being linked. "taxon_id" is he taxon being linked to the node. "rank" is the index of this taxon within the list of taxa being linked to the node, if the order is significant. Typically, this will be used to represent the position of the respective sequence within the concatenated alignment, or the partition index.
 
 ==NODE_BIOENTRY==
+This table links a node to a BioSQL [[Schema_Overview#BIOENTRY|bioentry]]. link are uniquely identified by thier "node_bioentry_id". "node_id" is the node to which the bioentry is being linked. "bioentry_id" is the bioentry being linked to the node. "rank" is the index of this bioentry within the list of bioentries being linked to the node, if the order is significant. Typically, this will be used to represent the position of the respective sequence within the concatenated alignment, or the partition index.
 
 ==NODE_Dbxref==
 

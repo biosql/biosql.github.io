@@ -126,6 +126,15 @@ or the partition index.
 NODE\_BIOENTRY
 --------------
 
+This table links a node to a BioSQL
+[bioentry](Schema_Overview#BIOENTRY "wikilink"). link are uniquely
+identified by thier "node\_bioentry\_id". "node\_id" is the node to
+which the bioentry is being linked. "bioentry\_id" is the bioentry being
+linked to the node. "rank" is the index of this bioentry within the list
+of bioentries being linked to the node, if the order is significant.
+Typically, this will be used to represent the position of the respective
+sequence within the concatenated alignment, or the partition index.
+
 NODE\_Dbxref
 ------------
 
