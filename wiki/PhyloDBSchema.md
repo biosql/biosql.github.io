@@ -115,6 +115,14 @@ nodes A and B.
 NODE\_TAXON
 -----------
 
+Node\_taxon links tree nodes to taxa and is uniquely identified by
+"node\_taxon\_id". "node\_id" is the node to which the taxon is being
+linked. "taxon\_id" is he taxon being linked to the node. "rank" is the
+index of this taxon within the list of taxa being linked to the node, if
+the order is significant. Typically, this will be used to represent the
+position of the respective sequence within the concatenated alignment,
+or the partition index.
+
 NODE\_BIOENTRY
 --------------
 
