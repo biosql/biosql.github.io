@@ -168,3 +168,7 @@ the same metadata element. If there is only one value, this may be left
 at the default of zero. "edge\_id" is the tree edge to which the
 metadata is being associated. "term\_id" is the name of the metadate
 element as a term from a controlled vocabulary (or ontology).
+
+Branch lengths should be stored as edge qualifier values liked to a term
+identifying the units the distance is in, e.g. parsimony steps or years
+bp or MYA.
