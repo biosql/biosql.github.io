@@ -3,7 +3,11 @@ This document describes some of the tables and fields in the PhyloDB schema. It 
 =Tables=
 
 ==TREE==
-This
+Tree stores information on individual bifurcating non-cyclic graphs. Trees are uniquely identified by thier "tree_id". They also have a "name" and "identifier". They are associated with a BioSQL biodatabase via their "biodatabase_id". The Boolean field "is_rooted" identifies whether a node is rooted or not. The default is TRUE, i.e. rooted. "Node_id" identfies the ''start'' node which is usually the root node of a rooted tree.
+
+===Questions about TREE?===
+#Where do "identifier"s come from?
+#What is the role of the ''start'' node except to identify the root?
 
 ==TREE_ROOT==
 
