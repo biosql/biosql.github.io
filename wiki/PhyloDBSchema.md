@@ -87,13 +87,30 @@ Smarties](http://rs18.rapidshare.com/files/4441805/Trees_and_Hierarchies_in_SQL_
 NODE\_PATH
 ----------
 
-child\_node\_id integer NOT NULL, -- The endpoint node of the two nodes
-connected by a (directed) path. In a phylogenetic tree, this is the
-descendant.
+Node path stores directed paths between nodes. In a phylogenetic tree,
+these are the descendant and ancestoral nodes. "child\_node\_id" is the
+endpoint node of the two nodes connected by the (directed) path. In a
+phylogenetic tree, this is the descendant. "parent\_node\_id" is the
+startpoint node of the two nodes connected by a (directed) path. In a
+phylogenetic tree, this is the ancestor. "path text" defines the path
+from startpoint to endpoint as the series of nodes visited along the
+path. The nodes may be identified by label, or, typically more
+efficient, by their primary key, or left or right value. The latter are
+often smaller than the primary key, and hence consume less space. One
+may increase efficiency further by using a base-34 numeric
+representation (24 letters of the alphabet, plus 10 digits) instead of
+decimal (base-10) representation. The actual method used is not
+important, though it should be used consistently. The "distance" is the
+number of nodes between the parent and child. Thus the path between a
+node and itself has length zero, and length 1 between two nodes directly
+connected by an edge. If there is a path of length l between two nodes A
+and Z and an edge between Z and B, there is a path of length l+1 between
+nodes A and B.
 
-` parent_node_id integer NOT NULL, -- The startpoint node of the two nodes connected by a (directed) path. In a phylogenetic tree, this is the ancestor.`  
-` path text, -- The path from startpoint to endpoint as the series of nodes visited along the path. The nodes may be identified by label, or, typically more efficient, by their primary key, or left or right value. The latter or often smaller than the primary key, and hence consume less space. One may increase efficiency further by using a base-34 numeric representation (24 letters of the alphabet, plus 10 digits) instead of decimal (base-10) representation. The actual method used is not important, though it should be used consistently.`  
-` distance integer NOT NULL, -- The distance (or length) of the path. The path between a node and itself has length zero, and length 1 between two nodes directly connected by an edge. If there is a path of length l between two nodes A and Z and an edge between Z and B, there is a path of length l+1 between nodes A and B.`
+### Questions about NODE\_PATH
+
+1.  Does this not just duplicat information extractable from the node
+    and edge tables?
 
 NODE\_TAXON
 -----------
