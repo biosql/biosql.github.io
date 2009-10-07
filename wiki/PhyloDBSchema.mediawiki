@@ -19,6 +19,7 @@ This stores metadata associated with an entire tree. "tree_id" identifies the tr
 #Why is use rank and not tow tree qualifiers?
 
 ==TREE_Dbxref==
+Stores information on database cross-references assigned to the tree. "tree_id" identifies the tree to which the database corss-reference is being assigned. "dbxref_id" is the database cross-reference assigned to the tree. "term_id" is the type of the database cross-reference as a controlled vocabulary or ontology term. The type of a tree accession should be 'primary identifier'.
 
 ==NODE==
 
