@@ -7,7 +7,8 @@ layout: wiki
 This document describes some of the tables and fields in the PhyloDB
 schema. It also aims to demonstrate functional capabilities using
 example SQL. Design philosophies and expectations are presented with
-reasoning.
+reasoning. Most of this text has been cut-and-pasted from the comments
+associated with the PhyloDB schema.
 
 Tree Tables
 ===========
