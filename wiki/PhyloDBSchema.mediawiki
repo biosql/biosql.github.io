@@ -30,6 +30,12 @@ The node table stores information on the nodes within trees. Each node is unique
 #How do I compute "left_idx" and "right_idx"?
 
 ==NODE_PATH==
+ 
+
+child_node_id integer NOT NULL, -- The endpoint node of the two nodes connected by a (directed) path. In a phylogenetic tree, this is the descendant.
+  parent_node_id integer NOT NULL, -- The startpoint node of the two nodes connected by a (directed) path. In a phylogenetic tree, this is the ancestor.
+  path text, -- The path from startpoint to endpoint as the series of nodes visited along the path. The nodes may be identified by label, or, typically more efficient, by their primary key, or left or right value. The latter or often smaller than the primary key, and hence consume less space. One may increase efficiency further by using a base-34 numeric representation (24 letters of the alphabet, plus 10 digits) instead of decimal (base-10) representation. The actual method used is not important, though it should be used consistently.
+  distance integer NOT NULL, -- The distance (or length) of the path. The path between a node and itself has length zero, and length 1 between two nodes directly connected by an edge. If there is a path of length l between two nodes A and Z and an edge between Z and B, there is a path of length l+1 between nodes A and B.
 
 ==NODE_TAXON==
 
