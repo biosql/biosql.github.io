@@ -160,3 +160,11 @@ tree, this is the ancestor.
 
 EDGE\_QUALIFIER\_VALUE
 ----------------------
+
+Stores associations between edges and metadata. "value" is the value of
+the attribute/value pair association of metadata (if applicable). "rank"
+is the index of the metadata value if there is more than one value for
+the same metadata element. If there is only one value, this may be left
+at the default of zero. "edge\_id" is the tree edge to which the
+metadata is being associated. "term\_id" is the name of the metadate
+element as a term from a controlled vocabulary (or ontology).
