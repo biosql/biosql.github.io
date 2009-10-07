@@ -15,7 +15,7 @@ Tree_root stores information on the root node of a tree. Tree roots are uniquely
 ==TREE_QUALIFIER_VALUE==
 This stores metadata associated with an entire tree. "tree_id" identifies the tree with which the metadata is associated. The name of the metadata element as a BioSQL term from a controlled vocabulary (or ontology) is identified by the foreign key "term_id". The value of the metadata element is stored as text in "value". The "rank" field stores the index of the metadata value if there is more than one value for the same metadata element. If there is only one value, this may be left at the default of zero.
 
-==Questions about TREE_QUALIFIER_VALUE==
+===Questions about TREE_QUALIFIER_VALUE===
 #Why is use rank and not tow tree qualifiers?
 
 ==TREE_Dbxref==
