@@ -83,10 +83,6 @@ of the nested set optimization structure for efficient hierarchical
 queries. These values needs to be precomputed by a program, see J.
 Celko, SQL for Smarties.
 
-### Questions about NODE
-
-1.  How do I compute "left\_idx" and "right\_idx"?
-
 NODE\_PATH
 ----------
 
