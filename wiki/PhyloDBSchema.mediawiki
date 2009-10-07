@@ -10,6 +10,9 @@ Tree stores information on individual bifurcating non-cyclic graphs. Trees are u
 #What is the role of the ''start'' node except to identify the root?
 
 ==TREE_ROOT==
+Tree_root stores information on the root node of a tree. Tree roots are uniquely identified by thier "tree_root_id". The tree the root is from is identified by the "tree_id" while the node table record is identified by "node_id". "is_alternate" is TRUE if the root node is the preferential (most likely) root node of the tree, and FALSE otherwise. The "significance" (such as likelihood, or posterior probability) with which the node is the root node. This only has meaning if the method used for reconstructing the tree calculates this value.
+
+===Questions about TREE_ROOT?===
 
 ==TREE_QUALIFIER_VALUE==
 

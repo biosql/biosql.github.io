@@ -31,6 +31,17 @@ a rooted tree.
 TREE\_ROOT
 ----------
 
+Tree\_root stores information on the root node of a tree. Tree roots are
+uniquely identified by thier "tree\_root\_id". The tree the root is from
+is identified by the "tree\_id" while the node table record is
+identified by "node\_id". "is\_alternate" is TRUE if the root node is
+the preferential (most likely) root node of the tree, and FALSE
+otherwise. The "significance" (such as likelihood, or posterior
+probability) with which the node is the root node. This only has meaning
+if the method used for reconstructing the tree calculates this value.
+
+### Questions about TREE\_ROOT?
+
 TREE\_QUALIFIER\_VALUE
 ----------------------
 
