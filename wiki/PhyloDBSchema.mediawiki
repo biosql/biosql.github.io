@@ -43,7 +43,7 @@ Sores cross-references between nodes and other database entries. "node_id" is th
 
 =Edge Tables=
 
-==EDGE_QUALIFIER_VALUE==
+
 
 ==EDGE==
 

@@ -148,9 +148,6 @@ should be 'primary identifier'.
 Edge Tables
 ===========
 
-EDGE\_QUALIFIER\_VALUE
-----------------------
-
 EDGE
 ----
 
