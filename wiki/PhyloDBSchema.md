@@ -9,8 +9,8 @@ schema. It also aims to demonstrate functional capabilities using
 example SQL. Design philosophies and expectations are presented with
 reasoning.
 
-Tables
-======
+Tree Tables
+===========
 
 TREE
 ----
@@ -66,6 +66,9 @@ the tree. "term\_id" is the type of the database cross-reference as a
 controlled vocabulary or ontology term. The type of a tree accession
 should be 'primary identifier'.
 
+Node Tables
+===========
+
 NODE
 ----
 
@@ -80,6 +83,9 @@ NODE\_BIOENTRY
 
 NODE\_Dbxref
 ------------
+
+Edge Tables
+===========
 
 EDGE\_QUALIFIER\_VALUE
 ----------------------
