@@ -112,6 +112,8 @@ nodes A and B.
 1.  Does this not just duplicate information extractable from the node
     and edge tables?
 2.  When would at branch have mutiple edges between nodes?
+3.  How do you code the path from startpoint to endpoint as the series
+    of nodes visited along the path?
 
 NODE\_TAXON
 -----------

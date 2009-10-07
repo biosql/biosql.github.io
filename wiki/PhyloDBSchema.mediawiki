@@ -31,7 +31,8 @@ Node path stores directed paths between nodes. In a phylogenetic tree, these are
 
 ===Questions about NODE_PATH===
 #Does this not just duplicate information extractable from the node and edge tables?
-# When would at branch have mutiple edges between nodes?
+#When would at branch have mutiple edges between nodes?
+#How do you code the path from startpoint to endpoint as the series of nodes visited along the path?
 
 ==NODE_TAXON==
 Node_taxon links tree nodes to taxa and is uniquely identified by "node_taxon_id". "node_id" is the node to which the taxon is being linked. "taxon_id" is he taxon being linked to the node. "rank" is the index of this taxon within the list of taxa being linked to the node, if the order is significant. Typically, this will be used to represent the position of the respective sequence within the concatenated alignment, or the partition index.
