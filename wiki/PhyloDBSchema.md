@@ -109,8 +109,9 @@ nodes A and B.
 
 ### Questions about NODE\_PATH
 
-1.  Does this not just duplicat information extractable from the node
+1.  Does this not just duplicate information extractable from the node
     and edge tables?
+2.  When would at branch have mutiple edges between nodes?
 
 NODE\_TAXON
 -----------
