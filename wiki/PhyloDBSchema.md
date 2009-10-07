@@ -151,11 +151,12 @@ Edge Tables
 EDGE
 ----
 
-Edge stores information on the edge\_id integer NOT NULL DEFAULT
-nextval('edge\_pk\_seq'::regclass),
-
-` child_node_id integer NOT NULL, -- The endpoint node of the two nodes connected by a directed edge. In a phylogenetic tree, this is the descendant.`  
-` parent_node_id integer NOT NULL, -- The startpoint node of the two nodes connected by a directed edge. In a phylogenetic tree, this is the ancestor.`
+Edge stores information on the edges between nodes each is uniquely
+identified by the "edge\_id". The "child\_node\_id" is the endpoint node
+of the two nodes connected by a directed edge. In a phylogenetic tree,
+this is the descendant, while the "parent\_node\_id" is the startpoint
+node of the two nodes connected by a directed edge. In a phylogenetic
+tree, this is the ancestor.
 
 EDGE\_QUALIFIER\_VALUE
 ----------------------
