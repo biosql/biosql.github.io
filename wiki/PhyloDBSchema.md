@@ -59,6 +59,13 @@ the default of zero.
 TREE\_Dbxref
 ------------
 
+Stores information on database cross-references assigned to the tree.
+"tree\_id" identifies the tree to which the database corss-reference is
+being assigned. "dbxref\_id" is the database cross-reference assigned to
+the tree. "term\_id" is the type of the database cross-reference as a
+controlled vocabulary or ontology term. The type of a tree accession
+should be 'primary identifier'.
+
 NODE
 ----
 
