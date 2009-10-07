@@ -24,6 +24,10 @@ Stores information on database cross-references assigned to the tree. "tree_id" 
 =Node Tables=
 
 ==NODE==
+The node table stores information on the nodes within trees. Each node is uniquely identified through its "node_id". Nodes may ne "label"ed, e.g. with the latin binomial of the taxon, taxonomic rank, the accession number of a sequences, or any other construct that uniquely identifies the node within one tree. "tree_id" specifies which tree each node is a part of. "left_idx and "right_idx" specify the left and right values of the nested set optimization structure for efficient hierarchical queries. These values needs to be precomputed by a program, see J. Celko, SQL for Smarties.
+
+===Questions about NODE===
+ #How do I compute "left_idx" and "right_idx"?
 
 ==NODE_PATH==
 

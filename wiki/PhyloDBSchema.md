@@ -72,6 +72,20 @@ Node Tables
 NODE
 ----
 
+The node table stores information on the nodes within trees. Each node
+is uniquely identified through its "node\_id". Nodes may ne "label"ed,
+e.g. with the latin binomial of the taxon, taxonomic rank, the accession
+number of a sequences, or any other construct that uniquely identifies
+the node within one tree. "tree\_id" specifies which tree each node is a
+part of. "left\_idx and "right\_idx" specify the left and right values
+of the nested set optimization structure for efficient hierarchical
+queries. These values needs to be precomputed by a program, see J.
+Celko, SQL for Smarties.
+
+### Questions about NODE
+
+`#How do I compute "left_idx" and "right_idx"?`
+
 NODE\_PATH
 ----------
 
