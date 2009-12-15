@@ -105,7 +105,7 @@ obtained from the links below.
 
 -   [BioJava](BioJava_BioSQL_ORM "wikilink")
 -   [BioPerl](bp:Bioperl-db "wikilink")
--   BioRuby
+-   [BioRuby](http://bioruby.open-bio.org/wiki/Tutorial#BioSQL)
 -   [BioPython](biopython:BioSQL "wikilink") (this also contains
     excellent documentation for installing BioSQL)
 
