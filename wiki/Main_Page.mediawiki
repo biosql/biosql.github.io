@@ -39,7 +39,7 @@ The Bio* projects provide object relational mapping from their respective object
 
 * [[BioJava BioSQL ORM|BioJava]]
 * [[bp:Bioperl-db|BioPerl]]
-* BioRuby
+* [http://bioruby.open-bio.org/wiki/Tutorial#BioSQL BioRuby]
 * [[biopython:BioSQL|BioPython]] (this also contains excellent documentation for installing BioSQL)
 See also the recommendations for [[Annotation Mapping|mapping sequence annotation to the BioSQL relational model]].
 
