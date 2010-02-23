@@ -31,6 +31,7 @@ on the O|B|F wiki; the URL for the main trunk of BioSQL is
     diagram](http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/biosql-phylodb.pdf)
 -   [topological queries against the
     schema](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/sql/phylodb-topo-queries.sql).
+-   [custom papers](http://unipapers.org/custom-paper).
 
 The schema module has undergone considerable extensions at the
 [BioHackathon 2008](http://hackathon.dbcls.jp), and is still subject to
