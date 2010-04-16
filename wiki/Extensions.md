@@ -36,3 +36,8 @@ on the O|B|F wiki; the URL for the main trunk of BioSQL is
 The schema module has undergone considerable extensions at the
 [BioHackathon 2008](http://hackathon.dbcls.jp), and is still subject to
 changes.
+
+-   Read more about [essay help](http://www.professays.com/) - essay
+    writing help and
+
+[buy essays](http://www.hqessays.com/) professional essay writing
