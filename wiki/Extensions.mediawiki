@@ -1,4 +1,4 @@
-Extension modules are optional, and only needed for storing or retrieving the respective data types it accommodates. Language mappings should not expect these modules to be present if only core-schema data types are being persisted or retrieved
+Extension modules are optional, and only needed for storing or retrieving the respective data types it accommodates. Language mappings should not expect these modules to be present if only core-schema data types are being persisted or retrieved.
 
 ==PhyloDB==
 A PhyloDB extension module for storing phylogenetic trees and taxonomies has been under development since December 2006 (started by Bill Piel and Hilmar Lapp at the [http://hackathon.nescent.org/Phylohackathon_1 Phyloinformatics Hackathon]). The [[PhyloDBSchema|schema overview]] is good place to start.
