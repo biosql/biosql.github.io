@@ -7,7 +7,4 @@ The module is in pre-release status and is only available via [http://code.open-
 * [http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/sql/biosql-phylodb-pg.sql schema in PostgreSQL]
 * [http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/biosql-phylodb.pdf entity-relationship diagram]
 * [http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/sql/phylodb-topo-queries.sql topological queries against the schema].
-* [http://unipapers.org/custom-paper custom papers].
 The schema module has undergone considerable extensions at the [http://hackathon.dbcls.jp BioHackathon 2008], and is still subject to changes.
-* Read more about [http://www.professays.com/ essay help] - essay writing help and 
-[http://www.hqessays.com/ buy essays] professional essay writing
