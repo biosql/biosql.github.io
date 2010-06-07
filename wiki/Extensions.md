@@ -7,7 +7,7 @@ layout: wiki
 Extension modules are optional, and only needed for storing or
 retrieving the respective data types it accommodates. Language mappings
 should not expect these modules to be present if only core-schema data
-types are being persisted or retrieved
+types are being persisted or retrieved.
 
 PhyloDB
 -------
