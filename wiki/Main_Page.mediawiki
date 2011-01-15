@@ -21,8 +21,8 @@ The [[Downloads]] section has links to downloads for current and past releases a
 
 ''Work is underway to migrate the documentation from the code repository to this website.''
 
-* See the [[Schema Overview|schema overview]] for an overview of the BioSQL model. In addition, see the documentation in the [http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk schema SVN repository], especially [http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL INSTALL], and documents in the [http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk/doc doc/] subdirectory.
-* Instantiating the schema and pre-populating it with the NCBI taxonomy or other data are extensively documented in the [http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL INSTALL] file in BioSQL (MySQL and PostgreSQL), the [[biopython:BioSQL|BioSQL page at the BioPython wiki]] (MySQL), and the [http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/bj_and_bsql_oracle_howto.htm Biojava/BioSQL HowTo] (Oracle).
+* See the [[Schema Overview|schema overview]] for an overview of the BioSQL model. In addition, see the documentation in the [https://github.com/hlapp/biosql schema Git repository], especially [https://github.com/hlapp/biosql/blob/master/INSTALL INSTALL], and documents in the [https://github.com/hlapp/biosql/tree/master/doc doc/] subdirectory.
+* Instantiating the schema and pre-populating it with the NCBI taxonomy or other data are extensively documented in the [https://github.com/hlapp/biosql/blob/master/INSTALL INSTALL] file in BioSQL (MySQL and PostgreSQL), the [[biopython:BioSQL|BioSQL page at the BioPython wiki]] (MySQL), and the [http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/bj_and_bsql_oracle_howto.htm Biojava/BioSQL HowTo] (Oracle).
 * See [[Optimizations|possible optimizations of local BioSQL installations]].
 * BioSQL add-on modules are documented as [[Extensions|Extension modules]] (and the repository may hold additional documentation for them, too).
 
