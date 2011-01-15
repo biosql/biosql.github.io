@@ -61,18 +61,16 @@ to this website.*
 
 -   See the [schema overview](Schema_Overview "wikilink") for an
     overview of the BioSQL model. In addition, see the documentation in
-    the [schema SVN
-    repository](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk),
+    the [schema Git repository](https://github.com/hlapp/biosql),
     especially
-    [INSTALL](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL),
-    and documents in the
-    [doc/](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk/doc) subdirectory.
+    [INSTALL](https://github.com/hlapp/biosql/blob/master/INSTALL), and
+    documents in the
+    [doc/](https://github.com/hlapp/biosql/tree/master/doc) subdirectory.
 -   Instantiating the schema and pre-populating it with the NCBI
     taxonomy or other data are extensively documented in the
-    [INSTALL](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL)
-    file in BioSQL (MySQL and PostgreSQL), the [BioSQL page at the
-    BioPython wiki](biopython:BioSQL "wikilink") (MySQL), and the
-    [Biojava/BioSQL
+    [INSTALL](https://github.com/hlapp/biosql/blob/master/INSTALL) file
+    in BioSQL (MySQL and PostgreSQL), the [BioSQL page at the BioPython
+    wiki](biopython:BioSQL "wikilink") (MySQL), and the [Biojava/BioSQL
     HowTo](http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/bj_and_bsql_oracle_howto.htm) (Oracle).
 -   See [possible optimizations of local BioSQL
     installations](Optimizations "wikilink").
