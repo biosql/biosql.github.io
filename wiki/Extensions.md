@@ -24,7 +24,7 @@ The module is in pre-release status and is only available via
 -   [schema in
     PostgreSQL](http://github.com/biosql/biosql/blob/master/sql/biosql-phylodb-pg.sql)
 -   [entity-relationship
-    diagram](http://github.com/biosql/biosql/blob/master/doc/biosql-phylodb.pdf)
+    diagram](http://github.com/biosql/biosql/raw/master/doc/biosql-phylodb.pdf)
 -   [topological queries against the
     schema](http://github.com/biosql/biosql/blob/master/sql/phylodb-topo-queries.sql).
 
