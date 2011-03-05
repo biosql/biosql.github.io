@@ -80,9 +80,9 @@ to this website.*
 Bug Reports & Enhancement Requests
 ----------------------------------
 
-The [O|B|F Bugzilla instance](http://bugzilla.open-bio.org) has a BioSQL
-product [to which you can submit
-bugs](http://bugzilla.open-bio.org/enter_bug.cgi?product=BioSQL).
+The [O|B|F Redmine instance](http://redmine.open-bio.org) has a [BioSQL
+project](http://redmine.open-bio.org/projects/biosql) to which you can
+submit bugs.
 
 You may also report issues directly to the
 [BioSQL](http://lists.open-bio.org/mailman/listinfo/biosql-l) mailing
