@@ -43,12 +43,11 @@ status information for upcoming releases are available, or will be
 posted on this wiki.
 
 The PhyloDB extension module has not been released yet and is only
-available from the [Subversion
-repository](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk).
-[Instructions for downloading code from anonymous
-svn](http://open-bio.org/wiki/SourceCode#Downloading_and_updating_code_via_Anonymous_SVN)
-are on the O|B|F wiki; the URL for the main trunk of BioSQL is
-[`svn://code.open-bio.org/biosql/biosql-schema/trunk`](svn://code.open-bio.org/biosql/biosql-schema/trunk).
+available from the [Git repository](http://github.com/biosql/biosql).
+[Instructions for downloading code from Git
+anonymously](http://open-bio.org/wiki/SourceCode#Downloading_and_updating_code_via_Anonymous_Git)
+are on the O|B|F wiki; the URL for the master branch of BioSQL is
+[`git://github.com/biosql/biosql.git`](git://github.com/biosql/biosql.git).
 
 The [Downloads](Downloads "wikilink") section has links to downloads for
 current and past releases as well as pre/alpha-releases.
