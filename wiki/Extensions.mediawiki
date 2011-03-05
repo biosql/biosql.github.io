@@ -5,6 +5,6 @@ A PhyloDB extension module for storing phylogenetic trees and taxonomies has bee
 
 The module is in pre-release status and is only available via [http://github.com/biosql/biosql Git].
 * [http://github.com/biosql/biosql/blob/master/sql/biosql-phylodb-pg.sql schema in PostgreSQL]
-* [http://github.com/biosql/biosql/blob/master/doc/biosql-phylodb.pdf entity-relationship diagram]
+* [http://github.com/biosql/biosql/raw/master/doc/biosql-phylodb.pdf entity-relationship diagram]
 * [http://github.com/biosql/biosql/blob/master/sql/phylodb-topo-queries.sql topological queries against the schema].
 The schema module has undergone considerable extensions at the [http://hackathon.dbcls.jp BioHackathon 2008], and is still subject to changes.
