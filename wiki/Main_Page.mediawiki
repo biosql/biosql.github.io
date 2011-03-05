@@ -28,7 +28,7 @@ The [[Downloads]] section has links to downloads for current and past releases a
 
 == Bug Reports & Enhancement Requests ==
 
-The [http://bugzilla.open-bio.org O|B|F Bugzilla instance] has a BioSQL product [http://bugzilla.open-bio.org/enter_bug.cgi?product=BioSQL to which you can submit bugs].
+The [http://redmine.open-bio.org O|B|F Redmine instance] has a [http://redmine.open-bio.org/projects/biosql BioSQL project]  to which you can submit bugs.
 
 You may also report issues directly to the [http://lists.open-bio.org/mailman/listinfo/biosql-l BioSQL] mailing list at [mailto:biosql-l%40lists%2eopen-bio%2eorg biosql-l&#64;lists&#46;open-bio&#46;org].
 
