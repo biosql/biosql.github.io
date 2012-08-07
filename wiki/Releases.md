@@ -4,6 +4,14 @@ permalink: wiki/Releases
 layout: wiki
 ---
 
+BioSQL release v1.0.2 plans
+---------------------------
+
+This could be a small release adding an SQLite3 version of the schema,
+which is already in the repository and supported by Biopython. What
+remains to be done is updating the BioSQL Perl scripts (e.g. the
+taxonomy loader) to support SQLite.
+
 BioSQL release v1.0.1
 ---------------------
 
