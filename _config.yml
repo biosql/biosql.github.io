@@ -15,3 +15,20 @@ tagline: Database schema for annotated biolical sequences
 url: http://biosql.org
 baseurl: /
 
+author:
+  name: BioSQL Contributors
+  url: https://twitter.com/OBF_news
+
+# Page settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+
+# Custom variables for Hyde theme
+version: 1.0.1
+github:
+  repo: https://github.com/biosql/biosql
