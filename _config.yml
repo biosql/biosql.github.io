@@ -1,0 +1,17 @@
+# Dependencies
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+gems:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
+
+# Setup
+title: BioSQL
+tagline: Database schema for annotated biolical sequences
+url: http://biosql.org
+baseurl: /
+
