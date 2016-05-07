@@ -13,9 +13,9 @@ sequence and feature annotation, a reference taxonomy, and ontologies
 
 While in its original incarnation (in 2001) conceived by Ewan Birney as
 a local relational store for GenBank, the project has since become a
-collaboration between the [BioPerl](bp:Main_Page "wikilink"),
-[BioPython](biopython:Main_Page "wikilink"),
-[BioJava](bj:Main_Page "wikilink"), and [BioRuby](http://bioruby.org)
+collaboration between the [BioPerl](http://bioperl.org),
+[BioPython](http://biopython.org),
+[BioJava](http://biojava.org), and [BioRuby](http://bioruby.org)
 projects. The goal is to build a sufficiently generic schema for
 persistent storage of sequences, features, and annotation in a way that
 is interoperable between the Bio\* projects. Each Bio\* project has a
@@ -69,7 +69,7 @@ to this website.*
     taxonomy or other data are extensively documented in the
     [INSTALL](http://github.com/biosql/biosql/blob/master/INSTALL) file
     in BioSQL (MySQL and PostgreSQL), the [BioSQL page at the BioPython
-    wiki](biopython:BioSQL "wikilink") (MySQL), and the [Biojava/BioSQL
+    wiki](http://biopython.org/wiki/BioSQL) (MySQL), and the [Biojava/BioSQL
     HowTo](http://github.com/biosql/biosql/blob/master/doc/bj_and_bsql_oracle_howto.htm) (Oracle).
 -   See [possible optimizations of local BioSQL
     installations](Optimizations "wikilink").
@@ -101,9 +101,9 @@ respective object models to BioSQL. Details for each project can be
 obtained from the links below.
 
 -   [BioJava](BioJava_BioSQL_ORM "wikilink")
--   [BioPerl](bp:Bioperl-db "wikilink")
+-   [BioPerl](https://github.com/bioperl/bioperl-db)
 -   [BioRuby](http://bioruby.open-bio.org/wiki/Tutorial#BioSQL)
--   [BioPython](biopython:BioSQL "wikilink") (this also contains
+-   [BioPython](http://biopython.org/wiki/BioSQL "wikilink") (this also contains
     excellent documentation for installing BioSQL)
 
 See also the recommendations for [mapping sequence annotation to the
@@ -112,7 +112,7 @@ BioSQL relational model](Annotation_Mapping "wikilink").
 Contacts
 --------
 
-Project lead is [Hilmar Lapp](bp:Hilmar_Lapp "wikilink"). Questions
+Project lead is [Hilmar Lapp](http://lappland.io). Questions
 should be sent to the BioSQL mailing list at
 [biosql-l@lists.open-bio.org](mailto:biosql-l%40lists%2eopen-bio%2eorg).
 You can also [subscribe](http://open-bio.org/mailman/listinfo/biosql-l)
