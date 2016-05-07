@@ -333,7 +333,7 @@ Applied or fixed
 
 ### Some character column widths are too narrow
 
-[Erik Jan reports](http://bugzilla.open-bio.org/show_bug.cgi?id=2389)
+[Erik Jan reports](https://redmine.open-bio.org/issues/2389)
 that some varchar(n) type columns are constrained too narrow to
 accommodate the latest UniProt database.
 
