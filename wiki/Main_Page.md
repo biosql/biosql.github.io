@@ -19,7 +19,7 @@ collaboration between the [BioPerl](http://bioperl.org),
 projects. The goal is to build a sufficiently generic schema for
 persistent storage of sequences, features, and annotation in a way that
 is interoperable between the Bio\* projects. Each Bio\* project has a
-[language binding](#Language_Bindings "wikilink") (object-relational
+[language binding](#language-bindings "wikilink") (object-relational
 mapping, ORM) to BioSQL.
 
 **Schema Overview:** A good introduction to the core BioSQL schema and
@@ -103,7 +103,7 @@ obtained from the links below.
 -   [BioJava](BioJava_BioSQL_ORM "wikilink")
 -   [BioPerl](https://github.com/bioperl/bioperl-db)
 -   [BioRuby](http://bioruby.open-bio.org/wiki/Tutorial#BioSQL)
--   [BioPython](http://biopython.org/wiki/BioSQL "wikilink") (this also contains
+-   [BioPython](http://biopython.org/wiki/BioSQL) (this also contains
     excellent documentation for installing BioSQL)
 
 See also the recommendations for [mapping sequence annotation to the
