@@ -130,7 +130,7 @@ NODE\_BIOENTRY
 --------------
 
 This table links a node to a BioSQL
-[bioentry](Schema_Overview#BIOENTRY "wikilink"). link are uniquely
+[bioentry](Schema_Overview#bioentry "wikilink"). link are uniquely
 identified by thier "node\_bioentry\_id". "node\_id" is the node to
 which the bioentry is being linked. "bioentry\_id" is the bioentry being
 linked to the node. "rank" is the index of this bioentry within the list

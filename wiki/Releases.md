@@ -29,7 +29,7 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
     -   Add note about current incompatibility with PostgreSQL v8.3+.
 
 2.  Implement [scheduled
-    changes](Enhancement_Requests#Scheduled_for_v1.0.x "wikilink")
+    changes](Enhancement_Requests#scheduled-for-v10x "wikilink")
     *Done. --[Hilmar](User%3AHlapp "wikilink") 02:24, 2 August
     2008 (UTC)*
     -   Widen column width constraint of dbxref.accession and
