@@ -1,7 +1,7 @@
 ---
 title: Schema Overview
 permalink: wiki/Schema_Overview
-layout: wiki
+layout: page
 ---
 
 This document describes some of the tables and fields in the BioSQL

@@ -1,7 +1,7 @@
 ---
 title: Releases
 permalink: wiki/Releases
-layout: wiki
+layout: page
 ---
 
 BioSQL release v1.0.2 plans

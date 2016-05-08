@@ -1,7 +1,7 @@
 ---
 title: Extensions
 permalink: wiki/Extensions
-layout: wiki
+layout: page
 ---
 
 Extension modules are optional, and only needed for storing or

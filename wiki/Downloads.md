@@ -1,7 +1,7 @@
 ---
 title: Downloads
 permalink: wiki/Downloads
-layout: wiki
+layout: page
 ---
 
 This page holds links to downloads, whether released or not. Current or
