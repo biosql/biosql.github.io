@@ -40,31 +40,37 @@ specified in a 3 character field.
 
 For example, this truncated GenBank record:
 
-`LOCUS       S63169S6                  22 bp    DNA     linear   PRI 25-AUG-1993`  
-`DEFINITION  NDP=Norrie disease {first three exons, microdeletion regions}`  
-`ACCESSION   S63178`  
-`VERSION     S63178.1  GI:386456`  
-`...`  
-`//`
+```
+LOCUS       S63169S6                  22 bp    DNA     linear   PRI 25-AUG-1993
+DEFINITION  NDP=Norrie disease {first three exons, microdeletion regions}
+ACCESSION   S63178
+VERSION     S63178.1  GI:386456
+...
+//
+```
 
 Would be stored in bioentry as:
 
-`name:      S63169S6`  
-`accession: S63178`  
-`identifier:     386456`  
-`division:       PRI`  
-`description:   NDP=Norrie disease {first three exons, microdeletion regions}`  
-`version:   1`
+```
+name:      S63169S6
+accession: S63178
+identifier:     386456
+division:       PRI
+description:   NDP=Norrie disease {first three exons, microdeletion regions}
+version:   1
+```
 
 bioentries need not come from a public database; a bioentry from a
 private lab database might look like this:
 
-`name:      MyFavGene1`  
-`accession: MFD12345`  
-`identifier:     902772`  
-`division:       ion_ch`  
-`description:   Gene prediction from my secret organism`  
-`version:   10`
+```
+name:      MyFavGene1
+accession: MFD12345
+identifier:     902772
+division:       ion_ch
+description:   Gene prediction from my secret organism
+version:   10
+```
 
 In this case, the identifier 902772 is not an NCBI GI number, but is a
 key to lookup this entry in the private database, "My Favorite Database"
