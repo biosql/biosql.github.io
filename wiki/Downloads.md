@@ -26,9 +26,9 @@ MD5 signatures (http://biosql.org/DIST/biosql-1.0.1.SIGNATURES.md5):
 * MD5 (biosql-1.0.1.zip) = `f0f6dd6855ee3e5a0e8457d97bc1efb1`
 
 Release notes can be found in the file
-[Release.txt](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/tags/biosql-release-1-0-1/Release.txt),
+[Release.txt](https://github.com/biosql/biosql/blob/biosql-release-1-0-1/Release.txt),
 and release-specific changes are in the file
-[Changes](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/tags/biosql-release-1-0-1/Changes).
+[Changes](https://github.com/biosql/biosql/blob/biosql-release-1-0-1/Changes).
 
 BioSQL core schema, Release v1.0.0 (Tokyo)
 ------------------------------------------
@@ -48,6 +48,6 @@ MD5 signatures (http://biosql.org/DIST/biosql-1.0.0.SIGNATURES.md5):
 * MD5(biosql-1.0.0.zip) = `06913c8639ca4fe7f9000b556d8a04ed`
 
 Release notes can be found in the file
-[Release.txt](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/tags/biosql-release-1-0-0/Release.txt),
+[Release.txt](https://github.com/biosql/biosql/blob/biosql-release-1-0-0/Release.txt),
 and release-specific changes are in the file
-[Changes](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/tags/biosql-release-1-0-0/Changes).
+[Changes](https://github.com/biosql/biosql/blob/biosql-release-1-0-0/Changes).
