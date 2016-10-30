@@ -1,12 +1,13 @@
 ---
-title: Placeholder for BioSQL welcome page
+title: Welcome to BioSQL
 layout: default
 ---
 
-We recently [migrated from MediaWiki to GitHub pages](https://github.com/peterjc/mediawiki_to_git_md),
-see our [README](https://biosql.github.io/README.html) file for details.
+Welcome to the BioSQL website. This site was recently
+[migrated from MediaWiki to GitHub pages]({{ site.baseurl }}README.html).
 
-The new site is mostly working, but there are a number of
-[known issues](https://github.com/biosql/biosql.github.io/issues).
+The site is mostly working, but there are a number of
+[known issues]({{ site.github.issues_url }}).
 
-Please see the [main page](/wiki/Main_Page).
+Please visit the real home page of this site, the
+[Main Page]({{ site.baseurl }}wiki/Main_Page) of the former wiki.
