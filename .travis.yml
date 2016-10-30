@@ -7,7 +7,7 @@
 # https://pages.github.com/versions/
 
 language: ruby
-rvm: 2.1.7
+rvm: 2.3.1
 script:
  - "if grep '\t' wiki/*.md; then echo 'Tabs are bad, please use four spaces.'; false; fi"
  - "bundle exec jekyll build"
