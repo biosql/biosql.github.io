@@ -1,3 +1,12 @@
+/* move sidebar footer to the bottom of the sidebar */
+@media (min-width: 48em) {
+  .sidebar-footer {
+    position: absolute;
+    bottom: 5px;
+    padding: 1rem;
+  }
+}
+
 /* switch footer between sidebar and bottom of page depending on media size */
 @media (max-width: 47.99em) {
   .sidebar-footer .copyright,
