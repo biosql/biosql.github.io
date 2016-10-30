@@ -1,3 +1,16 @@
+/* 'Edit this page' link at the top of every page */
+.edit-link {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+.edit-link hr {
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+}
+.content {
+    padding-top: 0.5rem;
+}
+
 /*
  * More themes in addition to those that come with Hyde.
  *
