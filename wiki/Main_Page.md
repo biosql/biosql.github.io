@@ -80,9 +80,7 @@ to this website.*
 Bug Reports & Enhancement Requests
 ----------------------------------
 
-The [O|B|F Redmine instance](http://redmine.open-bio.org) has a [BioSQL
-project](http://redmine.open-bio.org/projects/biosql) to which you can
-submit bugs.
+You can submit bugs to the [issue tracker of the main Github repo]({{ site.github.issues_url }}).
 
 You may also report issues directly to the
 [BioSQL](http://lists.open-bio.org/mailman/listinfo/biosql-l) mailing
