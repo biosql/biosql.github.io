@@ -19,7 +19,7 @@ following formats:
 * <http://biosql.org/DIST/biosql-1.0.1.tar.bz2>
 * <http://biosql.org/DIST/biosql-1.0.1.zip> (has Windows-style EOL)
 
-MD5 signatures (<http://biosql.org/DIST/biosql-1.0.1.SIGNATURES.md5.txt>):
+MD5 signatures (<http://biosql.org/DIST/biosql-1.0.1.SIGNATURES.md5>):
 
 * MD5 (biosql-1.0.1.tar.gz) = `aab431c4fd0ed429c0f5f07df5c915ec`
 * MD5 (biosql-1.0.1.tar.bz2) = `57b14c8f2695d86516ad52c024898889`
@@ -41,7 +41,7 @@ following formats:
 * <http://biosql.org/DIST/biosql-1.0.0.tar.bz2>
 * <http://biosql.org/DIST/biosql-1.0.0.zip> (has Windows-style EOL)
 
-MD5 signatures (<http://biosql.org/DIST/biosql-1.0.0.SIGNATURES.md5.txt>):
+MD5 signatures (<http://biosql.org/DIST/biosql-1.0.0.SIGNATURES.md5>):
 
 * MD5(biosql-1.0.0.tar.bz2) = `2b09a821b9d94bb1e94c3c79dc2f4cff`
 * MD5(biosql-1.0.0.tar.gz) = `e47982d979ddb98aae640b5ab55ce2c6`
