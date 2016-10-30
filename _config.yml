@@ -32,3 +32,9 @@ defaults:
 version: 1.0.1
 github:
   repo: https://github.com/biosql/biosql
+
+exclude:
+  - Gemfile
+  - node_modules
+  - Dockerfile
+  - serve-local.sh

@@ -1,0 +1,5 @@
+# Site wide configuration
+#
+# development version - override for local deployment
+
+url: ""
