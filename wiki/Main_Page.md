@@ -80,7 +80,7 @@ to this website.*
 Bug Reports & Enhancement Requests
 ----------------------------------
 
-You can submit bugs to the [issue tracker of the main Github repo]({{ site.github.issues_url }}).
+You can submit bugs to the [issue tracker of the main Github repo]({{ site.github.repo }}/issues).
 
 You may also report issues directly to the
 [BioSQL](http://lists.open-bio.org/mailman/listinfo/biosql-l) mailing
