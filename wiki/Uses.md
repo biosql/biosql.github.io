@@ -28,5 +28,5 @@ Genomic data
 Google Scholar
 --------------
 
-At last count there were 85 matches on Google Scholar:
+At last count there were 218 matches on Google Scholar:
 <http://scholar.google.com/scholar?q=BioSQL>
