@@ -8,6 +8,10 @@
 
 language: ruby
 rvm: 2.3.1
+
+before_install:
+ - "rm Gemfile.lock"
+
 script:
  - "if grep '\t' wiki/*.md; then echo 'Tabs are bad, please use four spaces.'; false; fi"
  - "bundle exec jekyll build"
