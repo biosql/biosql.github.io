@@ -1,3 +1,43 @@
+/* switch footer between sidebar and bottom of page depending on media size */
+@media (max-width: 47.99em) {
+  .sidebar-footer .copyright,
+  .sidebar-footer #poweredBy {
+    display: none;
+  }
+}
+@media (min-width: 48em) {
+  footer .copyright,
+  footer #poweredBy {
+    display: none;
+  }
+}
+
+/* when footer is shown at bottom of page, give it proper margins */
+footer {
+    margin: 0.5rem 1rem 0.5rem;
+}
+
+/* copyright statement */
+.copyright {
+    font-size: 14px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
+    line-height: 1.2;
+}
+
+/* CC image used in the copyright statement - reset to inline */
+.copyright img {
+    margin: 0px;
+    display: initial;
+}
+
+/* powered-by statement in very small font */
+#poweredBy {
+    font-size: 12px;
+    margin-top: 0.1rem;
+    margin-bottom: 0px;
+}
+
 /* 'Edit this page' link at the top of every page */
 .edit-link {
     text-align: right;
