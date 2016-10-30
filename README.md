@@ -2,6 +2,8 @@
 title: BioSQL.org website README
 ---
 
+[![Build Status](https://travis-ci.org/biosql/biosql.github.io.svg?branch=master)](https://travis-ci.org/biosql/biosql.github.io)
+
 The git repository at <https://github.com/biosql/biosql.github.io/>
 produces the BioSQL website at <https://biosql.org>
 using GitHub Pages (rendered using Jekyll, see
