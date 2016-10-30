@@ -21,10 +21,10 @@
     </div>
 
     <nav class="sidebar-nav">
-      <!--
-      The "Home" entry is redundant with the big "BioSQL" above it,
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
-      -->
+
+      <!-- Link the "Home" entry to Main_Page, as used to be for the wiki -->
+      {% assign home = site.pages | where:"title","Main Page" | first %}
+      <a class="sidebar-nav-item{% if page.url == home.url %} active{% endif %}" href="{{ home.url }}">Home</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
