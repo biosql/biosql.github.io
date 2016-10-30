@@ -11,7 +11,8 @@ whitelist:
 
 # Setup
 title: BioSQL
-tagline: Database schema for annotated biolical sequences
+logo: BioSQL-t.png
+tagline: Database schema for annotated biological sequences
 url: http://biosql.org
 baseurl: /
 

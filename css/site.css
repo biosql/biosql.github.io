@@ -1,0 +1,24 @@
+/*
+ * More themes in addition to those that come with Hyde.
+ *
+ */
+
+/* Base16 (http://chriskempson.github.io/base16/#default) */
+
+/* light cyan */
+.theme-base-twilight-0c .sidebar {
+  background-color: #afc4db;
+}
+.theme-base-twilight-0c .content a,
+.theme-base-twilight-0c .related-posts li a:hover {
+  color: #afc4db;
+}
+
+/* Medium Blue */
+.theme-base-twilight-0d .sidebar {
+  background-color: #7587a6;
+}
+.theme-base-twilight-0d .content a,
+.theme-base-twilight-0d .related-posts li a:hover {
+  color: #7587a6;
+}

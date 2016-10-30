@@ -4,11 +4,19 @@
   -->
   <div class="container">
     <div class="sidebar-about">
+      {% if site.logo %}
+      <div class="sidebar-logo">
+        <a href="{{ site.baseurl }}">
+          <img src="{{ site.baseurl }}images/{{ site.logo }}" alt="BioSQL Logo" title="BioSQL Home" width="100%"/>
+        </a>
+      </div>
+      {% else %}
       <h1>
         <a href="{{ site.baseurl }}">
           {{ site.title }}
         </a>
       </h1>
+      {% endif %}
       <p class="lead">{{ site.description }}</p>
     </div>
 
