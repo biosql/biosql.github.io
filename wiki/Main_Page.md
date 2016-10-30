@@ -46,7 +46,7 @@ The PhyloDB extension module has not been released yet and is only
 available from the [Git repository](http://github.com/biosql/biosql).
 [Instructions for downloading code from Git
 anonymously](http://open-bio.org/wiki/SourceCode#Downloading_and_updating_code_via_Anonymous_Git)
-are on the O|B|F wiki; the URL for the master branch of BioSQL is
+are on the OBF wiki; the URL for the master branch of BioSQL is
 [`git://github.com/biosql/biosql.git`](git://github.com/biosql/biosql.git).
 
 The [Downloads](Downloads "wikilink") section has links to downloads for
