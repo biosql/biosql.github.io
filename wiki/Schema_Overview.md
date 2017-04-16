@@ -250,6 +250,28 @@ nodes but lists the downstream, child path instead):
     WHERE name LIKE '%fungi%')
 ```
 
+Return the full taxonomy of every species in the database as a
+semicolon separated list. This query is written for postgres
+and relies on the `string_agg` function. SQLite and MySQL instead
+call the same function `group_concat`.
+
+``` sql
+SELECT lineage.id,
+       string_agg(lineage.name, ';') AS taxonomy
+FROM   (SELECT child.taxon_id AS id,
+               name.name
+        FROM   taxon child
+               join taxon ancestor
+                 ON child.left_value >= ancestor.left_value
+                    AND child.left_value <= ancestor.right_value
+               join taxon_name name
+                 ON name.taxon_id = ancestor.taxon_id
+        WHERE  child.right_value = ( child.left_value + 1 )
+               AND name.name_class = 'scientific name'
+        ORDER  BY ancestor.left_value) lineage
+GROUP BY lineage.id;
+```
+
 Sequence Features with Location and Annotation
 ----------------------------------------------
 
