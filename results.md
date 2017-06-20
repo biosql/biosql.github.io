@@ -34,8 +34,7 @@ Covering issues :
   ***Replaced with : http://biojava.org/wiki/BioJava%3ABioJavaXDocs***
   
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/pg
-  
-  ***Replaced with https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/pg***
+  * ***Replaced with https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/pg***
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/oracle
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/mysql
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/hsqldb
@@ -49,5 +48,5 @@ Covering issues :
 5. [http://biosql.org/wiki/PhyloDBSchema](http://biosql.org/wiki/PhyloDBSchema)
 
   * [NameResolutionFailure]  http://rs18.rapidshare.com/files/4441805/Trees_and_Hierarchies_in_SQL_for_Smarties.pdf
-  ***Replaced with : https://datubaze.files.wordpress.com/2016/03/celkos-trees-and-hierarchies-in-sql_2004.pdf***
+  * ***Replaced with : https://datubaze.files.wordpress.com/2016/03/celkos-trees-and-hierarchies-in-sql_2004.pdf***
 
