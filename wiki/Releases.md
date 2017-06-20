@@ -90,11 +90,11 @@ on any of the below, please email them to biosql-l@lists.open-bio.org.
 5.  Update Changes file. *Done. --[Hilmar](http://lappland.io)
     23:41, 22 February 2008 (EST)*
 6.  Update documentation in the repository. *Done, for
-    [Biopython](http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk/doc/biopython)
+    [Biopython](https://github.com/biosql/biosql/tree/master/doc/biopython)
     (see
-    [PDF](http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/biopython/python_biosql_basic.pdf))
+    [PDF](https://github.com/biosql/biosql/blob/master/doc/biopython/python_biosql_basic.pdf))
     and
-    [BioJava/Oracle](http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/bj_and_bsql_oracle_howto.htm).
+    [BioJava/Oracle](https://github.com/biosql/biosql/blob/master/doc/bj_and_bsql_oracle_howto.htm).
     Unfortunately, realized this not before, but only after branching
     off, so need to merge all changes to the branch.
     --[Hilmar](http://lappland.io) 12:06, 24 February 2008 (EST)*

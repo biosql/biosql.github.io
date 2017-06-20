@@ -237,7 +237,7 @@ that seems like a bastardization. Suggestions welcome.
 ### Ability to fully represent contig assembly
 
 The ability to fully represent [EMBL format's CO
-lines](http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html#3_4_14)
+lines](http://ftp.ebi.ac.uk/pub/databases/embl/doc/usrman.txt#3_4_14)
 in a BioSQL record would be desirable. The CO line is essentially a join
 of segments of other sequences, like this:
 
@@ -282,7 +282,7 @@ would only consist of gap characters, and be virtual).
 Should there be a better way of doing this?
 
 Related to CO lines, [EMBLs AS
-lines](http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html#3_4_13)
+lines](http://ftp.ebi.ac.uk/pub/databases/embl/doc/usrman.txt#3_4_13)
 store assembly path information. In essence, these could be stored as
 feature pairs, one feature on the source contig (or read, another
 bioentry), the other feature on the assembled contig (the entry with the

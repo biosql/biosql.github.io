@@ -11,7 +11,7 @@ to objects in the `org.biojavax` packages.
 BioJavaX Design
 ===============
 
-[BioJavaX](http://biojava.org/wikis/BioJava:BioJavaXDocs/) was officially
+[BioJavaX](http://biojava.org/wiki/BioJava%3ABioJavaXDocs) was officially
 released with BioJava1.5. It extends the `org.biojava` API's and was
 designed to very closely match the BioSQL schema. This made ORM of
 [BioJava](http://biojava.org) to BioSQL much more straight forward
@@ -27,10 +27,10 @@ files formally define where objects are written in the database.
 
 Hibernate mappings are currently defined for the following RDBMS's:
 
--   [PostGres](http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/pg)
--   [Oracle](http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/oracle)
--   [MySQL](http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/mysql)
--   [HyperSonic](http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/hsqldb)
+-   [PostGres](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/pg)
+-   [Oracle](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/oracle)
+-   [MySQL](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/mysql)
+-   [HyperSonic](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/hsqldb)
 -   Derby (comming soon)
 
 JPA and Annotations

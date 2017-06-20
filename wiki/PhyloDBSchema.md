@@ -82,7 +82,7 @@ part of. "left\_idx and "right\_idx" specify the left and right values
 of the nested set optimization structure for efficient hierarchical
 queries. These values needs to be precomputed by a program, see [J.
 Celko, SQL for
-Smarties](http://rs18.rapidshare.com/files/4441805/Trees_and_Hierarchies_in_SQL_for_Smarties.pdf).
+Smarties](https://www.worldcat.org/search?q=isbn%3A0128007613).
 
 NODE\_PATH
 ----------
