@@ -237,7 +237,7 @@ that seems like a bastardization. Suggestions welcome.
 ### Ability to fully represent contig assembly
 
 The ability to fully represent [EMBL format's CO
-lines](ftp://ftp.ebi.ac.uk/pub/databases/embl/doc/usrman.txt#3_4_14)
+lines](http://ftp.ebi.ac.uk/pub/databases/embl/doc/usrman.txt#3_4_14)
 in a BioSQL record would be desirable. The CO line is essentially a join
 of segments of other sequences, like this:
 
