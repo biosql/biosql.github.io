@@ -113,10 +113,10 @@ Contacts
 Project lead is [Hilmar Lapp](http://lappland.io). Questions
 should be sent to the BioSQL mailing list at
 [biosql-l@lists.open-bio.org](mailto:biosql-l%40lists%2eopen-bio%2eorg).
-You can also [subscribe](http://open-bio.org/mailman/listinfo/biosql-l)
+You can also [subscribe](http://mailman.open-bio.org/mailman/listinfo/biosql-l)
 to the mailing list to keep up to date with discussions and
 announcements.
 
 In addition, the [biosql-guts
-list](http://open-bio.org/mailman/listinfo/biosql-guts-l) is for bug
+list](http://mailman.open-bio.org/mailman/listinfo/biosql-guts-l) is for bug
 tracking and commit messages.
