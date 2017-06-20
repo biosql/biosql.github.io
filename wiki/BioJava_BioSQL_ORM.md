@@ -27,10 +27,10 @@ files formally define where objects are written in the database.
 
 Hibernate mappings are currently defined for the following RDBMS's:
 
--   [PostGres](http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/pg)
--   [Oracle](http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/oracle)
--   [MySQL](http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/mysql)
--   [HyperSonic](http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/hsqldb)
+-   [PostGres](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/pg)
+-   [Oracle](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/oracle)
+-   [MySQL](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/mysql)
+-   [HyperSonic](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/hsqldb)
 -   Derby (comming soon)
 
 JPA and Annotations
