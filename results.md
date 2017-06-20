@@ -9,7 +9,7 @@ Covering issues :
  * [Include URL checking in TravisCI setup](https://github.com/biosql/biosql.github.io/issues/4) - No broken links
 
 
-***Broken links (10)***
+***Broken links (5)***
 
 1. [http://biosql.org/wiki/Main_Page](http://biosql.org/wiki/Main_Page)
 
@@ -30,6 +30,7 @@ Covering issues :
 4. [http://biosql.org/wiki/BioJava_BioSQL_ORM ](http://biosql.org/wiki/BioJava_BioSQL_ORM )
 
   * [404]  http://biojava.org/wikis/BioJava:BioJavaXDocs/
+  ***Replaced with : http://biojava.org/wiki/BioJava%3ABioJavaXDocs***
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/pg
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/oracle
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/mysql
