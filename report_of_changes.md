@@ -5,16 +5,16 @@ Finished in: 3 minutes 13 seconds
 Depth = 10
 
 Covering issues : 
- * [Checking all the URLs still work](https://github.com/biosql/biosql.github.io/issues/6) - The whole md is for that issue
- * [Include URL checking in TravisCI setup](https://github.com/biosql/biosql.github.io/issues/4) - No broken links
-
+ * [Checking all the URLs still work](https://github.com/biosql/biosql.github.io/issues/6) - Found 13 dumb links overall and replaced them with working ones, in their respective md's in their respective md in the wiki directory. 
 
 ***Broken links (5)***
 
 1. [http://biosql.org/wiki/Main_Page](http://biosql.org/wiki/Main_Page)
 
   * [404]  http://open-bio.org/mailman/listinfo/biosql-l
+  * ***Replaced with http://mailman.open-bio.org/mailman/listinfo/biosql-l***
   * [404]  http://open-bio.org/mailman/listinfo/biosql-guts-l
+  * ***Replaced with http://mailman.open-bio.org/mailman/listinfo/biosql-guts-l***
 
 2. [http://biosql.org/wiki/Releases](http://biosql.org/wiki/Releases)
 
