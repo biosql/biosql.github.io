@@ -34,15 +34,17 @@ Covering issues :
   ***Replaced with : http://biojava.org/wiki/BioJava%3ABioJavaXDocs***
   
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/pg
+  
+  ***Replaced with https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/pg***
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/oracle
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/mysql
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/hsqldb
   
-  ***Replaced with 
+ Replaced with 
   -   [PostGres](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/pg)
 -   [Oracle](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/oracle)
 -   [MySQL](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/mysql)
--   [HyperSonic](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/hsqldb)***
+-   [HyperSonic](https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/hsqldb) 
 
 5. [http://biosql.org/wiki/PhyloDBSchema](http://biosql.org/wiki/PhyloDBSchema)
 
