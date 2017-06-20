@@ -31,7 +31,6 @@ Covering issues :
 
   * [404]  http://biojava.org/wikis/BioJava:BioJavaXDocs/
   * ***Replaced with : http://biojava.org/wiki/BioJava%3ABioJavaXDocs***
-  
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/pg
   * ***Replaced with https://github.com/biojava/biojava-legacy/tree/master/biosql/src/main/java/org/biojavax/bio/db/biosql/pg***
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/oracle
