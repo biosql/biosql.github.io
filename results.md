@@ -25,7 +25,9 @@ Covering issues :
 3. [http://biosql.org/wiki/Enhancement_Requests](http://biosql.org/wiki/Enhancement_Requests)
 
   * [301 » ConnectFailure]  http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html#3_4_14
+  * ***Replaced with http://ftp.ebi.ac.uk/pub/databases/embl/doc/usrman.txt#3_4_14***
   * [301 » ConnectFailure]  http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html#3_4_13
+  * ***Replaced with http://ftp.ebi.ac.uk/pub/databases/embl/doc/usrman.txt#3_4_13***
 
 4. [http://biosql.org/wiki/BioJava_BioSQL_ORM ](http://biosql.org/wiki/BioJava_BioSQL_ORM )
 
