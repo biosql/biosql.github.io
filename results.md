@@ -23,6 +23,7 @@ Covering issues :
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/biopython/python_biosql_basic.pdf
   * ***Replaced with https://github.com/biosql/biosql/blob/master/doc/biopython/python_biosql_basic.pdf***
   * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/bj_and_bsql_oracle_howto.htm
+  * ***Replaced with https://github.com/biosql/biosql/blob/master/doc/bj_and_bsql_oracle_howto.htm***
 
 3. [http://biosql.org/wiki/Enhancement_Requests](http://biosql.org/wiki/Enhancement_Requests)
 
