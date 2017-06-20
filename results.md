@@ -38,4 +38,5 @@ Covering issues :
 5. [http://biosql.org/wiki/PhyloDBSchema](http://biosql.org/wiki/PhyloDBSchema)
 
   * [NameResolutionFailure]  http://rs18.rapidshare.com/files/4441805/Trees_and_Hierarchies_in_SQL_for_Smarties.pdf
+  ***Replaced with : https://datubaze.files.wordpress.com/2016/03/celkos-trees-and-hierarchies-in-sql_2004.pdf***
 
