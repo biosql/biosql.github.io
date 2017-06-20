@@ -39,30 +39,3 @@ Covering issues :
 
   * [NameResolutionFailure]  http://rs18.rapidshare.com/files/4441805/Trees_and_Hierarchies_in_SQL_for_Smarties.pdf
 
-6. [https://biosql.org/wiki/Main_Page](https://biosql.org/wiki/Main_Page)
-
-  * [404]  http://open-bio.org/mailman/listinfo/biosql-l
-  * [404]  http://open-bio.org/mailman/listinfo/biosql-guts-l
-
-7. [https://biosql.org/wiki/Releases](https://biosql.org/wiki/Releases)
-
-  * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biosql/browse/biosql-schema/trunk/doc/biopython
-  * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/biopython/python_biosql_basic.pdf
-  * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biosql/checkout/biosql-schema/trunk/doc/bj_and_bsql_oracle_howto.htm
-
-8. [https://biosql.org/wiki/Enhancement_Requests](https://biosql.org/wiki/Enhancement_Requests)
-
-  * [301 » ConnectFailure]  http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html#3_4_14
-  * [301 » ConnectFailure]  http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html#3_4_13
-
-9. [https://biosql.org/wiki/BioJava_BioSQL_ORM](https://biosql.org/wiki/BioJava_BioSQL_ORM)
-
-  * [404]  http://biojava.org/wikis/BioJava:BioJavaXDocs/
-  * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/pg
-  * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/oracle
-  * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/mysql
-  * [ConnectFailure]  http://code.open-bio.org/svnweb/index.cgi/biojava/browse/biojava-live/trunk/src/org/biojavax/bio/db/biosql/hsqldb
-
-10. [https://biosql.org/wiki/PhyloDBSchema](https://biosql.org/wiki/PhyloDBSchea) 
-
-  * [NameResolutionFailure]  http://rs18.rapidshare.com/files/4441805/Trees_and_Hierarchies_in_SQL_for_Smarties.pdf
