@@ -16,7 +16,7 @@ favicon: BioSQL-icon-48px.png
 apple-touch-icon: BioSQL-icon-144px.png
 tagline: Database schema for annotated biological sequences
 url: http://biosql.org
-baseurl: /
+baseurl:
 
 author:
   name: BioSQL Contributors
